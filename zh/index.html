@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProstoCAD — 面向 3D 打印的免费参数化 CAD，带 STL 工具和 AI</title>
+<meta name="description" content="ProstoCAD：基于 FreeCAD 1.1.3 内核的参数化零件和装配体设计。提供 Mac 应用和 Windows 版本，带 STL 工具和内置 AI 连接（Claude Code、Codex、Gemini CLI）。">
+<meta property="og:title" content="ProstoCAD">
+<meta property="og:description" content="ProstoCAD：基于 FreeCAD 1.1.3 内核的参数化零件和装配体设计。提供 Mac 应用和 Windows 版本，带 STL 工具和内置 AI 连接（Claude Code、Codex、Gemini CLI）。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a111c">
+<meta name="msvalidate.01" content="499B6EF04BFF810C76A070A973326980">
+<link rel="alternate" hreflang="en" href="https://prostocad.com/">
+<link rel="alternate" hreflang="ru" href="https://prostocad.com/ru/">
+<link rel="alternate" hreflang="de" href="https://prostocad.com/de/">
+<link rel="alternate" hreflang="zh-Hans" href="https://prostocad.com/zh/">
+<link rel="alternate" hreflang="hi" href="https://prostocad.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://prostocad.com/">
+<link rel="canonical" href="https://prostocad.com/zh/">
+<link rel="alternate" type="application/atom+xml" href="https://prostocad.com/zh/updates.xml" title="ProstoCAD 与 InCad — 更新">
+<meta property="og:url" content="https://prostocad.com/zh/">
+<meta property="og:image" content="https://prostocad.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css?v=ed6ab6eb">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><img src="../icon.svg" alt="" width="34" height="34"><span><strong>Prosto<span>CAD</span></strong><small>零件 · 装配 · STL</small></span></a>
+  <nav class="links">
+    <a href="#features">功能</a>
+    <a href="#updates">更新</a>
+    <a href="#docs">文档</a>
+    <a href="#requirements">系统要求</a>
+    <a href="#addon">FreeCAD 插件</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">联系</a>
+  </nav>
+  <div class="right">
+    <details class="langmenu"><summary aria-label="Language"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>中文</span></summary><div class="menu"><a href="../" data-lang="en" hreflang="en" lang="en">English</a><a href="../ru/" data-lang="ru" hreflang="ru" lang="ru">Русский</a><a href="../de/" data-lang="de" hreflang="de" lang="de">Deutsch</a><a href="../zh/" data-lang="zh" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">中文</a><a href="../hi/" data-lang="hi" hreflang="hi" lang="hi">हिन्दी</a></div></details>
+    <a class="btn primary small" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>下载</span></a>
+  </div>
+</div></header>
+<div class="newsbar"><div class="wrap"><a href="#updates"><span class="tag-new">新</span><span class="what"><b>ProstoCAD 0.12.0</b> — InnCad Plus 更名为 ProstoCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric · <b>ProstoCAD for FreeCAD 0.13.0</b> — InCad 更名为 ProstoCAD for FreeCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric</span><span class="go">更新内容 →</span></a></div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <p class="town">A new CAD in town…</p>
+      <p class="mono-kicker">免费 · 基于 FreeCAD 1.1.3 内核</p>
+      <h1>参数化 CAD<span>献给 3D 打印爱好者。</span></h1>
+      <p class="tagline">Prosto。Presto。打印完成。</p>
+      <p class="equation">ProstoCAD <b class='plus'>+</b> 你的创意 = 打印好的零件</p>
+      <p class="lead">适合不愿为爱好花大钱、也拒绝盗版软件的人。ProstoCAD 免费：零件和装配体、把 STL 重建为真正零件的工具，以及与你的 AI 的内置连接——Claude Code、Codex 或 Gemini CLI 直接在你的窗口中建模。</p>
+      <div class="cta">
+        <a class="btn primary" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>下载 ProstoCAD<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+        <a class="btn outline" href="#docs"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>查看文档<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+      </div>
+      <p class="meta"><span>版本 0.12.0</span><i></i><span>免费</span><i></i><span>macOS (Apple Silicon) · Windows x64 · Linux 即将推出</span></p>
+      <p class="renamed">ProstoCAD 是 InnCad Plus 的新名字。</p>
+    </div>
+    <div class="window"><div class="bar"><i></i><i></i><i></i></div><div class=""><a class="zoom" href="../img/hero.webp?v=947d2b0a"><img src="../img/hero.webp?v=947d2b0a" alt="ProstoCAD 窗口：功能区、模型浏览器、参数表和一个零件" width="1800" height="963" loading="lazy" decoding="async"></a></div></div>
+  </div>
+  <p class="real"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>本网站上的所有截图都是真实的：均在 ProstoCAD 和 InCad 插件中制作。</p>
+
+  <div class="feats" id="features">
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20.5 7.5v9L12 21.2 3.5 16.5v-9z"/><path d="M3.5 7.5 12 12.2l8.5-4.7M12 12.2v9"/></svg></div><div><h3>参数化建模</h3>
+      <p>带尺寸和公式的草图、实时预览的特征、带约束的装配体。</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg></div><div><h3>STEP / STL / IGES</h3>
+      <p>打开 STEP 和 STL，导入 IGES 和 OBJ，导出 STEP 供其他 CAD 使用，导出 STL 供切片软件使用。</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg></div><div><h3>STL 变真正的零件</h3>
+      <p>Mesh Section 和 Smooth 把网格重建为可编辑的特征——也可以用 Connect AI 交给你的 AI 来完成。</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg></div><div><h3>独立应用</h3>
+      <p>内置 FreeCAD 1.1.3 内核：无需安装其他任何东西。在你自己的电脑上运行；文件仍是普通的 .FCStd。</p></div></div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-card">
+      <span class="pill">真正的螺纹</span>
+      <h2>真正的螺纹，可直接 3D 打印，只需几次点击</h2>
+      <p>可以打印的真正螺旋螺纹，而不是贴图——可做在现成的孔里或轴上：选择圆柱面和尺寸，或让 Auto 按孔自动匹配。ISO 公制、UNC / UNF、G、梯形、平牙顶的 Print-friendly，或 Custom——自定螺距、牙型角和牙深，适合罐子、瓶盖等各种非标准螺纹。打印间隙可任意设置（默认 0.2 mm），打印出的零件能拧在一起。</p>
+      <div class="shot"><a class="zoom" href="../img/thread.webp?v=f0aac2c9"><img src="../img/thread.webp?v=f0aac2c9" alt="Thread 对话框和可直接打印的 M5 螺纹" width="1040" height="650" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">AI × 3D 打印</span>
+      <h2>用 AI 为 3D 打印优化——尽量减少支撑</h2>
+      <p>让你的 AI 为打印准备零件：它可以把悬垂改为 45° 倒角，给零件一个平整的底面，并拆分无法一次打印的部分。每处修改都是历史中的普通特征——可以检查、编辑或撤销。</p>
+      <div class="term"><div class="bar"><i></i><i></i><i></i><span>Connect AI</span></div>
+        <p class="you">&gt; 把这个零件优化为适合 3D 打印，尽量减少支撑。</p>
+        <p>✓ 悬垂已改为 45° 倒角</p>
+        <p>✓ 以最大的面作为平整底面</p>
+        <p>✓ 每一步都在模型浏览器中——Undo 即可撤销</p>
+      </div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">3D 草图</span>
+      <h2>3D 草图中的 3D 线——沿虚拟立方体绘制</h2>
+      <p>在空间中绘图非常方便：原点周围有一个虚拟点阵立方体，大小和间距由你决定。线可以沿三个方向延伸：在任意层——XY、XZ、YZ——或整个立方体（Cube）中选点；Tab / Shift+Tab 切换层，点可以用鼠标拖动。Lines、Spline 或 Through points——画好的线可直接作为 Sweep 和 Loft 的路径。</p>
+      <div class="shot"><a class="zoom" href="../img/line3d_curve.webp?v=f475d377"><img src="../img/line3d_curve.webp?v=f475d377" alt="穿过虚拟立方体不同层上各点的 3D 线" width="1510" height="882" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">照片 → 真实尺寸</span>
+      <h2>一张照片加一次测量——得到真实尺寸</h2>
+      <p>插入照片，点击两点并输入一个真实长度：整张图片随之缩放，你就能在上面按真实毫米进行设计。照片拍歪了？Horizontal 或 Vertical 会把它旋转到这条线变平直。</p>
+      <div class="shot"><a class="zoom" href="../img/photo_scale.webp?v=6fe72c0d"><img src="../img/photo_scale.webp?v=6fe72c0d" alt="用两点和一个真实长度缩放照片；用 Horizontal 或 Vertical 摆正" width="1100" height="688" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Emboss · Engrave</span>
+      <h2>文字和任意草图——在任意面上凸起或雕刻</h2>
+      <p>Emboss 把文字或任意闭合草图——字母、标志、星形——凸起，Engrave 则把它刻进去：可在平面上，可包裹在圆柱和圆锥上，也可投影到球面上。超出某个面的字母会延续到与之平滑相接的面上，混合曲面同样可用。任意已安装字体、多行、西里尔字母、沿曲线排布文字；Evenly round 可让文字均匀绕满一圈。</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/star.webp?v=d639d691"><img src="../img/star.webp?v=d639d691" alt="在 ProstoCAD 中制作的星形" width="1000" height="711" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/18_emboss.webp?v=5092079f"><img src="../img/18_emboss.webp?v=5092079f" alt="绕圆柱凸起的文字" width="900" height="532" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card" id="gears">
+      <span class="pill">齿轮 · 蜗杆</span>
+      <h2>齿轮和蜗杆传动——一个对话框搞定</h2>
+      <p>Spur Gears 无需草图即可直接生成啮合的一对齿轮：渐开线齿形，直齿或斜齿（5–45°），可按齿数、传动比或中心距确定尺寸，并带轴孔。Worm Gear 生成蜗杆和蜗轮，1–6 头。第三个齿轮可与已有齿轮啮合；Make Assembly 把每个齿轮放进各自的零件中。</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/gears_pair.webp?v=8d746a2d"><img src="../img/gears_pair.webp?v=8d746a2d" alt="Spur Gears 对话框和啮合的一对斜齿轮" width="1200" height="765" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/gears_worm.webp?v=6f53ef30"><img src="../img/gears_worm.webp?v=6f53ef30" alt="Worm Gear 对话框以及蜗杆和蜗轮" width="1200" height="765" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">阵列</span>
+        <h2>阵列：在两个面之间均匀分布，去掉不需要的副本</h2>
+        <p>Equal spacing 把副本均匀分布在两个边界之间——两个面、两条边或两个点——无需自己计算间距。Excluded：直接在模型上点击不需要的副本即可去掉；✕ 可恢复任意一个。特征可用矩形、圆形阵列和 Mirror（镜像）；草图中还有 Along Path——沿任意曲线（直线、圆弧、样条）排列副本。</p>
+      </div>
+      <div class="shot"><a class="zoom" href="../img/pattern.webp?v=84b6f058"><img src="../img/pattern.webp?v=84b6f058" alt="在板的两个端面之间以 Equal spacing 分布的矩形阵列，去掉了第 3 和第 5 个副本" width="1400" height="749" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">拆分打印</span>
+        <h2>零件比打印机还大？拆开——用燕尾榫</h2>
+        <p>在草图中画出切割线——直线、圆弧或燕尾形——Split ▸ Keep all 会沿着它切开零件，每一块都成为独立的实体。间隙可任意设置：用 Offset 按间隙大小再画一条线——两线之间的窄条也会成为实体；删除它，间隙就有了。然后 Make Assembly 直接把这些块变成装配体，每块都是可直接打印的零件；燕尾榫把打印好的各块连在一起。</p>
+      </div>
+      <figure class="scheme"><svg class="dovetail" viewBox="0 0 440 190" role="img" aria-label="沿燕尾线一分为二的零件">
+  <defs><linearGradient id="dtA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6fb0"/><stop offset="1" stop-color="#1d4778"/></linearGradient>
+  <linearGradient id="dtB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8692a"/><stop offset="1" stop-color="#7a4316"/></linearGradient></defs>
+  <path d="M20 60 L190 60 L190 92 L226 80 L226 140 L190 128 L190 160 L20 160 Z" fill="url(#dtA)" stroke="#4aa6ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M244 60 L420 60 L420 160 L244 160 L244 128 L280 140 L280 80 L244 92 Z" fill="url(#dtB)" stroke="#f08a24" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190 92 L226 80 L226 140 L190 128" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <text x="105" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">1</text>
+  <text x="340" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">2</text>
+  <path d="M195 36 H275 M195 36 l10 -6 M195 36 l10 6 M275 36 l-10 -6 M275 36 l-10 6" stroke="#93a3b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="235" y="26" fill="#93a3b8" font-size="13" text-anchor="middle" font-family="system-ui, sans-serif">Split</text>
+</svg>
+        <figcaption>示意图</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="pair2">
+    <div class="box req" id="requirements">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.6"/><path d="M12 2.5v2.9M12 18.6v2.9M21.5 12h-2.9M5.4 12H2.5M18.7 5.3l-2 2M7.3 16.7l-2 2M18.7 18.7l-2-2M7.3 7.3l-2-2"/></svg><div><h3>系统要求</h3>
+        <p>内置 FreeCAD 1.1.3 内核——无需安装 FreeCAD。</p></div></div>
+      <div class="oss">
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.3-3.51zM14.19 6.15c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg><div><h3>macOS</h3><ul>
+          <li>macOS 13 Ventura 或更高版本</li><li>Apple 芯片：M1 或更新</li><li>约 1 GB 磁盘空间</li><li>从 U 盘运行：即将推出</li></ul></div></div>
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.1 10.4 4v7.2H3V5.1zm0 13.8 7.4 1.1v-7.1H3v6zm8.2 1.2L21 21.5v-8.6h-9.8v7.2zM11.2 3.9v7.3H21V2.5l-9.8 1.4z"/></svg><div><h3>Windows</h3><ul>
+          <li>Windows 10 或 11，64 位（x64）</li><li>约 600 MB 磁盘空间</li><li>无需管理员权限</li><li>可直接从 U 盘运行</li></ul></div></div>
+        <div class="osr soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2c-2.2 0-3.6 1.8-3.6 4.3 0 1.3.3 2.2-.6 3.6C6.6 11.8 5 14 5 16.6c0 .9.2 1.7.6 2.4-.9.4-1.6 1-1.6 1.6 0 .9 1.6 1.4 3.4 1.4 1 0 1.8-.3 2.3-.8.7.2 1.5.3 2.3.3s1.6-.1 2.3-.3c.5.5 1.3.8 2.3.8 1.8 0 3.4-.5 3.4-1.4 0-.6-.7-1.2-1.6-1.6.4-.7.6-1.5.6-2.4 0-2.6-1.6-4.8-2.8-6.7-.9-1.4-.6-2.3-.6-3.6C15.6 3.8 14.2 2 12 2zm-1.4 3.6c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zm2.8 0c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zM12 8.6c.9 0 1.8.4 1.8.8s-.9 1-1.8 1-1.8-.6-1.8-1 .9-.8 1.8-.8zm0 3c2 0 3.4 2.2 3.4 4.7S14 20 12 20s-3.4-1.2-3.4-3.7S10 11.6 12 11.6z"/></svg><div><h3>Linux <span class="tag-soon">即将推出</span></h3><ul>
+          <li>Linux 版本即将推出</li></ul></div></div>
+      </div>
+      <div class="foot">
+        <p>此版本不支持：Intel Mac。Linux：即将推出。</p>
+        <p>AI 连接（可选）：Claude Code、Codex 或 Gemini CLI，使用你自己的账号登录。</p>
+      </div>
+    </div>
+
+    <div class="box dlbox" id="download">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><div><h3>下载 ProstoCAD</h3>
+        <p>版本 0.12.0 · 发布于 2026 年 10 月 27 日 · 免费</p></div></div>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-pf="pf-mac">macOS</button>
+        <button type="button" role="tab" data-pf="pf-zip">Windows 便携版</button>
+        <button type="button" role="tab" data-pf="pf-linux">Linux <span class="tag-soon">即将推出</span></button>
+      </div>
+      <div class="pf" id="pf-mac"><h4>macOS</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-macos-arm64.dmg"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>下载 Mac 版</a>
+        <p class="file">ProstoCAD-0.12.0-macos-arm64.dmg · 186 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9</code></div>
+          <button class="copy" type="button" data-copy="e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9" data-ok="已复制" aria-label="复制 SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note">将 ProstoCAD.app 拖到“应用程序”文件夹。首次打开时 macOS 会要求确认：<a href="#faq-mac">仍要打开</a>。</p></div>
+      <div class="pf" id="pf-zip"><h4>Windows 便携版</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>下载 Windows 便携版</a>
+        <p class="file">ProstoCAD-0.12.0-windows-x64.zip · 188 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd</code></div>
+          <button class="copy" type="button" data-copy="71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd" data-ok="已复制" aria-label="复制 SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note"><b>无需安装，解压即用。</b>请解压到只含拉丁字母的短路径，然后运行 <code>ProstoCAD.exe</code>。</p></div>
+      <div class="pf" id="pf-linux"><h4>Linux</h4><p class="note">Linux 版本正在路上。请稍后再来——在此之前，ProstoCAD 已支持 Mac 和 Windows。</p></div>
+      <div class="links">
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">GitHub 上的发布页</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases">所有版本</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/SHA256SUMS-0.12.0.txt">SHA256SUMS-0.12.0.txt</a>
+      </div>
+      <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>欢迎常来看看：ProstoCAD 几乎每天都在变得更好，也许新版本已经在等你了。</p></div>
+    </div>
+  </div>
+
+  <div class="box addon" id="addon">
+    <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3.5a2 2 0 0 1 4 0V5h3.5A1.5 1.5 0 0 1 19 6.5V10h-1.5a2 2 0 0 0 0 4H19v3.5a1.5 1.5 0 0 1-1.5 1.5H14v-1.5a2 2 0 0 0-4 0V19H6.5A1.5 1.5 0 0 1 5 17.5V14h1.5a2 2 0 0 0 0-4H5V6.5A1.5 1.5 0 0 1 6.5 5H10z"/></svg><div><p class="kicker">面向 FreeCAD 用户</p>
+      <h3>InCad — FreeCAD 插件</h3>
+      <p class="slogan">献给用了多年其他 CAD、刚打开 FreeCAD 的你。</p></div></div>
+    <div class="addon-body">
+      <div>
+        <p>已经装了 FreeCAD 1.1？InCad 以工作台的形式为它加入同样的参数化工具：功能区、模型浏览器、特征对话框、装配体。免费，文件仍是普通的 .FCStd。STL 工具和 Connect AI 仅在 ProstoCAD 中提供。</p>
+        <p class="back">只需一个按钮 <b>Return to FreeCAD</b>，即可回到原生的 FreeCAD 界面。</p>
+        <a class="new-note" href="#gears"><img src="../img/gears_addon.webp?v=58e76195" alt="用 Spur Gears 制作的一对齿轮" width="600" height="396" loading="lazy" decoding="async"><span><span class="tag-new">终于来了</span>从 0.11 版起，插件中也有齿轮和蜗杆传动了。</span></a>
+        <p class="note">FreeCAD 1.1（已在 1.1.3 上测试）· Apple 芯片的 macOS 或 Windows 10 / 11 x64</p>
+        <p class="note">Mac：通过 FreeCAD 的 Addon Manager 安装，步骤见 ZIP 中的 README.txt。Windows：解压后运行 <code>install.bat</code>。</p>
+      </div>
+      <div class="addon-dl">
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-macOS-arm64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Mac 版插件<small>ZIP · 8 MB</small></span></a>
+        <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-Windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Windows 版插件<small>ZIP · 8 MB</small></span></a>
+        <p class="note">版本 0.13.0 · <a href="https://github.com/Igr11/ProstoCAD/releases">InCad 所有版本</a></p>
+      </div>
+    </div>
+    <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>欢迎常来看看：InCad 几乎每天都在变得更好，也许新版本已经在等你了。</p></div>
+  </div>
+</div></div>
+
+<section id="updates"><div class="wrap">
+  <div class="head">
+    <p class="kicker">更新</p>
+    <h2>ProstoCAD 和 InCad 有什么新内容</h2>
+    <p>每个程序的最新版本：新增了什么，修复了什么。更早的版本在 GitHub 上：<a href="https://github.com/Igr11/ProstoCAD-releases/releases">ProstoCAD</a>、<a href="https://github.com/Igr11/ProstoCAD/releases">ProstoCAD for FreeCAD</a>。</p>
+  </div>
+  <div class="upd-grid"><article class="box upd" id="update-plus-0.12.0">
+      <p class="upd-head"><span class="prod plus">ProstoCAD</span><b>0.12.0</b><time datetime="2026-10-27">2026 年 10 月 27 日</time></p>
+      <h3>InnCad Plus 更名为 ProstoCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric</h3><h4 class="added">新增</h4><ul class="ticks"><li>新名字，同一个程序：文件照常打开，ProstoCAD 首次启动时会自动接管 InnCad Plus 的设置。</li><li>每个矩形都会自动带上两条对角线和一个中心点（构造线）：一个约束（中心点落在原点）即可让矩形居中。圆角矩形的对角线连接各圆角的圆心。</li><li>在草图中右键可删除任何选中的对象，包括尺寸；在 Parameters 中也能删除草图尺寸。</li></ul><h4 class="fixed">修复</h4><ul class="ticks"><li>以前用完 Symmetric 后线条无法拖动：现在配对完成后工具会自动结束。</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">GitHub 上的发布说明 →</a></article><article class="box upd" id="update-incad-0.13.0">
+      <p class="upd-head"><span class="prod incad">ProstoCAD for FreeCAD</span><b>0.13.0</b><time datetime="2026-10-27">2026 年 10 月 27 日</time></p>
+      <h3>InCad 更名为 ProstoCAD for FreeCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric</h3><h4 class="added">新增</h4><ul class="ticks"><li>新名字，同一个工作台：在 FreeCAD 中显示为 ProstoCAD，以前做的文件照常打开。</li><li>每个矩形都会自动带上两条对角线和一个中心点（构造线）：一个约束（中心点落在原点）即可让矩形居中。圆角矩形的对角线连接各圆角的圆心。</li><li>在草图中右键可删除任何选中的对象，包括尺寸；在 Parameters 中也能删除草图尺寸。</li></ul><h4 class="fixed">修复</h4><ul class="ticks"><li>以前用完 Symmetric 后线条无法拖动：现在配对完成后工具会自动结束。</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0">GitHub 上的发布说明 →</a></article></div>
+  <p class="follow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><span>获取新版本消息：把<a href="updates.xml">更新订阅</a>（RSS / Atom）添加到任意阅读器，或在 GitHub 上为 <a href="https://github.com/Igr11/ProstoCAD-releases">ProstoCAD</a> 和 <a href="https://github.com/Igr11/ProstoCAD">ProstoCAD for FreeCAD</a> 点击 Watch ▸ Custom ▸ Releases。</span></p>
+</div></section>
+
+<section class="alt" id="workflow"><div class="wrap">
+  <div class="head">
+    <p class="kicker">工作方式</p>
+    <h2>用过参数化 CAD 的人都会感到熟悉</h2>
+    <p>功能区、带历史记录的模型浏览器、带实时预览的特征对话框、支持公式的参数表、鼠标右键的标记菜单。底层是普通的 FreeCAD 几何体。</p>
+  </div>
+  <div class="cards3">
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_sketch.webp?v=7a61ab4d"><img src="../img/ui_sketch.webp?v=7a61ab4d" alt="完全约束、带尺寸的草图" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>草图</h3>
+      <p>直线、圆弧、样条和文字；绘图时直接输入尺寸；约束列表；草图阵列。</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_feature.webp?v=755acb9b"><img src="../img/ui_feature.webp?v=755acb9b" alt="Extrude 对话框及零件上的预览" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>功能</h3>
+      <p>Extrude、Revolve、Hole、Fillet、Shell、Sweep、Loft、Thread、Emboss、齿轮——每个都有实时预览和拖动手柄。</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/asm_engine.webp?v=01783c85"><img src="../img/asm_engine.webp?v=01783c85" alt="ProstoCAD 中的 Moto Engine Demo 装配体：23 个零件，各有其自由度" width="1200" height="750" loading="lazy" decoding="async"></a></div><div class="body"><h3>装配体</h3>
+      <p>基于 FreeCAD 自身关节的 Mate、Flush、Insert 等约束；操纵器只会沿零件仍然自由的方向移动它。</p></div></div>
+  </div>
+</div></section>
+
+<section id="section"><div class="wrap">
+  <div class="head">
+    <p class="kicker">装配 · View ▸ Section</p>
+    <h2>剖切整个装配体——每个零件保持自己的颜色</h2>
+    <p>剖切平面切过它遇到的每个零件，每个零件有自己的剖面线。Interference 用亮红色显示零件相互干涉的位置，并给出干涉体积。</p>
+  </div>
+  <div class="big">
+    <div><div class="shot"><a class="zoom" href="../img/moto_front.webp?v=b4fc5097"><img src="../img/moto_front.webp?v=b4fc5097" alt="20 个零件的发动机装配剖视" width="1392" height="935" loading="lazy" decoding="async"></a></div>
+      <p class="caption">Moto Engine Demo——在 FreeCAD 中制作的 20 个零件的装配体，在 ProstoCAD 中剖切。</p></div>
+    <div class="side">
+      <div class="shot"><a class="zoom" href="../img/moto_iso.webp?v=362e5b8d"><img src="../img/moto_iso.webp?v=362e5b8d" alt="发动机装配体 3D 视图" width="1000" height="695" loading="lazy" decoding="async"></a></div>
+      <div class="shot"><a class="zoom" href="../img/interference.webp?v=3e749745"><img src="../img/interference.webp?v=3e749745" alt="亮红色显示的干涉" width="912" height="720" loading="lazy" decoding="async"></a></div>
+      <ul class="ticks"><li>任何形状：ProstoCAD 和 FreeCAD 的装配体、STEP、其他软件的文件</li><li>直接在装配树中使用 <b>Hide</b>、<b>Show</b>、<b>Show All</b></li><li><b>Open</b> 在单独窗口中打开零件；Save 把装配体及其零件保存到同一个文件夹</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="pawn"><div class="wrap">
+  <div class="head">
+    <p class="kicker">示例：国际象棋兵</p>
+    <h2>五步从照片到彩色零件</h2>
+  </div>
+  <div class="steps">
+    <div><div class="shot"><a class="zoom" href="../img/chess_1_photo.webp?v=580de11d"><img src="../img/chess_1_photo.webp?v=580de11d" alt="放在 XZ 平面上的兵的照片" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>1</em>照片</h3><p>Image ▸ Insert Image，On XZ——图片竖立起来</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_2_scale.webp?v=38797169"><img src="../img/chess_2_scale.webp?v=38797169" alt="用两点缩放照片" width="1600" height="1035" loading="lazy" decoding="async"></a></div><h3><em>2</em>比例</h3><p>两点：底部和顶部，Real length 50 mm</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_3_sketch.webp?v=0b78306e"><img src="../img/chess_3_sketch.webp?v=0b78306e" alt="在照片上画出一半轮廓的草图" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>3</em>草图</h3><p>在照片上描出一半轮廓</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_4_revolve.webp?v=00629593"><img src="../img/chess_4_revolve.webp?v=00629593" alt="旋转生成的兵" width="900" height="688" loading="lazy" decoding="async"></a></div><h3><em>4</em>Revolve</h3><p>绕 Z 轴旋转——兵正好高 50 mm</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_5_appearance.webp?v=3036b8ab"><img src="../img/chess_5_appearance.webp?v=3036b8ab" alt="兵的外观设置" width="900" height="598" loading="lazy" decoding="async"></a></div><h3><em>5</em>Appearance</h3><p>木纹、Satin、Hide Edges——立刻显示在零件上</p></div>
+  </div>
+  <div class="trio">
+    <figure><div class="shot"><a class="zoom" href="../img/chess_6_wood.webp?v=3e9752f9"><img src="../img/chess_6_wood.webp?v=3e9752f9" alt="木质的兵" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Wood · Satin</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_7_black.webp?v=197a9ffc"><img src="../img/chess_7_black.webp?v=197a9ffc" alt="光亮的黑色兵" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Glossy，黑色</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_8_red.webp?v=18134dc8"><img src="../img/chess_8_red.webp?v=18134dc8" alt="红色拉丝金属的兵" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Metal + Brushed</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="appearance"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/finishes.webp?v=f1f3abf4"><img src="../img/finishes.webp?v=f1f3abf4" alt="表面效果：Matte、Satin、Glossy、Metal、Chrome、Glass、Rubber" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ Material ▸ Appearance</p>
+      <h2>颜色与表面效果</h2>
+      <ul class="ticks"><li>调色板中的任意颜色，或点 <b>More…</b></li><li><b>Matte、Satin、Glossy、Metal、Chrome、Glass、Rubber</b></li><li>所选的面、实体或整个零件；<b>Hide Edges</b> 隐藏边线</li><li>立即可见；OK 只占一步 Undo</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div class="shot"><a class="zoom" href="../img/textures.webp?v=15527169"><img src="../img/textures.webp?v=15527169" alt="纹理：Brushed、Wood、Carbon、Knurl、Sand" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Appearance ▸ Texture</p>
+      <h2>颜色之上的纹理</h2>
+      <ul class="ticks"><li><b>Brushed、Wood、Carbon、Knurl、Sand</b></li><li>颜色会透出来：红色零件得到红色木纹</li><li>纹理在任何零件上都保持真实尺寸</li><li>保存在文件中，装配体中也能看到</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="tools"><div class="wrap">
+  <div class="row">
+    <div><div class="shot"><a class="zoom" href="../img/work_plane_series_view.webp?v=a6ce38d8"><img src="../img/work_plane_series_view.webp?v=a6ce38d8" alt="一组旋转过的工作平面" width="809" height="564" loading="lazy" decoding="async"></a></div>
+      <div class="pair"><div class="shot"><a class="zoom" href="../img/work_plane_series.webp?v=942ccea7"><img src="../img/work_plane_series.webp?v=942ccea7" alt="带 Planes 和 Turn 的 Work Plane 对话框" width="864" height="532" loading="lazy" decoding="async"></a></div></div></div>
+    <div class="text">
+      <p class="kicker">Work Plane</p>
+      <h2>放样平面——一次多个，还能旋转</h2>
+      <ul class="ticks"><li>Offset ▸ <b>Planes</b>：一次生成 2×、3×… 的偏移</li><li><b>Turn</b>：绕上一个平面或全局坐标的 X、Y、Z 旋转</li><li>输入数值，或拖动圆环</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div><div class="shot"><a class="zoom" href="../img/asm_axes.webp?v=8f0c140d"><img src="../img/asm_axes.webp?v=8f0c140d" alt="发动机回转件和孔的轴线，以浅色中心线显示" width="1200" height="750" loading="lazy" decoding="async"></a></div></div>
+    <div class="text">
+      <p class="kicker">装配</p>
+      <h2>可用于约束的轴线</h2>
+      <ul class="ticks"><li>每个回转体和孔都以浅色中心线显示其<b>轴线</b></li><li>Mate、Flush、Insert、Cylindrical、Parallel 单击即可选中轴线</li><li>Make Assembly 保留零件名称</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="plus" id="plus"><div class="wrap">
+  <div class="head">
+    <p class="kicker">STL → STEP</p>
+    <h2>借助 AI 把 STL 变成 STEP</h2>
+    <p>STL 是三角形网格：切片软件可以打印它，但你无法修改尺寸，也无法在其他 CAD 中把它作为实体打开。连接你的 AI，它会在 ProstoCAD 中把 STL 重建为真正的零件——草图、Extrude、Revolve、可编辑的尺寸——随时可以保存为 STEP。也可以用下面的 STL 工具自己完成。</p>
+  </div>
+  <div class="ba">
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_before.webp?v=72ec0346"><img src="../img/ai_hook_before.webp?v=72ec0346" alt="之前：挂钩的 STL，三角形网格" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>之前</b> · STL：三角形网格</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_after.webp?v=2675e03a"><img src="../img/ai_hook_after.webp?v=2675e03a" alt="之后：AI 用特征重建的挂钩" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>之后</b> · 由 AI 构建：历史中 9 个特征，尺寸可编辑</figcaption></figure>
+    </div>
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_before.webp?v=5e5b4acb"><img src="../img/ai_case_before.webp?v=5e5b4acb" alt="之前：iPhone 手机壳的 STL" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>之前</b> · iPhone 手机壳的 STL</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_after.webp?v=18028a93"><img src="../img/ai_case_after.webp?v=18028a93" alt="之后：AI 重建的 iPhone 手机壳" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>之后</b> · 由 AI 构建：24 个特征，可直接保存为 STEP</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_photo.webp?v=216d4eae"><img src="../img/leg_photo.webp?v=216d4eae" alt="之前：桌腿冲压底板的照片" width="960" height="1280" loading="lazy" decoding="async"></a></div><figcaption><b>之前</b> · 只有一张桌腿的照片</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/leg_render.webp?v=f7cf866a"><img src="../img/leg_render.webp?v=f7cf866a" alt="之后：AI 根据照片构建的底板，其 STEP 在 Plasticity 中" width="1200" height="939" loading="lazy" decoding="async"></a></div><figcaption><b>之后</b> · 由 AI 根据一张照片构建，保存为 STEP 并在 Plasticity 中打开</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_inncad.webp?v=ca96ce49"><img src="../img/leg_inncad.webp?v=ca96ce49" alt="ProstoCAD 中底板的背面，模型浏览器中列出其特征" width="1200" height="698" loading="lazy" decoding="async"></a></div><figcaption><b>ProstoCAD</b> · 背面：历史中有 11 个特征，尺寸可编辑</figcaption></figure>
+      <span class="ba-arrow ba-gap" aria-hidden="true">→</span>
+      <figure><div class="shot"><video src="../img/leg_spin.mp4?v=c3bf0153" poster="../img/leg_spin.webp?v=0fd8848d" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="AI 根据照片构建的底板，正在翻转"></video></div><figcaption>两面：厚度均匀的冲压板</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="row ai" id="ai">
+    <div class="shot"><a class="zoom" href="../img/ai_help_light.webp?v=a5228f2d"><img src="../img/ai_help_light.webp?v=a5228f2d" alt="Connect AI 窗口：Claude Code、Codex、Gemini CLI 和其他 MCP 程序" width="1600" height="1051" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ AI ▸ Connect AI</p>
+      <h2>一键接入，你的 AI 就在 ProstoCAD 里</h2>
+      <ul class="ticks"><li>已安装 Claude Code？<b>Connect AI</b> 会直接在零件所在文件夹打开带它的终端，无需任何询问</li><li>MCP 服务器已内置——无需下载</li><li>还没有 AI？窗口会告诉你去哪里获取 Claude Code、Codex 或 Gemini CLI，并给出安装命令</li><li>Claude Desktop、Cursor、VS Code、Windsurf、LM Studio：现成的路径和可复制的 JSON</li><li>AI 创建的特征和你的一样留在模型浏览器中：可以编辑，也可以逐步撤销</li></ul>
+      <p class="quote">“在 ProstoCAD 中把这个 STL 重建为零件，先做锐边。”</p>
+      <p><a class="btn outline small" href="#connect">如何连接，逐步说明<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+
+  <div class="stl">
+    <div class="box"><b><em>01</em>Import</b><p>STL 原样导入；状态栏显示三角形数量。</p></div>
+    <div class="box"><b><em>02</em>STL → STEP</b><p>网格变成由三角形组成的实体，可以导出为 STEP。</p></div>
+    <div class="box"><b><em>03</em>Mesh Section</b><p>用平面剖切 STL：得到由直线、圆弧和圆组成、尺寸取整的草图。</p></div>
+    <div class="box"><b><em>04</em>Smooth</b><p>把回转件重建为特征：草图、Revolve、退刀槽，以及按实测螺距生成的螺纹。</p></div>
+  </div>
+</div></section>
+
+<section id="connect"><div class="wrap">
+  <div class="head">
+    <p class="kicker">AI · MCP</p>
+    <h2>连接你的 AI——逐步说明</h2>
+    <p>ProstoCAD 内置 MCP 服务器（AI Link）：无需为它下载任何东西。任何支持 MCP 的 AI 程序都能在你的 ProstoCAD 窗口中工作——查看零件、测量 STL、构建可编辑的特征。</p>
+  </div>
+  <div class="connect">
+    <div class="box step-box">
+      <h3><span class="num">A</span>快捷方式：Connect AI</h3>
+      <ol class="steps-ol">
+        <li>安装一个 AI 命令行程序并用你自己的账号登录：<b>Claude Code</b>、<b>Codex</b>（OpenAI）或 <b>Gemini CLI</b>（Google）。在终端中运行一次以登录。
+          <div class="mini">
+            <p><a href="https://claude.com/claude-code">Claude Code</a> · 安装方法见其页面</p>
+            <div class="snip"><code>npm install -g @openai/codex</code><button class="copy" type="button" data-copy="npm install -g @openai/codex" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <div class="snip"><code>npm install -g @google/gemini-cli</code><button class="copy" type="button" data-copy="npm install -g @google/gemini-cli" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <p>Codex 和 Gemini CLI 需要 <a href="https://nodejs.org">Node.js</a>（LTS 安装包）。</p>
+          </div></li>
+        <li>在 ProstoCAD 中打开零件或导入 STL。</li>
+        <li><b>Tools ▸ AI ▸ Connect AI。</b>会在零件所在文件夹打开一个终端，AI 已连接到 ProstoCAD——无需任何询问。首次使用时 macOS 会询问是否允许 ProstoCAD 控制终端：请允许。</li>
+        <li>用你自己的话告诉 AI 你想要什么：
+          <div class="prompts">
+            <span>“在 ProstoCAD 中把这个 STL 重建为零件，先做锐边。”</span>
+            <span>“把这个零件优化为适合 3D 打印，尽量减少支撑。”</span>
+            <span>“在顶面的孔里做 M6 螺纹。”</span>
+          </div></li>
+      </ol>
+      <p class="note">还没装 AI？Connect AI 会显示每个程序的页面和安装命令，带复制按钮。</p>
+    </div>
+
+    <div class="box step-box">
+      <h3><span class="num">B</span>其他任何 MCP 程序</h3>
+      <p>在该程序的 MCP 设置中添加一个名为 <code>inncad</code> 的本地（stdio）MCP 服务器：</p>
+      <table class="where">
+        <tr><td>Claude Desktop</td><td>Settings ▸ Developer ▸ Edit Config</td></tr>
+        <tr><td>Cursor</td><td>Cursor Settings ▸ MCP</td></tr>
+        <tr><td>VS Code（Copilot 代理模式）</td><td>Command Palette ▸ MCP: Add Server ▸ stdio</td></tr>
+        <tr><td>Windsurf</td><td>Windsurf Settings ▸ MCP servers</td></tr>
+        <tr><td>LM Studio（本地模型）</td><td>Program ▸ Install ▸ Edit mcp.json</td></tr>
+        <tr><td>Cline</td><td>MCP Servers ▸ Configure</td></tr>
+      </table>
+      <div class="ostabs" data-tabs>
+        <button type="button" data-tab="mcp-mac">macOS</button>
+        <button type="button" data-tab="mcp-win">Windows</button>
+      </div>
+      <div class="tabpanel" id="mcp-mac">
+          <p class="lbl">命令</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/bin/python3</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/bin/python3" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">参数</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">设置文件（Claude Desktop、Cursor、Windsurf、LM Studio、Cline）</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code（.vscode/mcp.json）</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <div class="tabpanel" id="mcp-win">
+          <p class="lbl">命令</p><div class="snip"><code>C:\ProstoCAD\runtime\bin\python.exe</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\bin\python.exe" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">参数</p><div class="snip"><code>C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">设置文件（Claude Desktop、Cursor、Windsurf、LM Studio、Cline）</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code（.vscode/mcp.json）</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="已复制" aria-label="复制"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <p class="note">写完整路径，不要用 ~。程序放在个人文件夹的“应用程序”中？请用 /Users/<i>你的用户名</i>/Applications/…；Windows 上用你的 ProstoCAD 文件夹代替 C:\ProstoCAD。Connect AI 会显示你本机安装的准确路径，带复制按钮。修改设置后请重启该程序。</p>
+    </div>
+  </div>
+
+  <div class="connect two">
+    <div class="box step-box">
+      <h3>AI 在 ProstoCAD 中能做什么</h3>
+      <p class="lbl">查看</p>
+      <div class="chips"><code>status</code><code>view</code><code>mesh_info</code><code>mesh_section</code><code>fit_at</code><code>compare</code></div>
+      <p class="lbl">构建</p>
+      <div class="chips"><code>new_solid</code><code>sketch</code><code>extrude</code><code>revolve</code><code>fillet</code><code>chamfer</code><code>thread</code></div>
+      <p class="lbl">选择与修正</p>
+      <div class="chips"><code>find_faces</code><code>find_edges</code><code>delete</code><code>undo</code><code>run_python</code></div>
+      <p class="note">AI 创建的每个特征都和你的一样出现在模型浏览器中：可以编辑、删除或用 Undo 撤销。</p>
+    </div>
+    <div class="box step-box">
+      <h3>安全，由你掌控</h3>
+      <ul class="ticks">
+        <li><b>AI Link</b>（默认开启）只在本机监听，并且只接受知道 ProstoCAD 保存在其设置文件夹中密钥的程序。</li>
+        <li>在 <b>Tools ▸ AI ▸ AI Link</b> 中关闭它，任何 AI 都无法访问 ProstoCAD。</li>
+        <li>使用哪个 AI 程序和账号由你自己决定。</li>
+        <li>先要求简单形状，圆角和倒角之后再加——更容易检查。已用 Claude 测试；小型本地模型容易弄错尺寸和平面。</li>
+        <li>请在副本上工作，在信任某个尺寸之前先检查 AI 建了什么。</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/open_preview.webp?v=bf93487a"><img src="../img/open_preview.webp?v=bf93487a" alt="带文件预览的 Open 窗口" width="1400" height="762" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">还有更多</p>
+      <h2>节省时间的小功能</h2>
+      <ul class="ticks"><li>带预览的 <b>Open</b>：FCStd、STEP、STL——图片、日期、大小</li><li>导入 <b>STEP</b>、<b>IGES</b>、<b>OBJ</b>；JPG / PNG 作为描图底图</li><li>视图或整个窗口的 <b>Screenshot</b>，PNG 也可带透明背景</li><li>Extrude 到任意面、边、点或轴；第二侧有自己的范围</li><li>Fillet ▸ <b>Full</b>：两条边之间的完整圆角</li><li>浅色和深色主题；提示为蓝色，错误为红色</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<div class="bottom alt"><div class="wrap">
+  <div class="pair2 docrow">
+    <div class="box" id="docs">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg><div><h3>文档</h3>
+        <p>快速入门和新功能提供五种语言；完整手册为英文和俄文。</p></div>
+        <a class="more" href="../files/ProstoCAD-manual.pdf">打开手册 →</a></div>
+      <div class="guides">
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_windows.webp?v=f2e2d20e"><img src="../img/g_windows.webp?v=f2e2d20e" alt="用户手册（Windows）" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg>用户手册（Windows）</h3><p>同一本手册，含 Windows 的按键、路径和安装说明。</p>
+        <div class="links"><a href="../files/ProstoCAD-manual-windows.pdf">English <small>PDF · 398 KB</small></a><a href="../files/ProstoCAD-manual-windows_ru.pdf">Русский <small>PDF · 786 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_manual.webp?v=07d80746"><img src="../img/g_manual.webp?v=07d80746" alt="用户手册（Mac）" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>用户手册（Mac）</h3><p>逐步介绍每个工具，含 STL 与 AI 一章。</p>
+        <div class="links"><a href="../files/ProstoCAD-manual.pdf">English <small>PDF · 395 KB</small></a><a href="../files/ProstoCAD-manual_ru.pdf">Русский <small>PDF · 781 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_quick.webp?v=29779fe4"><img src="../img/g_quick.webp?v=29779fe4" alt="快速入门" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg>快速入门</h3><p>安装、窗口、鼠标和第一个零件——两页。</p>
+        <div class="links"><a href="../files/ProstoCAD-quickstart_zh.pdf">中文 <small>PDF · 306 KB</small></a><a href="../files/ProstoCAD-quickstart_en.pdf">English <small>PDF · 168 KB</small></a><a href="../files/ProstoCAD-quickstart_ru.pdf">Русский <small>PDF · 190 KB</small></a><a href="../files/ProstoCAD-quickstart_de.pdf">Deutsch <small>PDF · 170 KB</small></a><a href="../files/ProstoCAD-quickstart_hi.pdf">हिन्दी <small>PDF · 215 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_news.webp?v=c67c613e"><img src="../img/g_news.webp?v=c67c613e" alt="新功能" width="480" height="256" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg>新功能</h3><p>介绍 0.12.0 及更早版本新增内容的幻灯片。</p>
+        <div class="links"><a href="../files/InnCadPlus-whats-new_zh.pdf">中文 <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_en.pdf">English <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_ru.pdf">Русский <small>PDF · 3 MB</small></a><a href="../files/InnCadPlus-whats-new_de.pdf">Deutsch <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_hi.pdf">हिन्दी <small>PDF · 2 MB</small></a></div></div></div>
+      </div>
+    </div>
+
+    <div class="box" id="faq">
+      <div class="boxhead"><span class="q">?</span><div><h3>常见问题</h3>
+        <p>常见问题的简短解答。</p></div></div>
+      <div class="faq">
+        <details><summary>ProstoCAD 免费吗？</summary><p>是的。下载和使用都免费。</p></details>
+        <details><summary>需要安装 FreeCAD 吗？</summary><p>不需要。ProstoCAD 内置 FreeCAD 1.1.3 内核。它有自己的设置，不会改动已安装的 FreeCAD。</p></details>
+        <details id="faq-mac"><summary>macOS 提示无法验证此应用</summary>
+          <p>测试版未经过 Apple 公证。点按<b>完成</b>（不要点“移到废纸篓”），打开<b>系统设置 ▸ 隐私与安全性</b>，滚动到“已阻止使用 InnCadPlus…”，点按<b>仍要打开</b>，然后输入密码确认。只需操作一次。</p>
+          <p>在 macOS 13 和 14 上，也可以右键点按应用 ▸ 打开。或者在终端中运行： <code>xattr -dr com.apple.quarantine /Applications/ProstoCAD.app</code></p></details>
+        <details><summary>能在 Intel Mac 或 Linux 上运行吗？</summary><p>Linux：版本即将推出。Intel Mac：此版本不支持。目前 ProstoCAD 可在 Apple 芯片的 Mac（M1 或更新，macOS 13 或更高版本）和 Windows 10 / 11 x64 上运行。</p></details>
+        <details><summary>支持读写哪些文件格式？</summary><p>打开 FreeCAD 文件（.FCStd）、STEP 和 STL；导入 IGES、OBJ 以及作为描图底图的 JPG / PNG / BMP 图片；导出 STEP（精确实体）和 STL（带精度滑块，供切片软件使用）。</p></details>
+        <details><summary>FreeCAD 能打开我的文件吗？</summary><p>能。零件是 FreeCAD 的 PartDesign 实体，草图是 Sketcher 草图，装配体使用 FreeCAD 自己的关节：都是普通的 .FCStd 文件。ProstoCAD 也能打开在 FreeCAD 中创建的文件。</p></details>
+        <details><summary>使用 AI 需要什么？</summary><p>一个用你自己的账号登录的 AI 命令行工具：Claude Code、Codex 或 Gemini CLI（Codex 和 Gemini CLI 需要 Node.js）。Connect AI 会告诉你去哪里获取。AI Link 只在你的电脑上监听，并且只接受持有 ProstoCAD 密钥的程序；关闭它，任何 AI 都无法访问 ProstoCAD。</p></details>
+        <details><summary>出了问题，怎么报告？</summary><p>手册第 11 章说明了日志的位置以及需要发送的内容；然后给我们写信——见<a href="#contact">联系</a>。</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="box solo" id="solo">
+    <div class="solo-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.5-4.6-9.2-9.3C1.6 7.6 3.9 4.5 7.1 4.5c2 0 3.5 1.1 4.9 3 1.4-1.9 2.9-3 4.9-3 3.2 0 5.5 3.1 4.3 6.5-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg></div>
+    <div>
+      <h3>个人项目</h3>
+      <p>ProstoCAD 由一个人开发。欢迎提出愿望、错误报告和请求——如果修复错误或实现愿望需要一些时间，请提前谅解。</p>
+    </div>
+    <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/issues">提交愿望或错误<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+  </div>
+</div></div>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div>
+    <h3>联系</h3>
+    <p>问题和错误报告：<a href="https://github.com/Igr11/ProstoCAD/issues">GitHub issues</a>（InCad，ProstoCAD 所基于的工作台）。请附上日志——见手册第 11 章。</p>
+    <p>已安装 FreeCAD？同样的工具也有工作台版本：<a href="https://github.com/Igr11/ProstoCAD">InCad 工作台</a>。</p>
+  </div>
+  <div>
+    <p>ProstoCAD 基于 <a href="https://www.freecad.org">FreeCAD</a>、Open CASCADE 和 Qt 构建。这是一个独立项目，并非 FreeCAD 团队出品。</p>
+    <p>本网站上的所有截图都是真实的：均在 ProstoCAD 和 InCad 插件中制作。</p>
+    <p>本网站不使用 Cookie，没有跟踪和广告。</p>
+    <p><a href="../licenses/">许可证与源代码</a> · InCad 工作台为开源软件（LGPL 2.1 或更高版本）</p>
+  </div>
+</div></footer>
+
+<dialog id="lb"><img alt=""></dialog>
+<script src="../app.js?v=ed6ab6eb" defer></script>
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProstoCAD — бесплатная параметрическая САПР для 3D-печати, с инструментами STL и ИИ</title>
+<meta name="description" content="ProstoCAD: параметрические детали и сборки на движке FreeCAD 1.1.3. Программа для Mac и сборка для Windows, инструменты STL и встроенная связь с ИИ (Claude Code, Codex, Gemini CLI).">
+<meta property="og:title" content="ProstoCAD">
+<meta property="og:description" content="ProstoCAD: параметрические детали и сборки на движке FreeCAD 1.1.3. Программа для Mac и сборка для Windows, инструменты STL и встроенная связь с ИИ (Claude Code, Codex, Gemini CLI).">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a111c">
+<meta name="msvalidate.01" content="499B6EF04BFF810C76A070A973326980">
+<link rel="alternate" hreflang="en" href="https://prostocad.com/">
+<link rel="alternate" hreflang="ru" href="https://prostocad.com/ru/">
+<link rel="alternate" hreflang="de" href="https://prostocad.com/de/">
+<link rel="alternate" hreflang="zh-Hans" href="https://prostocad.com/zh/">
+<link rel="alternate" hreflang="hi" href="https://prostocad.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://prostocad.com/">
+<link rel="canonical" href="https://prostocad.com/ru/">
+<link rel="alternate" type="application/atom+xml" href="https://prostocad.com/ru/updates.xml" title="ProstoCAD — обновления">
+<meta property="og:url" content="https://prostocad.com/ru/">
+<meta property="og:image" content="https://prostocad.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css?v=ed6ab6eb">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><img src="../icon.svg" alt="" width="34" height="34"><span><strong>Prosto<span>CAD</span></strong><small>Детали · Сборки · STL</small></span></a>
+  <nav class="links">
+    <a href="#features">Возможности</a>
+    <a href="#updates">Обновления</a>
+    <a href="#docs">Документация</a>
+    <a href="#requirements">Требования</a>
+    <a href="#addon">Аддон для FreeCAD</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="right">
+    <details class="langmenu"><summary aria-label="Language"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>RU</span></summary><div class="menu"><a href="../" data-lang="en" hreflang="en" lang="en">English</a><a href="../ru/" data-lang="ru" hreflang="ru" lang="ru" aria-current="true">Русский</a><a href="../de/" data-lang="de" hreflang="de" lang="de">Deutsch</a><a href="../zh/" data-lang="zh" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="../hi/" data-lang="hi" hreflang="hi" lang="hi">हिन्दी</a></div></details>
+    <a class="btn primary small" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Скачать</span></a>
+  </div>
+</div></header>
+<div class="newsbar"><div class="wrap"><a href="#updates"><span class="tag-new">Новое</span><span class="what"><b>ProstoCAD 0.12.0</b> — InnCad Plus теперь называется ProstoCAD — а ещё Delete для размеров, диагонали прямоугольника и удобный Symmetric · <b>ProstoCAD for FreeCAD 0.13.0</b> — InCad теперь называется ProstoCAD for FreeCAD — а ещё Delete для размеров, диагонали прямоугольника и удобный Symmetric</span><span class="go">Что изменилось →</span></a></div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <p class="town">A new CAD in town…</p>
+      <p class="mono-kicker">Бесплатно · на движке FreeCAD 1.1.3</p>
+      <h1>Параметрическая САПР<span>для энтузиастов 3D‑печати.</span></h1>
+      <p class="tagline">Просто САПР. Просто результат.</p>
+      <p class="equation">ProstoCAD <b class='plus'>+</b> ваша идея = готовая деталь</p>
+      <p class="lead">Для тех, кто не готов много платить за хобби и против «пиратства». ProstoCAD бесплатный: детали и сборки, инструменты, которые превращают STL обратно в настоящую деталь, и встроенная связь с вашим ИИ — Claude Code, Codex или Gemini CLI строит деталь прямо в вашем окне.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Скачать ProstoCAD<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+        <a class="btn outline" href="#docs"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>Документация<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+      </div>
+      <p class="meta"><span>Версия 0.12.0</span><i></i><span>Бесплатно</span><i></i><span>macOS (Apple Silicon) · Windows x64 · Linux — скоро</span></p>
+      <p class="renamed">ProstoCAD — новое имя InnCad Plus.</p>
+    </div>
+    <div class="window"><div class="bar"><i></i><i></i><i></i></div><div class=""><a class="zoom" href="../img/hero.webp?v=947d2b0a"><img src="../img/hero.webp?v=947d2b0a" alt="Окно ProstoCAD: лента, браузер модели, параметры и деталь" width="1800" height="963" loading="lazy" decoding="async"></a></div></div>
+  </div>
+  <p class="real"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Все снимки экрана на этом сайте настоящие: они сделаны в ProstoCAD и его аддоне для FreeCAD.</p>
+
+  <div class="feats" id="features">
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20.5 7.5v9L12 21.2 3.5 16.5v-9z"/><path d="M3.5 7.5 12 12.2l8.5-4.7M12 12.2v9"/></svg></div><div><h3>Параметрическое моделирование</h3>
+      <p>Эскизы с размерами и формулами, фичи с живым предпросмотром, сборки со связями.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg></div><div><h3>STEP / STL / IGES</h3>
+      <p>Открывает STEP и STL, импортирует IGES и OBJ, экспортирует STEP для других САПР и STL для слайсеров.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg></div><div><h3>STL — в настоящую деталь</h3>
+      <p>Mesh Section и Smooth пересобирают сетку в редактируемые фичи — или Connect AI поручает это вашему ИИ.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg></div><div><h3>Отдельная программа</h3>
+      <p>Движок FreeCAD 1.1.3 внутри: больше ничего ставить не нужно. Работает на вашем компьютере, файлы — обычные .FCStd.</p></div></div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-card">
+      <span class="pill">Настоящая резьба</span>
+      <h2>Настоящая резьба, готовая к 3D‑печати, — за несколько кликов</h2>
+      <p>Настоящая винтовая резьба, которую можно напечатать, а не картинка, — в готовом отверстии или на валу: выберите круглую грань и размер, или Auto подберёт его по отверстию. ISO, UNC / UNF, G, трапецеидальная, Print-friendly с плоскими вершинами или Custom — свой шаг, угол профиля и глубина для банок, крышек и любой нестандартной резьбы. Зазор для печати — любой (по умолчанию 0,2 мм), чтобы напечатанные детали свинчивались.</p>
+      <div class="shot"><a class="zoom" href="../img/thread.webp?v=f0aac2c9"><img src="../img/thread.webp?v=f0aac2c9" alt="Диалог Thread и резьба M5, готовая к печати" width="1040" height="650" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">ИИ × 3D‑печать</span>
+      <h2>Оптимизация под 3D‑печать с помощью ИИ — с минимумом поддержек</h2>
+      <p>Попросите свой ИИ подготовить деталь к печати: он может заменить нависания фасками под 45°, дать детали плоское основание и разделить то, что не печатается целиком. Каждое изменение — обычная фича в истории: проверьте, поправьте или отмените.</p>
+      <div class="term"><div class="bar"><i></i><i></i><i></i><span>Connect AI</span></div>
+        <p class="you">&gt; Оптимизируй эту деталь под 3D‑печать с минимумом поддержек.</p>
+        <p>✓ Нависания заменены фасками 45°</p>
+        <p>✓ Плоское основание на самой большой грани</p>
+        <p>✓ Каждый шаг — в браузере модели, Undo отменяет</p>
+      </div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">3D‑эскиз</span>
+      <h2>3D‑линии в 3D‑эскизе — по виртуальному кубу</h2>
+      <p>Очень удобный способ рисовать в пространстве: куб виртуальных точек вокруг начала координат, размер и шаг — ваши. Линия идёт во всех трёх направлениях: точки берутся на любом слое — XY, XZ, YZ — или во всём кубе (Cube); Tab / Shift+Tab переключает слой, точки тянутся мышью. Lines, Spline или Through points — готовая линия становится путём для Sweep и Loft.</p>
+      <div class="shot"><a class="zoom" href="../img/line3d_curve.webp?v=f475d377"><img src="../img/line3d_curve.webp?v=f475d377" alt="3D-линия через точки на разных слоях виртуального куба" width="1510" height="882" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Фото → реальный размер</span>
+      <h2>Одно фото и один замер — реальные размеры</h2>
+      <p>Вставьте фото, щёлкните две точки и введите одну настоящую длину: масштабируется вся картинка, и вы проектируете поверх неё в настоящих миллиметрах. Фото снято «криво»? Horizontal или Vertical повернёт его так, что линия станет ровной.</p>
+      <div class="shot"><a class="zoom" href="../img/photo_scale.webp?v=6fe72c0d"><img src="../img/photo_scale.webp?v=6fe72c0d" alt="Масштаб фото по двум точкам и одной длине; выравнивание Horizontal или Vertical" width="1100" height="688" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Emboss · Engrave</span>
+      <h2>Текст и любой эскиз — выпукло или вдавленно на любой грани</h2>
+      <p>Emboss выдавливает текст или любой замкнутый эскиз — буквы, логотип, звезду, — а Engrave врезает его: на плоских гранях, с обёртыванием вокруг цилиндров и конусов, с проекцией на сферу. Буквы, которые выходят за грань, продолжаются на плавно примыкающих гранях — смешанные поверхности тоже работают. Любой установленный шрифт, несколько строк, кириллица, текст вдоль кривой; Evenly round распределяет надпись по всей окружности.</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/star.webp?v=d639d691"><img src="../img/star.webp?v=d639d691" alt="Звезда, сделанная в ProstoCAD" width="1000" height="711" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/18_emboss.webp?v=5092079f"><img src="../img/18_emboss.webp?v=5092079f" alt="Текст, выдавленный вокруг цилиндра" width="900" height="532" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card" id="gears">
+      <span class="pill">Шестерни · Червяки</span>
+      <h2>Шестерни и червячные передачи — в одном диалоге</h2>
+      <p>Spur Gears сразу делает пару в зацеплении, без эскиза: эвольвентный зуб, прямой или косой (5–45°), размер по числу зубьев, передаточному числу или межосевому расстоянию, с отверстиями под валы. Worm Gear делает червяк и колесо, 1–6 заходов. Третья шестерня входит в зацепление с уже существующей; Make Assembly раскладывает шестерни по деталям сборки.</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/gears_pair.webp?v=8d746a2d"><img src="../img/gears_pair.webp?v=8d746a2d" alt="Диалог Spur Gears и пара косозубых шестерён в зацеплении" width="1200" height="765" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/gears_worm.webp?v=6f53ef30"><img src="../img/gears_worm.webp?v=6f53ef30" alt="Диалог Worm Gear с червяком и колесом" width="1200" height="765" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">Массив</span>
+        <h2>Массивы: ровно между двумя гранями, без лишних копий</h2>
+        <p>Equal spacing распределяет копии ровно между двумя границами — двумя гранями, рёбрами или точками, — шаг считать не нужно. Excluded: щёлкните на модели копии, которые не нужны, и они исчезнут; ✕ вернёт любую. Прямоугольные, круговые и Mirror (зеркало) — для фич; в эскизах ещё Along Path — копии по любой кривой: линиям, дугам, сплайнам.</p>
+      </div>
+      <div class="shot"><a class="zoom" href="../img/pattern.webp?v=84b6f058"><img src="../img/pattern.webp?v=84b6f058" alt="Прямоугольный массив с Equal spacing между торцами пластины, копии 3 и 5 исключены" width="1400" height="749" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">Сплит для печати</span>
+        <h2>Деталь больше принтера? Разрежьте — с ласточкиным хвостом</h2>
+        <p>Нарисуйте линию разреза в эскизе — прямую, дугу или ласточкин хвост — и Split ▸ Keep all разрежет деталь по ней, каждый кусок станет отдельным телом. Зазор — любой: повторите линию через Offset на нужную величину — полоска между линиями тоже станет телом; удалите её, и зазор готов. Затем Make Assembly сразу превращает куски в сборку, каждый — деталь, готовая к печати; ласточкин хвост соединит напечатанные части.</p>
+      </div>
+      <figure class="scheme"><svg class="dovetail" viewBox="0 0 440 190" role="img" aria-label="Деталь, разрезанная на две части по линии ласточкиного хвоста">
+  <defs><linearGradient id="dtA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6fb0"/><stop offset="1" stop-color="#1d4778"/></linearGradient>
+  <linearGradient id="dtB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8692a"/><stop offset="1" stop-color="#7a4316"/></linearGradient></defs>
+  <path d="M20 60 L190 60 L190 92 L226 80 L226 140 L190 128 L190 160 L20 160 Z" fill="url(#dtA)" stroke="#4aa6ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M244 60 L420 60 L420 160 L244 160 L244 128 L280 140 L280 80 L244 92 Z" fill="url(#dtB)" stroke="#f08a24" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190 92 L226 80 L226 140 L190 128" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <text x="105" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">1</text>
+  <text x="340" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">2</text>
+  <path d="M195 36 H275 M195 36 l10 -6 M195 36 l10 6 M275 36 l-10 -6 M275 36 l-10 6" stroke="#93a3b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="235" y="26" fill="#93a3b8" font-size="13" text-anchor="middle" font-family="system-ui, sans-serif">Split</text>
+</svg>
+        <figcaption>Схема</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="pair2">
+    <div class="box req" id="requirements">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.6"/><path d="M12 2.5v2.9M12 18.6v2.9M21.5 12h-2.9M5.4 12H2.5M18.7 5.3l-2 2M7.3 16.7l-2 2M18.7 18.7l-2-2M7.3 7.3l-2-2"/></svg><div><h3>Системные требования</h3>
+        <p>Движок FreeCAD 1.1.3 внутри — FreeCAD ставить не нужно.</p></div></div>
+      <div class="oss">
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.3-3.51zM14.19 6.15c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg><div><h3>macOS</h3><ul>
+          <li>macOS 13 Ventura и новее</li><li>Apple Silicon: M1 и новее</li><li>Около 1 ГБ на диске</li><li>С флешки — скоро</li></ul></div></div>
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.1 10.4 4v7.2H3V5.1zm0 13.8 7.4 1.1v-7.1H3v6zm8.2 1.2L21 21.5v-8.6h-9.8v7.2zM11.2 3.9v7.3H21V2.5l-9.8 1.4z"/></svg><div><h3>Windows</h3><ul>
+          <li>Windows 10 или 11, 64 бит (x64)</li><li>Около 600 МБ на диске</li><li>Права администратора не нужны</li><li>Запускается прямо с флешки</li></ul></div></div>
+        <div class="osr soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2c-2.2 0-3.6 1.8-3.6 4.3 0 1.3.3 2.2-.6 3.6C6.6 11.8 5 14 5 16.6c0 .9.2 1.7.6 2.4-.9.4-1.6 1-1.6 1.6 0 .9 1.6 1.4 3.4 1.4 1 0 1.8-.3 2.3-.8.7.2 1.5.3 2.3.3s1.6-.1 2.3-.3c.5.5 1.3.8 2.3.8 1.8 0 3.4-.5 3.4-1.4 0-.6-.7-1.2-1.6-1.6.4-.7.6-1.5.6-2.4 0-2.6-1.6-4.8-2.8-6.7-.9-1.4-.6-2.3-.6-3.6C15.6 3.8 14.2 2 12 2zm-1.4 3.6c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zm2.8 0c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zM12 8.6c.9 0 1.8.4 1.8.8s-.9 1-1.8 1-1.8-.6-1.8-1 .9-.8 1.8-.8zm0 3c2 0 3.4 2.2 3.4 4.7S14 20 12 20s-3.4-1.2-3.4-3.7S10 11.6 12 11.6z"/></svg><div><h3>Linux <span class="tag-soon">скоро</span></h3><ul>
+          <li>Версия для Linux скоро будет</li></ul></div></div>
+      </div>
+      <div class="foot">
+        <p>В этой сборке нет: Mac на Intel. Linux — скоро.</p>
+        <p>Для связи с ИИ (по желанию): Claude Code, Codex или Gemini CLI с вашим собственным аккаунтом.</p>
+      </div>
+    </div>
+
+    <div class="box dlbox" id="download">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><div><h3>Скачать ProstoCAD</h3>
+        <p>Версия 0.12.0 · выпуск 27 октября 2026 · бесплатно</p></div></div>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-pf="pf-mac">macOS</button>
+        <button type="button" role="tab" data-pf="pf-zip">Windows Portable</button>
+        <button type="button" role="tab" data-pf="pf-linux">Linux <span class="tag-soon">скоро</span></button>
+      </div>
+      <div class="pf" id="pf-mac"><h4>macOS</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-macos-arm64.dmg"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Скачать для Mac</a>
+        <p class="file">ProstoCAD-0.12.0-macos-arm64.dmg · 186 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9</code></div>
+          <button class="copy" type="button" data-copy="e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9" data-ok="Скопировано" aria-label="Копировать SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note">Перетащите ProstoCAD.app в «Программы». В первый раз macOS попросит подтвердить: <a href="#faq-mac">«Всё равно открыть»</a>.</p></div>
+      <div class="pf" id="pf-zip"><h4>Windows Portable</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Скачать Windows Portable</a>
+        <p class="file">ProstoCAD-0.12.0-windows-x64.zip · 188 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd</code></div>
+          <button class="copy" type="button" data-copy="71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd" data-ok="Скопировано" aria-label="Копировать SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note"><b>Установка не нужна. Распакуйте и пользуйтесь.</b> Путь — короткий и без кириллицы, затем запустите <code>ProstoCAD.exe</code>. Работает и прямо с флешки — с флешкой USB 3 так же быстро.</p></div>
+      <div class="pf" id="pf-linux"><h4>Linux</h4><p class="note">Версия для Linux уже в пути. Заходите скоро — а пока ProstoCAD есть для Mac и Windows.</p></div>
+      <div class="links">
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">Выпуск на GitHub</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases">Все выпуски</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/SHA256SUMS-0.12.0.txt">SHA256SUMS-0.12.0.txt</a>
+      </div>
+      <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>Заходите почаще: ProstoCAD становится лучше почти каждый день, и, возможно, новая версия уже ждёт вас.</p></div>
+    </div>
+  </div>
+
+  <div class="box addon" id="addon">
+    <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3.5a2 2 0 0 1 4 0V5h3.5A1.5 1.5 0 0 1 19 6.5V10h-1.5a2 2 0 0 0 0 4H19v3.5a1.5 1.5 0 0 1-1.5 1.5H14v-1.5a2 2 0 0 0-4 0V19H6.5A1.5 1.5 0 0 1 5 17.5V14h1.5a2 2 0 0 0 0-4H5V6.5A1.5 1.5 0 0 1 6.5 5H10z"/></svg><div><p class="kicker">Для пользователей FreeCAD</p>
+      <h3>ProstoCAD for FreeCAD — аддон</h3>
+      <p class="slogan">Для тех, кто открыл FreeCAD после многих лет в другой САПР.</p></div></div>
+    <div class="addon-body">
+      <div>
+        <p>Уже стоит FreeCAD 1.1? ProstoCAD for FreeCAD добавляет в него те же параметрические инструменты в виде верстака: ленту, браузер модели, диалоги фич, сборки. Бесплатно, файлы остаются обычными .FCStd. Инструменты STL и Connect AI есть только в ProstoCAD.</p>
+        <p class="back">Одна кнопка — <b>Return to FreeCAD</b> — и вы возвращаетесь в родной FreeCAD.</p>
+        <a class="new-note" href="#gears"><img src="../img/gears_addon.webp?v=58e76195" alt="Пара шестерён, сделанная Spur Gears" width="600" height="396" loading="lazy" decoding="async"><span><span class="tag-new">Наконец-то</span>Шестерни и червячные передачи теперь есть и в аддоне, с версии 0.11.</span></a>
+        <p class="note">FreeCAD 1.1 (проверено на 1.1.3) · macOS на Apple Silicon или Windows 10 / 11 x64</p>
+        <p class="note">Mac: установка через Addon Manager во FreeCAD, шаги — в README.txt внутри ZIP. Windows: распакуйте и запустите <code>install.bat</code>.</p>
+      </div>
+      <div class="addon-dl">
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-macOS-arm64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Аддон для Mac<small>ZIP · 8 MB</small></span></a>
+        <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-Windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Аддон для Windows<small>ZIP · 8 MB</small></span></a>
+        <p class="note">Версия 0.13.0 · <a href="https://github.com/Igr11/ProstoCAD/releases">Все выпуски аддона</a></p>
+      </div>
+    </div>
+    <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>Заходите почаще: аддон становится лучше почти каждый день, и, возможно, новая версия уже ждёт вас.</p></div>
+  </div>
+</div></div>
+
+<section id="updates"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Обновления</p>
+    <h2>Что нового в ProstoCAD</h2>
+    <p>Последняя версия каждой программы: что добавлено и что исправлено. Более ранние — на GitHub: <a href="https://github.com/Igr11/ProstoCAD-releases/releases">ProstoCAD</a>, <a href="https://github.com/Igr11/ProstoCAD/releases">ProstoCAD for FreeCAD</a>.</p>
+  </div>
+  <div class="upd-grid"><article class="box upd" id="update-plus-0.12.0">
+      <p class="upd-head"><span class="prod plus">ProstoCAD</span><b>0.12.0</b><time datetime="2026-10-27">27 октября 2026</time></p>
+      <h3>InnCad Plus теперь называется ProstoCAD — а ещё Delete для размеров, диагонали прямоугольника и удобный Symmetric</h3><h4 class="added">Добавлено</h4><ul class="ticks"><li>Новое имя, та же программа: ваши файлы открываются как прежде, а при первом запуске ProstoCAD сам забирает настройки InnCad Plus.</li><li>Каждый прямоугольник получает две диагонали и центральную точку как вспомогательные: одна связь (центр на начале координат) ставит его по центру. У скруглённого прямоугольника диагонали соединяют центры скруглений.</li><li>Правый клик в эскизе предлагает Delete для всего выделенного, и для размеров тоже; в Parameters можно удалить размер эскиза.</li></ul><h4 class="fixed">Исправлено</h4><ul class="ticks"><li>После Symmetric линии нельзя было потянуть: теперь инструмент завершается, как только пара готова.</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">Описание выпуска на GitHub →</a></article><article class="box upd" id="update-incad-0.13.0">
+      <p class="upd-head"><span class="prod incad">ProstoCAD for FreeCAD</span><b>0.13.0</b><time datetime="2026-10-27">27 октября 2026</time></p>
+      <h3>InCad теперь называется ProstoCAD for FreeCAD — а ещё Delete для размеров, диагонали прямоугольника и удобный Symmetric</h3><h4 class="added">Добавлено</h4><ul class="ticks"><li>Новое имя, тот же верстак: во FreeCAD он называется ProstoCAD, а все файлы, сделанные раньше, открываются как прежде.</li><li>Каждый прямоугольник получает две диагонали и центральную точку как вспомогательные: одна связь (центр на начале координат) ставит его по центру. У скруглённого прямоугольника диагонали соединяют центры скруглений.</li><li>Правый клик в эскизе предлагает Delete для всего выделенного, и для размеров тоже; в Parameters можно удалить размер эскиза.</li></ul><h4 class="fixed">Исправлено</h4><ul class="ticks"><li>После Symmetric линии нельзя было потянуть: теперь инструмент завершается, как только пара готова.</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0">Описание выпуска на GitHub →</a></article></div>
+  <p class="follow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><span>Узнавайте о новых версиях: добавьте <a href="updates.xml">ленту обновлений</a> (RSS / Atom) в любую читалку лент или на GitHub нажмите Watch ▸ Custom ▸ Releases у <a href="https://github.com/Igr11/ProstoCAD-releases">ProstoCAD</a> и <a href="https://github.com/Igr11/ProstoCAD">ProstoCAD for FreeCAD</a>.</span></p>
+</div></section>
+
+<section class="alt" id="workflow"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Как это устроено</p>
+    <h2>Знакомо всем, кто работал в параметрической САПР</h2>
+    <p>Лента, браузер модели с историей, диалоги фич с живым предпросмотром, таблица параметров с формулами, маркерные меню на правой кнопке. А внутри — обычная геометрия FreeCAD.</p>
+  </div>
+  <div class="cards3">
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_sketch.webp?v=7a61ab4d"><img src="../img/ui_sketch.webp?v=7a61ab4d" alt="Полностью определённый эскиз с размерами" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>Эскиз</h3>
+      <p>Линии, дуги, сплайны и текст; размеры вводятся прямо при рисовании; список связей; массивы в эскизе.</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_feature.webp?v=755acb9b"><img src="../img/ui_feature.webp?v=755acb9b" alt="Диалог Extrude с предпросмотром на детали" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>Фичи</h3>
+      <p>Extrude, Revolve, Hole, Fillet, Shell, Sweep, Loft, Thread, Emboss, шестерни — у каждой живой предпросмотр и ручки на модели.</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/asm_engine.webp?v=01783c85"><img src="../img/asm_engine.webp?v=01783c85" alt="Сборка Moto Engine Demo в ProstoCAD: 23 детали, у каждой свои степени свободы" width="1200" height="750" loading="lazy" decoding="async"></a></div><div class="body"><h3>Сборки</h3>
+      <p>Mate, Flush, Insert и другие связи на собственных соединениях FreeCAD; гизмо двигает деталь только там, где она ещё свободна.</p></div></div>
+  </div>
+</div></section>
+
+<section id="section"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Сборка · View ▸ Section</p>
+    <h2>Разрез всей сборки — каждая деталь в своём цвете</h2>
+    <p>Плоскость режет все детали, через которые проходит, у каждой своя штриховка. Interference показывает, где детали заходят друг в друга, — ярко-красным, с объёмом.</p>
+  </div>
+  <div class="big">
+    <div><div class="shot"><a class="zoom" href="../img/moto_front.webp?v=b4fc5097"><img src="../img/moto_front.webp?v=b4fc5097" alt="Разрез сборки двигателя из 20 деталей" width="1392" height="935" loading="lazy" decoding="async"></a></div>
+      <p class="caption">Moto Engine Demo — сборка из 20 деталей, сделанная в FreeCAD, разрезана в ProstoCAD.</p></div>
+    <div class="side">
+      <div class="shot"><a class="zoom" href="../img/moto_iso.webp?v=362e5b8d"><img src="../img/moto_iso.webp?v=362e5b8d" alt="Сборка двигателя в 3D" width="1000" height="695" loading="lazy" decoding="async"></a></div>
+      <div class="shot"><a class="zoom" href="../img/interference.webp?v=3e749745"><img src="../img/interference.webp?v=3e749745" alt="Пересечение деталей ярко-красным" width="912" height="720" loading="lazy" decoding="async"></a></div>
+      <ul class="ticks"><li>Любые тела: сборки ProstoCAD и FreeCAD, STEP, файлы из других программ</li><li><b>Hide</b>, <b>Show</b>, <b>Show All</b> прямо в дереве сборки</li><li><b>Open</b> детали в своём окне; Save кладёт сборку и её детали в одну папку</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="pawn"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Пример: шахматная пешка</p>
+    <h2>От фото до цветной детали за пять шагов</h2>
+  </div>
+  <div class="steps">
+    <div><div class="shot"><a class="zoom" href="../img/chess_1_photo.webp?v=580de11d"><img src="../img/chess_1_photo.webp?v=580de11d" alt="Фото пешки на плоскости XZ" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>1</em>Фото</h3><p>Image ▸ Insert Image, On XZ — картинка встаёт вертикально</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_2_scale.webp?v=38797169"><img src="../img/chess_2_scale.webp?v=38797169" alt="Масштаб фото по двум точкам" width="1600" height="1035" loading="lazy" decoding="async"></a></div><h3><em>2</em>Масштаб</h3><p>Две точки, низ и макушка: Real length 50 мм</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_3_sketch.webp?v=0b78306e"><img src="../img/chess_3_sketch.webp?v=0b78306e" alt="Половина контура поверх фото" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>3</em>Эскиз</h3><p>Половина силуэта поверх фото</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_4_revolve.webp?v=00629593"><img src="../img/chess_4_revolve.webp?v=00629593" alt="Пешка после Revolve" width="900" height="688" loading="lazy" decoding="async"></a></div><h3><em>4</em>Revolve</h3><p>Вокруг Z — пешка ровно 50 мм</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_5_appearance.webp?v=3036b8ab"><img src="../img/chess_5_appearance.webp?v=3036b8ab" alt="Appearance на пешке" width="900" height="598" loading="lazy" decoding="async"></a></div><h3><em>5</em>Appearance</h3><p>Дерево, Satin, Hide Edges — сразу на детали</p></div>
+  </div>
+  <div class="trio">
+    <figure><div class="shot"><a class="zoom" href="../img/chess_6_wood.webp?v=3e9752f9"><img src="../img/chess_6_wood.webp?v=3e9752f9" alt="Деревянная пешка" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Wood · Satin</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_7_black.webp?v=197a9ffc"><img src="../img/chess_7_black.webp?v=197a9ffc" alt="Глянцевая чёрная пешка" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Glossy, чёрная</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_8_red.webp?v=18134dc8"><img src="../img/chess_8_red.webp?v=18134dc8" alt="Красная пешка, шлифованный металл" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Metal + Brushed</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="appearance"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/finishes.webp?v=f1f3abf4"><img src="../img/finishes.webp?v=f1f3abf4" alt="Виды поверхности: Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ Material ▸ Appearance</p>
+      <h2>Цвет и вид поверхности</h2>
+      <ul class="ticks"><li>Любой цвет: палитра или <b>More…</b></li><li><b>Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber</b></li><li>Выбранные грани, Solid'ы или вся деталь; <b>Hide Edges</b> убирает линии рёбер</li><li>Видно сразу; OK — один шаг Undo</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div class="shot"><a class="zoom" href="../img/textures.webp?v=15527169"><img src="../img/textures.webp?v=15527169" alt="Фактуры: Brushed, Wood, Carbon, Knurl, Sand" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Appearance ▸ Texture</p>
+      <h2>Фактуры поверх цвета</h2>
+      <ul class="ticks"><li><b>Brushed, Wood, Carbon, Knurl, Sand</b></li><li>Цвет просвечивает: красная деталь — красное дерево</li><li>Рисунок в настоящем размере на детали любого размера</li><li>Сохраняется в файле, видна и в сборке</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="tools"><div class="wrap">
+  <div class="row">
+    <div><div class="shot"><a class="zoom" href="../img/work_plane_series_view.webp?v=a6ce38d8"><img src="../img/work_plane_series_view.webp?v=a6ce38d8" alt="Серия повёрнутых рабочих плоскостей" width="809" height="564" loading="lazy" decoding="async"></a></div>
+      <div class="pair"><div class="shot"><a class="zoom" href="../img/work_plane_series.webp?v=942ccea7"><img src="../img/work_plane_series.webp?v=942ccea7" alt="Диалог Work Plane с Planes и Turn" width="864" height="532" loading="lazy" decoding="async"></a></div></div></div>
+    <div class="text">
+      <p class="kicker">Work Plane</p>
+      <h2>Плоскости для лофта — сразу несколько и с поворотом</h2>
+      <ul class="ticks"><li>Offset ▸ <b>Planes</b>: 2×, 3×… отступа за один раз</li><li><b>Turn</b> вокруг X, Y, Z предыдущей плоскости или глобально</li><li>Вводом или кольцами на плоскости</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div><div class="shot"><a class="zoom" href="../img/asm_axes.webp?v=8f0c140d"><img src="../img/asm_axes.webp?v=8f0c140d" alt="Оси тел вращения и отверстий двигателя — светлые осевые линии" width="1200" height="750" loading="lazy" decoding="async"></a></div></div>
+    <div class="text">
+      <p class="kicker">Сборка</p>
+      <h2>Оси, за которые удобно хвататься</h2>
+      <ul class="ticks"><li>У каждого тела вращения и отверстия — <b>ось</b> светлой осевой линией</li><li>Mate, Flush, Insert, Cylindrical, Parallel берут ось щелчком</li><li>Make Assembly сохраняет имена деталей</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="plus" id="plus"><div class="wrap">
+  <div class="head">
+    <p class="kicker">STL → STEP</p>
+    <h2>STL в STEP с помощью ИИ</h2>
+    <p>STL — это сетка треугольников: слайсер её напечатает, но поменять размер или открыть её как тело в другой САПР нельзя. Подключите свой ИИ — и он перестроит STL в ProstoCAD в настоящую деталь: эскизы, Extrude, Revolve, размеры, которые можно править, — готовую к сохранению в STEP. Или сделайте это сами инструментами STL ниже.</p>
+  </div>
+  <div class="ba">
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_before.webp?v=72ec0346"><img src="../img/ai_hook_before.webp?v=72ec0346" alt="До: STL крючка — сетка треугольников" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>До</b> · STL: сетка треугольников</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_after.webp?v=2675e03a"><img src="../img/ai_hook_after.webp?v=2675e03a" alt="После: крючок, перестроенный ИИ фичами" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>После</b> · построено ИИ: 9 фич в истории, размеры можно править</figcaption></figure>
+    </div>
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_before.webp?v=5e5b4acb"><img src="../img/ai_case_before.webp?v=5e5b4acb" alt="До: чехол iPhone в виде STL" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>До</b> · STL чехла для iPhone</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_after.webp?v=18028a93"><img src="../img/ai_case_after.webp?v=18028a93" alt="После: чехол iPhone, перестроенный ИИ" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>После</b> · построено ИИ: 24 фичи, готово к сохранению в STEP</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_photo.webp?v=216d4eae"><img src="../img/leg_photo.webp?v=216d4eae" alt="До: фото штампованной опорной пластины ножки стола" width="960" height="1280" loading="lazy" decoding="async"></a></div><figcaption><b>До</b> · просто фото ножки стола</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/leg_render.webp?v=f7cf866a"><img src="../img/leg_render.webp?v=f7cf866a" alt="После: опорная пластина, построенная ИИ по фото, её STEP в Plasticity" width="1200" height="939" loading="lazy" decoding="async"></a></div><figcaption><b>После</b> · построено ИИ по одной фотографии, сохранено в STEP и открыто в Plasticity</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_inncad.webp?v=ca96ce49"><img src="../img/leg_inncad.webp?v=ca96ce49" alt="Опорная пластина в ProstoCAD снизу, её фичи в браузере модели" width="1200" height="698" loading="lazy" decoding="async"></a></div><figcaption><b>ProstoCAD</b> · обратная сторона: 11 фич в истории, размеры можно править</figcaption></figure>
+      <span class="ba-arrow ba-gap" aria-hidden="true">→</span>
+      <figure><div class="shot"><video src="../img/leg_spin.mp4?v=c3bf0153" poster="../img/leg_spin.webp?v=0fd8848d" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="Опорная пластина, построенная ИИ по фото, переворачивается"></video></div><figcaption>Обе стороны: штампованная пластина одной толщины</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="row ai" id="ai">
+    <div class="shot"><a class="zoom" href="../img/ai_help_light.webp?v=a5228f2d"><img src="../img/ai_help_light.webp?v=a5228f2d" alt="Окно Connect AI: Claude Code, Codex, Gemini CLI и другие программы MCP" width="1600" height="1051" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ AI ▸ Connect AI</p>
+      <h2>Одна кнопка — и ваш ИИ уже в ProstoCAD</h2>
+      <ul class="ticks"><li>Стоит Claude Code — <b>Connect AI</b> сразу открывает Терминал с ним в папке детали, без вопросов</li><li>MCP-сервер встроен — скачивать ничего не нужно</li><li>ИИ ещё нет — окно подскажет, где взять Claude Code, Codex или Gemini CLI, и даст команду установки</li><li>Claude Desktop, Cursor, VS Code, Windsurf, LM Studio: готовые пути и JSON для копирования</li><li>Фичи, сделанные ИИ, остаются в браузере модели как ваши: их можно править или отменить по шагу</li></ul>
+      <p class="quote">«Перестрой STL в ProstoCAD как деталь, сначала с острыми рёбрами.»</p>
+      <p><a class="btn outline small" href="#connect">Как подключить — по шагам<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+
+  <div class="stl">
+    <div class="box"><b><em>01</em>Import</b><p>STL приходит как есть; строка состояния показывает число треугольников.</p></div>
+    <div class="box"><b><em>02</em>STL → STEP</b><p>Сетка становится телом из своих треугольников — можно экспортировать в STEP.</p></div>
+    <div class="box"><b><em>03</em>Mesh Section</b><p>Разрез STL плоскостью: эскиз из линий, дуг и окружностей с круглыми размерами.</p></div>
+    <div class="box"><b><em>04</em>Smooth</b><p>Деталь вращения пересобирается фичами: эскиз, Revolve, канавки, резьба с измеренным шагом.</p></div>
+  </div>
+</div></section>
+
+<section id="connect"><div class="wrap">
+  <div class="head">
+    <p class="kicker">AI · MCP</p>
+    <h2>Подключение ИИ — по шагам</h2>
+    <p>В ProstoCAD встроен MCP-сервер (AI Link): для него ничего скачивать не нужно. Любая программа ИИ, которая понимает MCP, может работать в вашем окне ProstoCAD — смотреть на деталь, измерять STL, строить фичи, которые можно править.</p>
+  </div>
+  <div class="connect">
+    <div class="box step-box">
+      <h3><span class="num">A</span>Быстрый способ: Connect AI</h3>
+      <ol class="steps-ol">
+        <li>Установите консольную программу ИИ и войдите со своим аккаунтом: <b>Claude Code</b>, <b>Codex</b> (OpenAI) или <b>Gemini CLI</b> (Google). Запустите её один раз в Терминале, чтобы войти.
+          <div class="mini">
+            <p><a href="https://claude.com/claude-code">Claude Code</a> · установка — на его странице</p>
+            <div class="snip"><code>npm install -g @openai/codex</code><button class="copy" type="button" data-copy="npm install -g @openai/codex" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <div class="snip"><code>npm install -g @google/gemini-cli</code><button class="copy" type="button" data-copy="npm install -g @google/gemini-cli" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <p>Для Codex и Gemini CLI нужен <a href="https://nodejs.org">Node.js</a> (установщик LTS).</p>
+          </div></li>
+        <li>В ProstoCAD откройте деталь или импортируйте STL.</li>
+        <li><b>Tools ▸ AI ▸ Connect AI.</b> Откроется Терминал в папке детали, и ИИ в нём уже подключён к ProstoCAD — без вопросов. В первый раз macOS спросит, можно ли ProstoCAD управлять Терминалом: разрешите.</li>
+        <li>Скажите ИИ своими словами, что нужно:
+          <div class="prompts">
+            <span>«Перестрой STL в ProstoCAD как деталь, сначала с острыми рёбрами.»</span>
+            <span>«Оптимизируй эту деталь под 3D‑печать с минимумом поддержек.»</span>
+            <span>«Сделай резьбу M6 в отверстии на верхней грани.»</span>
+          </div></li>
+      </ol>
+      <p class="note">ИИ ещё не установлен? Connect AI покажет страницу каждого и команду установки с кнопкой Copy.</p>
+    </div>
+
+    <div class="box step-box">
+      <h3><span class="num">B</span>Любая другая MCP-программа</h3>
+      <p>Добавьте в настройках MCP программы локальный (stdio) сервер с именем <code>inncad</code>:</p>
+      <table class="where">
+        <tr><td>Claude Desktop</td><td>Settings ▸ Developer ▸ Edit Config</td></tr>
+        <tr><td>Cursor</td><td>Cursor Settings ▸ MCP</td></tr>
+        <tr><td>VS Code (режим агента Copilot)</td><td>Command Palette ▸ MCP: Add Server ▸ stdio</td></tr>
+        <tr><td>Windsurf</td><td>Windsurf Settings ▸ MCP servers</td></tr>
+        <tr><td>LM Studio (локальные модели)</td><td>Program ▸ Install ▸ Edit mcp.json</td></tr>
+        <tr><td>Cline</td><td>MCP Servers ▸ Configure</td></tr>
+      </table>
+      <div class="ostabs" data-tabs>
+        <button type="button" data-tab="mcp-mac">macOS</button>
+        <button type="button" data-tab="mcp-win">Windows</button>
+      </div>
+      <div class="tabpanel" id="mcp-mac">
+          <p class="lbl">Команда</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/bin/python3</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/bin/python3" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Аргумент</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Файл настроек (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <div class="tabpanel" id="mcp-win">
+          <p class="lbl">Команда</p><div class="snip"><code>C:\ProstoCAD\runtime\bin\python.exe</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\bin\python.exe" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Аргумент</p><div class="snip"><code>C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Файл настроек (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Скопировано" aria-label="Копировать"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <p class="note">Пишите путь полностью, без ~. Программа лежит в «Программах» домашней папки? Тогда /Users/<i>вы</i>/Applications/…; в Windows — ваша папка ProstoCAD вместо C:\ProstoCAD. Connect AI покажет точные пути вашей установки с кнопкой Copy. После изменения настроек перезапустите программу.</p>
+    </div>
+  </div>
+
+  <div class="connect two">
+    <div class="box step-box">
+      <h3>Что ИИ умеет в ProstoCAD</h3>
+      <p class="lbl">Смотреть</p>
+      <div class="chips"><code>status</code><code>view</code><code>mesh_info</code><code>mesh_section</code><code>fit_at</code><code>compare</code></div>
+      <p class="lbl">Строить</p>
+      <div class="chips"><code>new_solid</code><code>sketch</code><code>extrude</code><code>revolve</code><code>fillet</code><code>chamfer</code><code>thread</code></div>
+      <p class="lbl">Выбирать и исправлять</p>
+      <div class="chips"><code>find_faces</code><code>find_edges</code><code>delete</code><code>undo</code><code>run_python</code></div>
+      <p class="note">Каждая фича, сделанная ИИ, попадает в браузер модели, как ваша: её можно править, удалить или отменить Undo.</p>
+    </div>
+    <div class="box step-box">
+      <h3>Безопасно и под вашим контролем</h3>
+      <ul class="ticks">
+        <li><b>AI Link</b> (включён по умолчанию) слушает только этот компьютер и только программы, знающие ключ, который ProstoCAD хранит в папке настроек.</li>
+        <li>Выключите его в <b>Tools ▸ AI ▸ AI Link</b> — и ни один ИИ до ProstoCAD не доберётся.</li>
+        <li>Программа ИИ и её аккаунт — ваш собственный выбор.</li>
+        <li>Просите сначала простую форму, скругления и фаски потом — так легче проверить. Проверено с Claude; небольшие локальные модели путаются в размерах и плоскостях.</li>
+        <li>Работайте с копиями и проверяйте, что построил ИИ, прежде чем доверять размеру.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/open_preview.webp?v=bf93487a"><img src="../img/open_preview.webp?v=bf93487a" alt="Окно Open с превью файлов" width="1400" height="762" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">И ещё</p>
+      <h2>Мелочи, которые экономят время</h2>
+      <ul class="ticks"><li><b>Open</b> с превью: FCStd, STEP, STL — картинка, дата, размер</li><li>Импорт <b>STEP</b>, <b>IGES</b>, <b>OBJ</b>; JPG / PNG как подложка</li><li><b>Screenshot</b> вида или всего окна, PNG и с прозрачным фоном</li><li>Extrude до любой грани, ребра, точки или оси; свои границы у второй стороны</li><li>Fillet ▸ <b>Full</b>: полный радиус между двумя рёбрами</li><li>Светлая и тёмная темы; подсказки синие, ошибки красные</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<div class="bottom alt"><div class="wrap">
+  <div class="pair2 docrow">
+    <div class="box" id="docs">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg><div><h3>Документация</h3>
+        <p>«Быстрый старт» и «Что нового» на пяти языках; полные руководства — на английском и русском.</p></div>
+        <a class="more" href="../files/ProstoCAD-manual_ru.pdf">Открыть руководство →</a></div>
+      <div class="guides">
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_windows.webp?v=f2e2d20e"><img src="../img/g_windows.webp?v=f2e2d20e" alt="Руководство (Windows)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg>Руководство (Windows)</h3><p>То же руководство с клавишами, путями и установкой для Windows.</p>
+        <div class="links"><a href="../files/ProstoCAD-manual-windows_ru.pdf">Русский <small>PDF · 786 KB</small></a><a href="../files/ProstoCAD-manual-windows.pdf">English <small>PDF · 398 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_manual.webp?v=07d80746"><img src="../img/g_manual.webp?v=07d80746" alt="Руководство (Mac)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>Руководство (Mac)</h3><p>Все инструменты по шагам, с главой про STL и ИИ.</p>
+        <div class="links"><a href="../files/ProstoCAD-manual_ru.pdf">Русский <small>PDF · 781 KB</small></a><a href="../files/ProstoCAD-manual.pdf">English <small>PDF · 395 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_quick.webp?v=29779fe4"><img src="../img/g_quick.webp?v=29779fe4" alt="Быстрый старт" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg>Быстрый старт</h3><p>Установка, окно, мышь и первая деталь — две страницы.</p>
+        <div class="links"><a href="../files/ProstoCAD-quickstart_ru.pdf">Русский <small>PDF · 190 KB</small></a><a href="../files/ProstoCAD-quickstart_en.pdf">English <small>PDF · 168 KB</small></a><a href="../files/ProstoCAD-quickstart_de.pdf">Deutsch <small>PDF · 170 KB</small></a><a href="../files/ProstoCAD-quickstart_zh.pdf">中文 <small>PDF · 306 KB</small></a><a href="../files/ProstoCAD-quickstart_hi.pdf">हिन्दी <small>PDF · 215 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_news.webp?v=c67c613e"><img src="../img/g_news.webp?v=c67c613e" alt="Что нового" width="480" height="256" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg>Что нового</h3><p>Слайды о том, что появилось в 0.12.0 и раньше.</p>
+        <div class="links"><a href="../files/InnCadPlus-whats-new_ru.pdf">Русский <small>PDF · 3 MB</small></a><a href="../files/InnCadPlus-whats-new_en.pdf">English <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_de.pdf">Deutsch <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_zh.pdf">中文 <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_hi.pdf">हिन्दी <small>PDF · 2 MB</small></a></div></div></div>
+      </div>
+    </div>
+
+    <div class="box" id="faq">
+      <div class="boxhead"><span class="q">?</span><div><h3>Частые вопросы</h3>
+        <p>Короткие ответы на частые вопросы.</p></div></div>
+      <div class="faq">
+        <details><summary>ProstoCAD бесплатный?</summary><p>Да. Скачивание и работа бесплатны.</p></details>
+        <details><summary>Нужно ли ставить FreeCAD?</summary><p>Нет. Движок FreeCAD 1.1.3 уже внутри ProstoCAD. У программы свои настройки, установленный FreeCAD она не трогает.</p></details>
+        <details id="faq-mac"><summary>macOS пишет, что не может проверить программу</summary>
+          <p>Тестовая сборка не заверена (notarized) в Apple. Нажмите <b>Готово</b> (не «Переместить в Корзину»), откройте <b>Системные настройки ▸ Конфиденциальность и безопасность</b>, у строки «InnCadPlus заблокирована…» нажмите <b>Всё равно открыть</b> и подтвердите паролем. Это нужно один раз.</p>
+          <p>В macOS 13 и 14 то же делает правый щелчок по программе ▸ Открыть. Или в Терминале: <code>xattr -dr com.apple.quarantine /Applications/ProstoCAD.app</code></p></details>
+        <details><summary>Работает ли на Mac с Intel или в Linux?</summary><p>Linux: версия скоро будет. Mac на Intel: в этой сборке нет. Сейчас ProstoCAD работает на Mac с Apple Silicon (M1 и новее, macOS 13 и новее) и на Windows 10 / 11 x64.</p></details>
+        <details><summary>Какие форматы файлов он читает и пишет?</summary><p>Открывает файлы FreeCAD (.FCStd), STEP и STL; импортирует IGES, OBJ и картинки JPG / PNG / BMP как подложку; экспортирует STEP (точные тела) и STL (с ползунком точности для слайсеров).</p></details>
+        <details><summary>Откроет ли мои файлы FreeCAD?</summary><p>Да. Деталь — это тело PartDesign, эскиз — эскиз Sketcher, сборка — на собственных соединениях FreeCAD: обычные файлы .FCStd. И ProstoCAD открывает файлы, сделанные в FreeCAD.</p></details>
+        <details><summary>Что нужно для ИИ?</summary><p>Программа ИИ для командной строки с вашим собственным аккаунтом: Claude Code, Codex или Gemini CLI (Codex и Gemini CLI нужен Node.js). Connect AI подскажет, где их взять. AI Link слушает только ваш компьютер и только программы с ключом ProstoCAD; выключите его — и никакой ИИ до ProstoCAD не доберётся.</p></details>
+        <details><summary>Что-то пошло не так. Как сообщить?</summary><p>Глава 11 руководства говорит, где журнал и что прислать; дальше напишите нам — см. <a href="#contact">Контакты</a>.</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="box solo" id="solo">
+    <div class="solo-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.5-4.6-9.2-9.3C1.6 7.6 3.9 4.5 7.1 4.5c2 0 3.5 1.1 4.9 3 1.4-1.9 2.9-3 4.9-3 3.2 0 5.5 3.1 4.3 6.5-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg></div>
+    <div>
+      <h3>Проект одного человека</h3>
+      <p>ProstoCAD делает один человек. Пожелания, сообщения об ошибках и просьбы принимаются — заранее простите, если починка ошибки или исполнение пожелания займёт время.</p>
+    </div>
+    <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/issues">Отправить пожелание или ошибку<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+  </div>
+</div></div>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div>
+    <h3>Контакты</h3>
+    <p>Вопросы и сообщения об ошибках: <a href="https://github.com/Igr11/ProstoCAD/issues">GitHub issues</a> (открытый верстак ProstoCAD). Приложите журнал — глава 11 руководства.</p>
+    <p>Те же инструменты для установленного FreeCAD: <a href="https://github.com/Igr11/ProstoCAD">верстак ProstoCAD for FreeCAD</a>.</p>
+  </div>
+  <div>
+    <p>ProstoCAD построен на <a href="https://www.freecad.org">FreeCAD</a>, Open CASCADE и Qt. Это независимый проект, его делает не команда FreeCAD.</p>
+    <p>Все снимки экрана на этом сайте настоящие: они сделаны в ProstoCAD и его аддоне для FreeCAD.</p>
+    <p>Этот сайт не ставит cookies, без слежки и рекламы.</p>
+    <p><a href="../licenses/">Лицензии и исходный код</a> · верстак ProstoCAD for FreeCAD — открытый код (LGPL 2.1 или новее)</p>
+  </div>
+</div></footer>
+
+<dialog id="lb"><img alt=""></dialog>
+<script src="../app.js?v=ed6ab6eb" defer></script>
+</body>
+</html>

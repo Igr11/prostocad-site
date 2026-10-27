@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProstoCAD — 3D प्रिंटिंग के लिए मुफ़्त पैरामीट्रिक CAD, STL टूल्स और AI के साथ</title>
+<meta name="description" content="ProstoCAD: FreeCAD 1.1.3 इंजन पर पैरामीट्रिक पार्ट्स और असेंबली। Mac ऐप और Windows बिल्ड, STL टूल्स और बिल्ट-इन AI लिंक (Claude Code, Codex, Gemini CLI)।">
+<meta property="og:title" content="ProstoCAD">
+<meta property="og:description" content="ProstoCAD: FreeCAD 1.1.3 इंजन पर पैरामीट्रिक पार्ट्स और असेंबली। Mac ऐप और Windows बिल्ड, STL टूल्स और बिल्ट-इन AI लिंक (Claude Code, Codex, Gemini CLI)।">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a111c">
+<meta name="msvalidate.01" content="499B6EF04BFF810C76A070A973326980">
+<link rel="alternate" hreflang="en" href="https://prostocad.com/">
+<link rel="alternate" hreflang="ru" href="https://prostocad.com/ru/">
+<link rel="alternate" hreflang="de" href="https://prostocad.com/de/">
+<link rel="alternate" hreflang="zh-Hans" href="https://prostocad.com/zh/">
+<link rel="alternate" hreflang="hi" href="https://prostocad.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://prostocad.com/">
+<link rel="canonical" href="https://prostocad.com/hi/">
+<link rel="alternate" type="application/atom+xml" href="https://prostocad.com/hi/updates.xml" title="ProstoCAD और InCad — अपडेट">
+<meta property="og:url" content="https://prostocad.com/hi/">
+<meta property="og:image" content="https://prostocad.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css?v=ed6ab6eb">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><img src="../icon.svg" alt="" width="34" height="34"><span><strong>Prosto<span>CAD</span></strong><small>पार्ट्स · असेंबली · STL</small></span></a>
+  <nav class="links">
+    <a href="#features">फ़ीचर्स</a>
+    <a href="#updates">अपडेट</a>
+    <a href="#docs">डॉक्यूमेंटेशन</a>
+    <a href="#requirements">आवश्यकताएँ</a>
+    <a href="#addon">FreeCAD ऐडऑन</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">संपर्क</a>
+  </nav>
+  <div class="right">
+    <details class="langmenu"><summary aria-label="Language"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>हि</span></summary><div class="menu"><a href="../" data-lang="en" hreflang="en" lang="en">English</a><a href="../ru/" data-lang="ru" hreflang="ru" lang="ru">Русский</a><a href="../de/" data-lang="de" hreflang="de" lang="de">Deutsch</a><a href="../zh/" data-lang="zh" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="../hi/" data-lang="hi" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a></div></details>
+    <a class="btn primary small" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>डाउनलोड</span></a>
+  </div>
+</div></header>
+<div class="newsbar"><div class="wrap"><a href="#updates"><span class="tag-new">नया</span><span class="what"><b>ProstoCAD 0.12.0</b> — InnCad Plus अब ProstoCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric · <b>ProstoCAD for FreeCAD 0.13.0</b> — InCad अब ProstoCAD for FreeCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric</span><span class="go">क्या बदला →</span></a></div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <p class="town">A new CAD in town…</p>
+      <p class="mono-kicker">मुफ़्त · FreeCAD 1.1.3 इंजन पर</p>
+      <h1>पैरामीट्रिक CAD<span>3D प्रिंटिंग के शौकीनों के लिए।</span></h1>
+      <p class="tagline">Prosto. Presto. प्रिंटेड।</p>
+      <p class="equation">ProstoCAD <b class='plus'>+</b> आपका आइडिया = प्रिंट किया हुआ पार्ट</p>
+      <p class="lead">उनके लिए जो शौक पर बहुत पैसा खर्च नहीं करना चाहते और पायरेटेड सॉफ़्टवेयर के ख़िलाफ़ हैं। ProstoCAD मुफ़्त है: पार्ट्स और असेंबली, STL को असली पार्ट में बदलने वाले टूल्स, और आपके AI से बिल्ट-इन कनेक्शन — Claude Code, Codex या Gemini CLI आपकी विंडो में ही पार्ट बनाता है।</p>
+      <div class="cta">
+        <a class="btn primary" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>ProstoCAD डाउनलोड करें<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+        <a class="btn outline" href="#docs"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>डॉक्यूमेंटेशन देखें<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+      </div>
+      <p class="meta"><span>संस्करण 0.12.0</span><i></i><span>मुफ़्त</span><i></i><span>macOS (Apple Silicon) · Windows x64 · Linux जल्द</span></p>
+      <p class="renamed">ProstoCAD, InnCad Plus का नया नाम है।</p>
+    </div>
+    <div class="window"><div class="bar"><i></i><i></i><i></i></div><div class=""><a class="zoom" href="../img/hero.webp?v=947d2b0a"><img src="../img/hero.webp?v=947d2b0a" alt="ProstoCAD की विंडो: रिबन, मॉडल ब्राउज़र, पैरामीटर्स और एक पार्ट" width="1800" height="963" loading="lazy" decoding="async"></a></div></div>
+  </div>
+  <p class="real"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>इस साइट के सभी स्क्रीनशॉट असली हैं: वे ProstoCAD और InCad ऐडऑन में बनाए गए हैं।</p>
+
+  <div class="feats" id="features">
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20.5 7.5v9L12 21.2 3.5 16.5v-9z"/><path d="M3.5 7.5 12 12.2l8.5-4.7M12 12.2v9"/></svg></div><div><h3>पैरामीट्रिक मॉडलिंग</h3>
+      <p>डायमेंशन और फ़ॉर्मूला वाले स्केच, लाइव प्रीव्यू वाले फ़ीचर्स, जॉइंट्स वाली असेंबली।</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg></div><div><h3>STEP / STL / IGES</h3>
+      <p>STEP और STL खोलें, IGES और OBJ इम्पोर्ट करें, दूसरे CAD प्रोग्राम्स के लिए STEP और स्लाइसर के लिए STL एक्सपोर्ट करें।</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg></div><div><h3>STL से असली पार्ट</h3>
+      <p>Mesh Section और Smooth मेश को एडिट करने योग्य फ़ीचर्स में फिर से बनाते हैं — या Connect AI से यह काम आपका AI करता है।</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg></div><div><h3>स्वतंत्र ऐप</h3>
+      <p>FreeCAD 1.1.3 इंजन अंदर ही है: और कुछ इंस्टॉल नहीं करना। आपके कंप्यूटर पर चलता है; फ़ाइलें सामान्य .FCStd रहती हैं।</p></div></div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-card">
+      <span class="pill">असली थ्रेड</span>
+      <h2>असली थ्रेड, 3D प्रिंटिंग के लिए तैयार, कुछ ही क्लिक में</h2>
+      <p>प्रिंट किया जा सकने वाला असली हेलिकल थ्रेड, सिर्फ़ टेक्सचर नहीं — तैयार छेद में या शाफ़्ट पर: गोल फ़ेस और साइज़ चुनें, या Auto को छेद के हिसाब से मिलाने दें। ISO metric, UNC / UNF, G, Trapezoidal, सपाट क्रेस्ट वाला Print-friendly, या Custom — अपनी पिच, फ़्लैंक कोण और गहराई, जार, ढक्कन और किसी भी गैर-मानक थ्रेड के लिए। प्रिंट क्लियरेंस कोई भी (डिफ़ॉल्ट 0.2 mm), ताकि प्रिंट किए पार्ट्स आपस में कस जाएँ।</p>
+      <div class="shot"><a class="zoom" href="../img/thread.webp?v=f0aac2c9"><img src="../img/thread.webp?v=f0aac2c9" alt="Thread डायलॉग और प्रिंट के लिए तैयार M5 थ्रेड" width="1040" height="650" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">AI × 3D प्रिंटिंग</span>
+      <h2>AI से 3D प्रिंटिंग के लिए ऑप्टिमाइज़ेशन — कम से कम सपोर्ट के साथ</h2>
+      <p>अपने AI से पार्ट को प्रिंट के लिए तैयार करवाएँ: वह ओवरहैंग को 45° चैम्फ़र में बदल सकता है, पार्ट को सपाट आधार दे सकता है और जो हिस्सा एक बार में प्रिंट न हो उसे अलग कर सकता है। हर बदलाव हिस्ट्री में एक सामान्य फ़ीचर है — जाँचें, एडिट करें या Undo करें।</p>
+      <div class="term"><div class="bar"><i></i><i></i><i></i><span>Connect AI</span></div>
+        <p class="you">&gt; इस पार्ट को 3D प्रिंटिंग के लिए कम से कम सपोर्ट के साथ ऑप्टिमाइज़ करो।</p>
+        <p>✓ ओवरहैंग 45° चैम्फ़र से बदले गए</p>
+        <p>✓ सबसे बड़े फ़ेस पर सपाट आधार</p>
+        <p>✓ हर स्टेप मॉडल ब्राउज़र में — Undo से वापस</p>
+      </div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">3D स्केच</span>
+      <h2>3D स्केच में 3D लाइनें — वर्चुअल क्यूब पर</h2>
+      <p>स्पेस में ड्रॉ करने का बहुत आसान तरीका: ओरिजिन के चारों ओर वर्चुअल बिंदुओं का क्यूब, उसका आकार और स्टेप आपके हाथ में। लाइन तीनों दिशाओं में जाती है: किसी भी लेयर — XY, XZ, YZ — या पूरे क्यूब (Cube) में बिंदु चुनें; Tab / Shift+Tab लेयर बदलता है, बिंदु माउस से खिसकते हैं। Lines, Spline या Through points — लाइन Sweep और Loft के लिए पाथ बन जाती है।</p>
+      <div class="shot"><a class="zoom" href="../img/line3d_curve.webp?v=f475d377"><img src="../img/line3d_curve.webp?v=f475d377" alt="वर्चुअल क्यूब की अलग-अलग लेयर के बिंदुओं से गुज़रती 3D लाइन" width="1510" height="882" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">फ़ोटो → असली साइज़</span>
+      <h2>एक फ़ोटो और एक माप — असली डायमेंशन</h2>
+      <p>फ़ोटो डालें, दो बिंदुओं पर क्लिक करें और एक असली लंबाई लिखें: पूरी तस्वीर स्केल हो जाती है, और आप उस पर असली मिलीमीटर में डिज़ाइन करते हैं। फ़ोटो तिरछी खिंची है? Horizontal या Vertical उसे घुमाकर उस लाइन को सीधा कर देता है।</p>
+      <div class="shot"><a class="zoom" href="../img/photo_scale.webp?v=6fe72c0d"><img src="../img/photo_scale.webp?v=6fe72c0d" alt="दो बिंदुओं और एक असली लंबाई से फ़ोटो का स्केल; Horizontal या Vertical से सीधा करें" width="1100" height="688" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Emboss · Engrave</span>
+      <h2>टेक्स्ट और कोई भी स्केच — किसी भी फ़ेस पर उभरा या उकेरा हुआ</h2>
+      <p>Emboss टेक्स्ट या किसी भी बंद स्केच — अक्षर, लोगो, तारा — को उभारता है, और Engrave उसे अंदर काटता है: सपाट फ़ेस पर, सिलेंडर और कोन के चारों ओर लपेटकर, गोले पर प्रोजेक्ट करके। जो अक्षर फ़ेस से आगे जाते हैं, वे सहज रूप से जुड़े अगले फ़ेस पर जारी रहते हैं — मिश्रित सतहें भी चलती हैं। कोई भी इंस्टॉल फ़ॉन्ट, कई पंक्तियाँ, सिरिलिक, कर्व के साथ टेक्स्ट; Evenly round शब्द को पूरे घेरे में बराबर फैलाता है।</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/star.webp?v=d639d691"><img src="../img/star.webp?v=d639d691" alt="ProstoCAD में बना तारा" width="1000" height="711" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/18_emboss.webp?v=5092079f"><img src="../img/18_emboss.webp?v=5092079f" alt="सिलेंडर के चारों ओर उभरा टेक्स्ट" width="900" height="532" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card" id="gears">
+      <span class="pill">गियर · वर्म</span>
+      <h2>गियर और वर्म ड्राइव — एक ही डायलॉग में</h2>
+      <p>Spur Gears बिना स्केच के तुरंत आपस में फँसे गियर की जोड़ी बनाता है: इनवॉल्यूट दाँत, सीधे या हेलिकल (5–45°), दाँतों की संख्या, अनुपात या सेंटर दूरी से साइज़, शाफ़्ट के लिए छेद के साथ। Worm Gear वर्म और उसका व्हील बनाता है, 1–6 स्टार्ट। तीसरा गियर पहले से बने गियर से फँस सकता है; Make Assembly हर गियर को अलग पार्ट में रखता है।</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="../img/gears_pair.webp?v=8d746a2d"><img src="../img/gears_pair.webp?v=8d746a2d" alt="Spur Gears डायलॉग और आपस में फँसी हेलिकल गियर जोड़ी" width="1200" height="765" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="../img/gears_worm.webp?v=6f53ef30"><img src="../img/gears_worm.webp?v=6f53ef30" alt="Worm Gear डायलॉग, वर्म और उसके व्हील के साथ" width="1200" height="765" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">पैटर्न</span>
+        <h2>पैटर्न: दो फ़ेस के बीच बराबर, बिना फ़ालतू कॉपी के</h2>
+        <p>Equal spacing कॉपियों को दो सीमाओं — दो फ़ेस, एज या बिंदुओं — के बीच बराबर बाँट देता है, स्टेप खुद गिनना नहीं पड़ता। Excluded: जो कॉपी नहीं चाहिए उन्हें सीधे मॉडल पर क्लिक करें, वे हट जाती हैं; ✕ किसी को भी वापस लाता है। फ़ीचर्स के लिए आयताकार, गोल और Mirror (दर्पण); स्केच में Along Path भी — किसी भी कर्व (लाइन, आर्क, स्प्लाइन) के साथ कॉपी।</p>
+      </div>
+      <div class="shot"><a class="zoom" href="../img/pattern.webp?v=84b6f058"><img src="../img/pattern.webp?v=84b6f058" alt="प्लेट के सिरों के फ़ेस के बीच Equal spacing वाला आयताकार पैटर्न, कॉपी 3 और 5 हटाई गईं" width="1400" height="749" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">प्रिंट के लिए स्प्लिट</span>
+        <h2>प्रिंटर से बड़ा पार्ट? उसे डवटेल के साथ बाँटें</h2>
+        <p>स्केच में कट लाइन बनाएँ — सीधी, आर्क या डवटेल — और Split ▸ Keep all पार्ट को उसी के साथ काट देता है, हर टुकड़ा अपना अलग Solid बनता है। जितना चाहें उतना गैप: Offset से गैप जितनी दूरी पर लाइन दोबारा बनाएँ — दोनों लाइनों के बीच की पतली पट्टी भी Solid बन जाती है; उसे हटा दें, गैप तैयार। फिर Make Assembly टुकड़ों को सीधे असेंबली बना देता है, हर एक प्रिंट के लिए तैयार पार्ट; डवटेल प्रिंट किए टुकड़ों को आपस में जोड़े रखता है।</p>
+      </div>
+      <figure class="scheme"><svg class="dovetail" viewBox="0 0 440 190" role="img" aria-label="डवटेल लाइन के साथ दो हिस्सों में बँटा पार्ट">
+  <defs><linearGradient id="dtA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6fb0"/><stop offset="1" stop-color="#1d4778"/></linearGradient>
+  <linearGradient id="dtB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8692a"/><stop offset="1" stop-color="#7a4316"/></linearGradient></defs>
+  <path d="M20 60 L190 60 L190 92 L226 80 L226 140 L190 128 L190 160 L20 160 Z" fill="url(#dtA)" stroke="#4aa6ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M244 60 L420 60 L420 160 L244 160 L244 128 L280 140 L280 80 L244 92 Z" fill="url(#dtB)" stroke="#f08a24" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190 92 L226 80 L226 140 L190 128" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <text x="105" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">1</text>
+  <text x="340" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">2</text>
+  <path d="M195 36 H275 M195 36 l10 -6 M195 36 l10 6 M275 36 l-10 -6 M275 36 l-10 6" stroke="#93a3b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="235" y="26" fill="#93a3b8" font-size="13" text-anchor="middle" font-family="system-ui, sans-serif">Split</text>
+</svg>
+        <figcaption>आरेख</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="pair2">
+    <div class="box req" id="requirements">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.6"/><path d="M12 2.5v2.9M12 18.6v2.9M21.5 12h-2.9M5.4 12H2.5M18.7 5.3l-2 2M7.3 16.7l-2 2M18.7 18.7l-2-2M7.3 7.3l-2-2"/></svg><div><h3>सिस्टम आवश्यकताएँ</h3>
+        <p>FreeCAD 1.1.3 इंजन अंदर ही है — FreeCAD इंस्टॉल करने की ज़रूरत नहीं।</p></div></div>
+      <div class="oss">
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.3-3.51zM14.19 6.15c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg><div><h3>macOS</h3><ul>
+          <li>macOS 13 Ventura या नया</li><li>Apple Silicon: M1 या नया</li><li>लगभग 1 GB डिस्क स्पेस</li><li>USB स्टिक से: जल्द</li></ul></div></div>
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.1 10.4 4v7.2H3V5.1zm0 13.8 7.4 1.1v-7.1H3v6zm8.2 1.2L21 21.5v-8.6h-9.8v7.2zM11.2 3.9v7.3H21V2.5l-9.8 1.4z"/></svg><div><h3>Windows</h3><ul>
+          <li>Windows 10 या 11, 64-बिट (x64)</li><li>लगभग 600 MB डिस्क स्पेस</li><li>एडमिनिस्ट्रेटर अधिकार ज़रूरी नहीं</li><li>सीधे USB स्टिक से चलता है</li></ul></div></div>
+        <div class="osr soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2c-2.2 0-3.6 1.8-3.6 4.3 0 1.3.3 2.2-.6 3.6C6.6 11.8 5 14 5 16.6c0 .9.2 1.7.6 2.4-.9.4-1.6 1-1.6 1.6 0 .9 1.6 1.4 3.4 1.4 1 0 1.8-.3 2.3-.8.7.2 1.5.3 2.3.3s1.6-.1 2.3-.3c.5.5 1.3.8 2.3.8 1.8 0 3.4-.5 3.4-1.4 0-.6-.7-1.2-1.6-1.6.4-.7.6-1.5.6-2.4 0-2.6-1.6-4.8-2.8-6.7-.9-1.4-.6-2.3-.6-3.6C15.6 3.8 14.2 2 12 2zm-1.4 3.6c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zm2.8 0c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zM12 8.6c.9 0 1.8.4 1.8.8s-.9 1-1.8 1-1.8-.6-1.8-1 .9-.8 1.8-.8zm0 3c2 0 3.4 2.2 3.4 4.7S14 20 12 20s-3.4-1.2-3.4-3.7S10 11.6 12 11.6z"/></svg><div><h3>Linux <span class="tag-soon">जल्द</span></h3><ul>
+          <li>Linux संस्करण जल्द आ रहा है</li></ul></div></div>
+      </div>
+      <div class="foot">
+        <p>इस बिल्ड में नहीं: Intel Mac। Linux: जल्द आ रहा है।</p>
+        <p>AI लिंक के लिए (वैकल्पिक): Claude Code, Codex या Gemini CLI, आपके अपने अकाउंट से साइन-इन।</p>
+      </div>
+    </div>
+
+    <div class="box dlbox" id="download">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><div><h3>ProstoCAD डाउनलोड करें</h3>
+        <p>संस्करण 0.12.0 · रिलीज़ 27 अक्टूबर 2026 · मुफ़्त</p></div></div>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-pf="pf-mac">macOS</button>
+        <button type="button" role="tab" data-pf="pf-zip">Windows पोर्टेबल</button>
+        <button type="button" role="tab" data-pf="pf-linux">Linux <span class="tag-soon">जल्द</span></button>
+      </div>
+      <div class="pf" id="pf-mac"><h4>macOS</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-macos-arm64.dmg"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Mac के लिए डाउनलोड करें</a>
+        <p class="file">ProstoCAD-0.12.0-macos-arm64.dmg · 186 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9</code></div>
+          <button class="copy" type="button" data-copy="e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9" data-ok="कॉपी हो गया" aria-label="SHA-256 कॉपी करें"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note">ProstoCAD.app को Applications फ़ोल्डर में खींचें। पहली बार macOS पुष्टि माँगता है: <a href="#faq-mac">Open Anyway</a>।</p></div>
+      <div class="pf" id="pf-zip"><h4>Windows पोर्टेबल</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Windows पोर्टेबल डाउनलोड करें</a>
+        <p class="file">ProstoCAD-0.12.0-windows-x64.zip · 188 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd</code></div>
+          <button class="copy" type="button" data-copy="71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd" data-ok="कॉपी हो गया" aria-label="SHA-256 कॉपी करें"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note"><b>इंस्टॉलेशन की ज़रूरत नहीं। अनज़िप करें और इस्तेमाल करें।</b> केवल लैटिन अक्षरों वाला छोटा पाथ चुनें, फिर <code>ProstoCAD.exe</code> चलाएँ।</p></div>
+      <div class="pf" id="pf-linux"><h4>Linux</h4><p class="note">Linux वर्ज़न रास्ते में है। जल्द फिर आइए — तब तक ProstoCAD Mac और Windows के लिए उपलब्ध है।</p></div>
+      <div class="links">
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">GitHub पर रिलीज़</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases">सभी रिलीज़</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/SHA256SUMS-0.12.0.txt">SHA256SUMS-0.12.0.txt</a>
+      </div>
+      <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>बार-बार आते रहें: ProstoCAD लगभग हर दिन बेहतर होता है, और हो सकता है कि नया वर्ज़न पहले से आपका इंतज़ार कर रहा हो।</p></div>
+    </div>
+  </div>
+
+  <div class="box addon" id="addon">
+    <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3.5a2 2 0 0 1 4 0V5h3.5A1.5 1.5 0 0 1 19 6.5V10h-1.5a2 2 0 0 0 0 4H19v3.5a1.5 1.5 0 0 1-1.5 1.5H14v-1.5a2 2 0 0 0-4 0V19H6.5A1.5 1.5 0 0 1 5 17.5V14h1.5a2 2 0 0 0 0-4H5V6.5A1.5 1.5 0 0 1 6.5 5H10z"/></svg><div><p class="kicker">FreeCAD यूज़र्स के लिए</p>
+      <h3>InCad — FreeCAD के लिए ऐडऑन</h3>
+      <p class="slogan">उनके लिए, जिन्होंने बरसों किसी दूसरे CAD के बाद FreeCAD खोला।</p></div></div>
+    <div class="addon-body">
+      <div>
+        <p>पहले से FreeCAD 1.1 है? InCad उसमें वर्कबेंच के रूप में वही पैरामीट्रिक टूल्स जोड़ता है: रिबन, मॉडल ब्राउज़र, फ़ीचर डायलॉग, असेंबली। मुफ़्त, और आपकी फ़ाइलें सामान्य .FCStd रहती हैं। STL टूल्स और Connect AI सिर्फ़ ProstoCAD में हैं।</p>
+        <p class="back">एक बटन — <b>Return to FreeCAD</b> — और आप FreeCAD के अपने इंटरफ़ेस में वापस।</p>
+        <a class="new-note" href="#gears"><img src="../img/gears_addon.webp?v=58e76195" alt="Spur Gears से बनी गियर की एक जोड़ी" width="600" height="396" loading="lazy" decoding="async"><span><span class="tag-new">आख़िरकार</span>संस्करण 0.11 से गियर और वर्म ड्राइव ऐडऑन में भी हैं।</span></a>
+        <p class="note">FreeCAD 1.1 (1.1.3 पर परीक्षित) · Apple Silicon वाला macOS या Windows 10 / 11 x64</p>
+        <p class="note">Mac: FreeCAD के Addon Manager से इंस्टॉल करें, चरण ZIP के अंदर README.txt में हैं। Windows: अनज़िप करें और <code>install.bat</code> चलाएँ।</p>
+      </div>
+      <div class="addon-dl">
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-macOS-arm64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Mac के लिए ऐडऑन<small>ZIP · 8 MB</small></span></a>
+        <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-Windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Windows के लिए ऐडऑन<small>ZIP · 8 MB</small></span></a>
+        <p class="note">संस्करण 0.13.0 · <a href="https://github.com/Igr11/ProstoCAD/releases">InCad की सभी रिलीज़</a></p>
+      </div>
+    </div>
+    <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>बार-बार आते रहें: InCad लगभग हर दिन बेहतर होता है, और हो सकता है कि नया वर्ज़न पहले से आपका इंतज़ार कर रहा हो।</p></div>
+  </div>
+</div></div>
+
+<section id="updates"><div class="wrap">
+  <div class="head">
+    <p class="kicker">अपडेट</p>
+    <h2>ProstoCAD और InCad में नया क्या है</h2>
+    <p>हर प्रोग्राम का नवीनतम संस्करण: क्या जोड़ा गया और क्या ठीक किया गया। पुराने संस्करण GitHub पर हैं: <a href="https://github.com/Igr11/ProstoCAD-releases/releases">ProstoCAD</a>, <a href="https://github.com/Igr11/ProstoCAD/releases">ProstoCAD for FreeCAD</a>।</p>
+  </div>
+  <div class="upd-grid"><article class="box upd" id="update-plus-0.12.0">
+      <p class="upd-head"><span class="prod plus">ProstoCAD</span><b>0.12.0</b><time datetime="2026-10-27">27 अक्टूबर 2026</time></p>
+      <h3>InnCad Plus अब ProstoCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric</h3><h4 class="added">जोड़ा गया</h4><ul class="ticks"><li>नया नाम, वही प्रोग्राम: आपकी फ़ाइलें पहले की तरह खुलती हैं, और पहली बार शुरू होने पर ProstoCAD, InnCad Plus की सेटिंग्स अपने आप ले लेता है।</li><li>हर आयत को उसके दो विकर्ण और एक केंद्र बिंदु कंस्ट्रक्शन के रूप में मिलते हैं: एक कंस्ट्रेंट (केंद्र को मूल बिंदु पर) उसे केंद्र में रख देता है। गोल कोनों वाले आयत के विकर्ण कोनों के केंद्रों को जोड़ते हैं।</li><li>स्केच में राइट-क्लिक से चुनी हुई हर चीज़ के लिए Delete मिलता है, डायमेंशन के लिए भी; Parameters में स्केच डायमेंशन हटाया जा सकता है।</li></ul><h4 class="fixed">ठीक किया गया</h4><ul class="ticks"><li>Symmetric के बाद लाइनें खींची नहीं जा सकती थीं: अब जोड़ी बनते ही टूल बंद हो जाता है।</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">GitHub पर रिलीज़ नोट्स →</a></article><article class="box upd" id="update-incad-0.13.0">
+      <p class="upd-head"><span class="prod incad">ProstoCAD for FreeCAD</span><b>0.13.0</b><time datetime="2026-10-27">27 अक्टूबर 2026</time></p>
+      <h3>InCad अब ProstoCAD for FreeCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric</h3><h4 class="added">जोड़ा गया</h4><ul class="ticks"><li>नया नाम, वही वर्कबेंच: FreeCAD में यह ProstoCAD के नाम से दिखता है, और पहले बनी हर फ़ाइल पहले की तरह खुलती है।</li><li>हर आयत को उसके दो विकर्ण और एक केंद्र बिंदु कंस्ट्रक्शन के रूप में मिलते हैं: एक कंस्ट्रेंट (केंद्र को मूल बिंदु पर) उसे केंद्र में रख देता है। गोल कोनों वाले आयत के विकर्ण कोनों के केंद्रों को जोड़ते हैं।</li><li>स्केच में राइट-क्लिक से चुनी हुई हर चीज़ के लिए Delete मिलता है, डायमेंशन के लिए भी; Parameters में स्केच डायमेंशन हटाया जा सकता है।</li></ul><h4 class="fixed">ठीक किया गया</h4><ul class="ticks"><li>Symmetric के बाद लाइनें खींची नहीं जा सकती थीं: अब जोड़ी बनते ही टूल बंद हो जाता है।</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0">GitHub पर रिलीज़ नोट्स →</a></article></div>
+  <p class="follow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><span>नए संस्करणों की खबर पाएँ: किसी भी फ़ीड रीडर में <a href="updates.xml">अपडेट फ़ीड</a> (RSS / Atom) जोड़ें, या GitHub पर <a href="https://github.com/Igr11/ProstoCAD-releases">ProstoCAD</a> और <a href="https://github.com/Igr11/ProstoCAD">ProstoCAD for FreeCAD</a> के लिए Watch ▸ Custom ▸ Releases दबाएँ।</span></p>
+</div></section>
+
+<section class="alt" id="workflow"><div class="wrap">
+  <div class="head">
+    <p class="kicker">यह कैसे काम करता है</p>
+    <h2>पैरामीट्रिक CAD इस्तेमाल कर चुके हर व्यक्ति को जाना-पहचाना लगेगा</h2>
+    <p>रिबन, हिस्ट्री वाला मॉडल ब्राउज़र, लाइव प्रीव्यू वाले फ़ीचर डायलॉग, फ़ॉर्मूला वाली पैरामीटर टेबल, माउस के दाएँ बटन पर मार्किंग मेनू। अंदर सामान्य FreeCAD ज्यामिति है।</p>
+  </div>
+  <div class="cards3">
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_sketch.webp?v=7a61ab4d"><img src="../img/ui_sketch.webp?v=7a61ab4d" alt="डायमेंशन के साथ पूरी तरह परिभाषित स्केच" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>स्केच</h3>
+      <p>लाइनें, आर्क, स्प्लाइन और टेक्स्ट; ड्रॉ करते समय ही डायमेंशन टाइप करें; Constraint List; स्केच पैटर्न।</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/ui_feature.webp?v=755acb9b"><img src="../img/ui_feature.webp?v=755acb9b" alt="पार्ट पर प्रीव्यू के साथ Extrude डायलॉग" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>फ़ीचर्स</h3>
+      <p>Extrude, Revolve, Hole, Fillet, Shell, Sweep, Loft, Thread, Emboss, गियर — हर एक में लाइव प्रीव्यू और ड्रैग हैंडल।</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="../img/asm_engine.webp?v=01783c85"><img src="../img/asm_engine.webp?v=01783c85" alt="ProstoCAD में Moto Engine Demo असेंबली: 23 पार्ट्स, हर एक की अपनी स्वतंत्रता की डिग्री" width="1200" height="750" loading="lazy" decoding="async"></a></div><div class="body"><h3>असेंबली</h3>
+      <p>FreeCAD के अपने जॉइंट्स पर Mate, Flush, Insert और भी; गिज़्मो पार्ट को सिर्फ़ उसी दिशा में चलाता है जहाँ वह अभी भी स्वतंत्र है।</p></div></div>
+  </div>
+</div></section>
+
+<section id="section"><div class="wrap">
+  <div class="head">
+    <p class="kicker">असेंबली · View ▸ Section</p>
+    <h2>पूरी असेंबली का सेक्शन — हर पार्ट अपने रंग में</h2>
+    <p>प्लेन जिस भी पार्ट से गुज़रता है उसे काटता है, हर पार्ट की अपनी हैचिंग के साथ। Interference चमकीले लाल रंग में और वॉल्यूम के साथ दिखाता है कि पार्ट्स कहाँ एक-दूसरे में घुसते हैं।</p>
+  </div>
+  <div class="big">
+    <div><div class="shot"><a class="zoom" href="../img/moto_front.webp?v=b4fc5097"><img src="../img/moto_front.webp?v=b4fc5097" alt="20 पार्ट्स वाली इंजन असेंबली का सेक्शन" width="1392" height="935" loading="lazy" decoding="async"></a></div>
+      <p class="caption">Moto Engine Demo — FreeCAD में बनी 20 पार्ट्स की असेंबली, ProstoCAD में काटी गई।</p></div>
+    <div class="side">
+      <div class="shot"><a class="zoom" href="../img/moto_iso.webp?v=362e5b8d"><img src="../img/moto_iso.webp?v=362e5b8d" alt="इंजन असेंबली 3D में" width="1000" height="695" loading="lazy" decoding="async"></a></div>
+      <div class="shot"><a class="zoom" href="../img/interference.webp?v=3e749745"><img src="../img/interference.webp?v=3e749745" alt="चमकीले लाल रंग में इंटरफ़ेरेंस" width="912" height="720" loading="lazy" decoding="async"></a></div>
+      <ul class="ticks"><li>कोई भी आकार: ProstoCAD और FreeCAD की असेंबली, STEP, दूसरे प्रोग्राम्स की फ़ाइलें</li><li><b>Hide</b>, <b>Show</b>, <b>Show All</b> सीधे असेंबली ट्री में</li><li><b>Open</b> से पार्ट अपनी अलग विंडो में; Save असेंबली और उसके पार्ट्स को एक फ़ोल्डर में रखता है</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="pawn"><div class="wrap">
+  <div class="head">
+    <p class="kicker">उदाहरण: शतरंज का प्यादा</p>
+    <h2>फ़ोटो से रंगीन पार्ट तक, पाँच चरणों में</h2>
+  </div>
+  <div class="steps">
+    <div><div class="shot"><a class="zoom" href="../img/chess_1_photo.webp?v=580de11d"><img src="../img/chess_1_photo.webp?v=580de11d" alt="XZ प्लेन पर प्यादे की फ़ोटो" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>1</em>फ़ोटो</h3><p>Image ▸ Insert Image, On XZ — तस्वीर सीधी खड़ी हो जाती है</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_2_scale.webp?v=38797169"><img src="../img/chess_2_scale.webp?v=38797169" alt="दो बिंदुओं से फ़ोटो का स्केल" width="1600" height="1035" loading="lazy" decoding="async"></a></div><h3><em>2</em>स्केल</h3><p>दो बिंदु, नीचे और ऊपर: Real length 50 mm</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_3_sketch.webp?v=0b78306e"><img src="../img/chess_3_sketch.webp?v=0b78306e" alt="फ़ोटो पर आधी आउटलाइन का स्केच" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>3</em>स्केच</h3><p>फ़ोटो पर आधा सिल्हूट</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_4_revolve.webp?v=00629593"><img src="../img/chess_4_revolve.webp?v=00629593" alt="Revolve से बना प्यादा" width="900" height="688" loading="lazy" decoding="async"></a></div><h3><em>4</em>Revolve</h3><p>Z अक्ष के चारों ओर — प्यादा ठीक 50 mm का</p></div>
+    <div><div class="shot"><a class="zoom" href="../img/chess_5_appearance.webp?v=3036b8ab"><img src="../img/chess_5_appearance.webp?v=3036b8ab" alt="प्यादे पर Appearance" width="900" height="598" loading="lazy" decoding="async"></a></div><h3><em>5</em>Appearance</h3><p>लकड़ी, Satin, Hide Edges — तुरंत पार्ट पर</p></div>
+  </div>
+  <div class="trio">
+    <figure><div class="shot"><a class="zoom" href="../img/chess_6_wood.webp?v=3e9752f9"><img src="../img/chess_6_wood.webp?v=3e9752f9" alt="लकड़ी का प्यादा" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Wood · Satin</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_7_black.webp?v=197a9ffc"><img src="../img/chess_7_black.webp?v=197a9ffc" alt="चमकदार काला प्यादा" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Glossy, काला</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="../img/chess_8_red.webp?v=18134dc8"><img src="../img/chess_8_red.webp?v=18134dc8" alt="लाल ब्रश्ड-मेटल प्यादा" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Metal + Brushed</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="appearance"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/finishes.webp?v=f1f3abf4"><img src="../img/finishes.webp?v=f1f3abf4" alt="फ़िनिश: Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ Material ▸ Appearance</p>
+      <h2>रंग और फ़िनिश</h2>
+      <ul class="ticks"><li>पैलेट से कोई भी रंग या <b>More…</b></li><li><b>Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber</b></li><li>चुने हुए फ़ेस, Solids या पूरा पार्ट; <b>Hide Edges</b> किनारों की लाइनें हटाता है</li><li>तुरंत दिखता है; OK एक ही Undo स्टेप है</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div class="shot"><a class="zoom" href="../img/textures.webp?v=15527169"><img src="../img/textures.webp?v=15527169" alt="टेक्सचर: Brushed, Wood, Carbon, Knurl, Sand" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Appearance ▸ Texture</p>
+      <h2>रंग के ऊपर टेक्सचर</h2>
+      <ul class="ticks"><li><b>Brushed, Wood, Carbon, Knurl, Sand</b></li><li>रंग झलकता है: लाल पार्ट पर लाल लकड़ी</li><li>पैटर्न हर पार्ट पर अपना असली आकार रखता है</li><li>फ़ाइल में सेव होता है, असेंबली में भी दिखता है</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="tools"><div class="wrap">
+  <div class="row">
+    <div><div class="shot"><a class="zoom" href="../img/work_plane_series_view.webp?v=a6ce38d8"><img src="../img/work_plane_series_view.webp?v=a6ce38d8" alt="घुमाए गए वर्क प्लेन्स की एक श्रृंखला" width="809" height="564" loading="lazy" decoding="async"></a></div>
+      <div class="pair"><div class="shot"><a class="zoom" href="../img/work_plane_series.webp?v=942ccea7"><img src="../img/work_plane_series.webp?v=942ccea7" alt="Planes और Turn के साथ Work Plane डायलॉग" width="864" height="532" loading="lazy" decoding="async"></a></div></div></div>
+    <div class="text">
+      <p class="kicker">Work Plane</p>
+      <h2>Loft के लिए प्लेन्स — एक साथ कई, और घुमाए हुए</h2>
+      <ul class="ticks"><li>Offset ▸ <b>Planes</b>: 2×, 3×… ऑफ़सेट एक ही बार में</li><li>पिछले प्लेन या ग्लोबल अक्षों के X, Y, Z के चारों ओर <b>Turn</b></li><li>टाइप करें या रिंग्स पर ड्रैग करें</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div><div class="shot"><a class="zoom" href="../img/asm_axes.webp?v=8f0c140d"><img src="../img/asm_axes.webp?v=8f0c140d" alt="इंजन के घूमने वाले पार्ट्स और छेदों के अक्ष, हल्की सेंटर लाइनों के रूप में" width="1200" height="750" loading="lazy" decoding="async"></a></div></div>
+    <div class="text">
+      <p class="kicker">असेंबली</p>
+      <h2>कंस्ट्रेंट के लिए अक्ष</h2>
+      <ul class="ticks"><li>हर घूमने वाली बॉडी और छेद अपना <b>अक्ष</b> हल्की सेंटर लाइन के रूप में दिखाता है</li><li>Mate, Flush, Insert, Cylindrical, Parallel एक क्लिक में अक्ष चुनते हैं</li><li>Make Assembly पार्ट्स के नाम बनाए रखता है</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="plus" id="plus"><div class="wrap">
+  <div class="head">
+    <p class="kicker">STL → STEP</p>
+    <h2>AI की मदद से STL को STEP में</h2>
+    <p>STL त्रिकोणों का मेश है: स्लाइसर उसे प्रिंट कर देता है, पर आप न कोई साइज़ बदल सकते हैं, न उसे किसी दूसरे CAD में सॉलिड की तरह खोल सकते हैं। अपना AI कनेक्ट करें, और वह ProstoCAD में STL को असली पार्ट के रूप में दोबारा बनाता है — स्केच, Extrude, Revolve, एडिट करने योग्य साइज़ — STEP में सेव करने के लिए तैयार। या नीचे दिए STL टूल्स से खुद करें।</p>
+  </div>
+  <div class="ba">
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_before.webp?v=72ec0346"><img src="../img/ai_hook_before.webp?v=72ec0346" alt="पहले: हुक का STL, त्रिकोणों का मेश" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>पहले</b> · STL: त्रिकोणों का मेश</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_hook_after.webp?v=2675e03a"><img src="../img/ai_hook_after.webp?v=2675e03a" alt="बाद में: AI ने फ़ीचर्स से दोबारा बनाया हुक" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>बाद में</b> · AI ने बनाया: हिस्ट्री में 9 फ़ीचर्स, साइज़ एडिट हो सकते हैं</figcaption></figure>
+    </div>
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_before.webp?v=5e5b4acb"><img src="../img/ai_case_before.webp?v=5e5b4acb" alt="पहले: STL के रूप में iPhone केस" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>पहले</b> · iPhone केस का STL</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/ai_case_after.webp?v=18028a93"><img src="../img/ai_case_after.webp?v=18028a93" alt="बाद में: AI ने दोबारा बनाया iPhone केस" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>बाद में</b> · AI ने बनाया: 24 फ़ीचर्स, STEP में सेव करने के लिए तैयार</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_photo.webp?v=216d4eae"><img src="../img/leg_photo.webp?v=216d4eae" alt="पहले: मेज़ के पाए की स्टैम्प्ड बेस प्लेट की फ़ोटो" width="960" height="1280" loading="lazy" decoding="async"></a></div><figcaption><b>पहले</b> · बस मेज़ के पाए की एक फ़ोटो</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="../img/leg_render.webp?v=f7cf866a"><img src="../img/leg_render.webp?v=f7cf866a" alt="बाद में: फ़ोटो से AI द्वारा बनाई गई बेस प्लेट, उसका STEP Plasticity में" width="1200" height="939" loading="lazy" decoding="async"></a></div><figcaption><b>बाद में</b> · एक फ़ोटो से AI ने बनाया, STEP में सेव करके Plasticity में खोला</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="../img/leg_inncad.webp?v=ca96ce49"><img src="../img/leg_inncad.webp?v=ca96ce49" alt="ProstoCAD में बेस प्लेट नीचे से, मॉडल ब्राउज़र में उसके फ़ीचर्स" width="1200" height="698" loading="lazy" decoding="async"></a></div><figcaption><b>ProstoCAD</b> · नीचे की तरफ़: हिस्ट्री में 11 फ़ीचर्स, साइज़ बदल सकते हैं</figcaption></figure>
+      <span class="ba-arrow ba-gap" aria-hidden="true">→</span>
+      <figure><div class="shot"><video src="../img/leg_spin.mp4?v=c3bf0153" poster="../img/leg_spin.webp?v=0fd8848d" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="फ़ोटो से AI द्वारा बनाई गई बेस प्लेट, पलटती हुई"></video></div><figcaption>दोनों तरफ़: एक जैसी मोटाई की स्टैम्प्ड प्लेट</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="row ai" id="ai">
+    <div class="shot"><a class="zoom" href="../img/ai_help_light.webp?v=a5228f2d"><img src="../img/ai_help_light.webp?v=a5228f2d" alt="Connect AI विंडो: Claude Code, Codex, Gemini CLI और दूसरे MCP प्रोग्राम" width="1600" height="1051" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ AI ▸ Connect AI</p>
+      <h2>एक बटन, और आपका AI ProstoCAD में</h2>
+      <ul class="ticks"><li>Claude Code इंस्टॉल है? <b>Connect AI</b> बिना कोई सवाल पूछे पार्ट के फ़ोल्डर में उसके साथ Terminal खोलता है</li><li>MCP सर्वर बिल्ट-इन है — कुछ डाउनलोड नहीं करना</li><li>अभी कोई AI नहीं? विंडो बताती है कि Claude Code, Codex या Gemini CLI कहाँ से लें, और इंस्टॉल कमांड देती है</li><li>Claude Desktop, Cursor, VS Code, Windsurf, LM Studio: तैयार पाथ और कॉपी करने के लिए JSON</li><li>AI के बनाए फ़ीचर्स आपके फ़ीचर्स की तरह मॉडल ब्राउज़र में रहते हैं: उन्हें एडिट करें या हर स्टेप Undo करें</li></ul>
+      <p class="quote">“ProstoCAD में STL को पार्ट के रूप में दोबारा बनाओ, पहले तीखे किनारों के साथ।”</p>
+      <p><a class="btn outline small" href="#connect">कैसे कनेक्ट करें, चरण-दर-चरण<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+
+  <div class="stl">
+    <div class="box"><b><em>01</em>Import</b><p>STL जैसी है वैसी आती है; स्टेटस लाइन उसके त्रिकोण गिनती है।</p></div>
+    <div class="box"><b><em>02</em>STL → STEP</b><p>मेश अपने त्रिकोणों से बना सॉलिड बन जाता है, STEP में एक्सपोर्ट के लिए तैयार।</p></div>
+    <div class="box"><b><em>03</em>Mesh Section</b><p>STL को एक प्लेन से काटें: गोल साइज़ वाली लाइनों, आर्क और सर्कल का स्केच।</p></div>
+    <div class="box"><b><em>04</em>Smooth</b><p>घूमने वाला पार्ट फ़ीचर्स से दोबारा बनता है: स्केच, Revolve, ग्रूव, नापी गई पिच वाला थ्रेड।</p></div>
+  </div>
+</div></section>
+
+<section id="connect"><div class="wrap">
+  <div class="head">
+    <p class="kicker">AI · MCP</p>
+    <h2>अपना AI कनेक्ट करें — चरण-दर-चरण</h2>
+    <p>ProstoCAD में MCP सर्वर बिल्ट-इन है (AI Link): इसके लिए कुछ डाउनलोड नहीं करना। MCP समझने वाला कोई भी AI प्रोग्राम आपकी ProstoCAD विंडो में काम कर सकता है — पार्ट देखना, STL नापना, एडिट करने योग्य फ़ीचर्स बनाना।</p>
+  </div>
+  <div class="connect">
+    <div class="box step-box">
+      <h3><span class="num">A</span>तेज़ तरीका: Connect AI</h3>
+      <ol class="steps-ol">
+        <li>कोई AI कमांड-लाइन प्रोग्राम इंस्टॉल करें और अपने अकाउंट से साइन-इन करें: <b>Claude Code</b>, <b>Codex</b> (OpenAI) या <b>Gemini CLI</b> (Google)। साइन-इन के लिए उसे एक बार Terminal में चलाएँ।
+          <div class="mini">
+            <p><a href="https://claude.com/claude-code">Claude Code</a> · इंस्टॉलर उसके पेज पर</p>
+            <div class="snip"><code>npm install -g @openai/codex</code><button class="copy" type="button" data-copy="npm install -g @openai/codex" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <div class="snip"><code>npm install -g @google/gemini-cli</code><button class="copy" type="button" data-copy="npm install -g @google/gemini-cli" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <p>Codex और Gemini CLI को <a href="https://nodejs.org">Node.js</a> (LTS इंस्टॉलर) चाहिए।</p>
+          </div></li>
+        <li>ProstoCAD में पार्ट खोलें या STL इम्पोर्ट करें।</li>
+        <li><b>Tools ▸ AI ▸ Connect AI.</b> पार्ट के फ़ोल्डर में Terminal खुलता है, जिसमें AI पहले से ProstoCAD से जुड़ा होता है — कोई सवाल नहीं। पहली बार macOS पूछता है कि क्या ProstoCAD Terminal को नियंत्रित कर सकता है: अनुमति दें।</li>
+        <li>AI को अपने शब्दों में बताएँ कि क्या चाहिए:
+          <div class="prompts">
+            <span>“ProstoCAD में STL को पार्ट के रूप में दोबारा बनाओ, पहले तीखे किनारों के साथ।”</span>
+            <span>“इस पार्ट को 3D प्रिंटिंग के लिए कम से कम सपोर्ट के साथ ऑप्टिमाइज़ करो।”</span>
+            <span>“ऊपरी फ़ेस के छेद में M6 थ्रेड बनाओ।”</span>
+          </div></li>
+      </ol>
+      <p class="note">अभी कोई AI इंस्टॉल नहीं? Connect AI हर प्रोग्राम का पेज और इंस्टॉल कमांड Copy के साथ दिखाता है।</p>
+    </div>
+
+    <div class="box step-box">
+      <h3><span class="num">B</span>कोई भी दूसरा MCP प्रोग्राम</h3>
+      <p>प्रोग्राम की MCP सेटिंग्स में <code>inncad</code> नाम का लोकल (stdio) MCP सर्वर जोड़ें:</p>
+      <table class="where">
+        <tr><td>Claude Desktop</td><td>Settings ▸ Developer ▸ Edit Config</td></tr>
+        <tr><td>Cursor</td><td>Cursor Settings ▸ MCP</td></tr>
+        <tr><td>VS Code (Copilot एजेंट मोड)</td><td>Command Palette ▸ MCP: Add Server ▸ stdio</td></tr>
+        <tr><td>Windsurf</td><td>Windsurf Settings ▸ MCP servers</td></tr>
+        <tr><td>LM Studio (लोकल मॉडल)</td><td>Program ▸ Install ▸ Edit mcp.json</td></tr>
+        <tr><td>Cline</td><td>MCP Servers ▸ Configure</td></tr>
+      </table>
+      <div class="ostabs" data-tabs>
+        <button type="button" data-tab="mcp-mac">macOS</button>
+        <button type="button" data-tab="mcp-win">Windows</button>
+      </div>
+      <div class="tabpanel" id="mcp-mac">
+          <p class="lbl">कमांड</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/bin/python3</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/bin/python3" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">आर्ग्युमेंट</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">सेटिंग्स फ़ाइल (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <div class="tabpanel" id="mcp-win">
+          <p class="lbl">कमांड</p><div class="snip"><code>C:\ProstoCAD\runtime\bin\python.exe</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\bin\python.exe" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">आर्ग्युमेंट</p><div class="snip"><code>C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">सेटिंग्स फ़ाइल (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="कॉपी हो गया" aria-label="कॉपी"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <p class="note">पूरा पाथ लिखें, ~ नहीं। होम फ़ोल्डर के Applications में है? तब /Users/<i>आप</i>/Applications/…; Windows पर C:\ProstoCAD की जगह अपना ProstoCAD फ़ोल्डर। Connect AI आपके इंस्टॉलेशन के सटीक पाथ Copy के साथ दिखाता है। सेटिंग्स बदलने के बाद प्रोग्राम दोबारा शुरू करें।</p>
+    </div>
+  </div>
+
+  <div class="connect two">
+    <div class="box step-box">
+      <h3>ProstoCAD में AI क्या कर सकता है</h3>
+      <p class="lbl">देखना</p>
+      <div class="chips"><code>status</code><code>view</code><code>mesh_info</code><code>mesh_section</code><code>fit_at</code><code>compare</code></div>
+      <p class="lbl">बनाना</p>
+      <div class="chips"><code>new_solid</code><code>sketch</code><code>extrude</code><code>revolve</code><code>fillet</code><code>chamfer</code><code>thread</code></div>
+      <p class="lbl">चुनना और सुधारना</p>
+      <div class="chips"><code>find_faces</code><code>find_edges</code><code>delete</code><code>undo</code><code>run_python</code></div>
+      <p class="note">AI का बनाया हर फ़ीचर आपके फ़ीचर्स की तरह मॉडल ब्राउज़र में आता है: एडिट करें, हटाएँ या Undo करें।</p>
+    </div>
+    <div class="box step-box">
+      <h3>सुरक्षित और आपके नियंत्रण में</h3>
+      <ul class="ticks">
+        <li><b>AI Link</b> (डिफ़ॉल्ट रूप से चालू) सिर्फ़ इसी कंप्यूटर पर और सिर्फ़ उन प्रोग्राम्स को सुनता है जो ProstoCAD की सेटिंग्स फ़ोल्डर में रखी कुंजी जानते हैं।</li>
+        <li>इसे <b>Tools ▸ AI ▸ AI Link</b> में बंद करें, तो कोई AI ProstoCAD तक नहीं पहुँच सकता।</li>
+        <li>AI प्रोग्राम और उसका अकाउंट आपकी अपनी पसंद है।</li>
+        <li>पहले सादा आकार माँगें, फ़िलेट और चैम्फ़र बाद में — जाँचना आसान है। Claude के साथ परखा गया; छोटे लोकल मॉडल साइज़ और प्लेन में उलझ जाते हैं।</li>
+        <li>कॉपी पर काम करें और किसी साइज़ पर भरोसा करने से पहले जाँच लें कि AI ने क्या बनाया।</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="../img/open_preview.webp?v=bf93487a"><img src="../img/open_preview.webp?v=bf93487a" alt="फ़ाइल प्रीव्यू वाली Open विंडो" width="1400" height="762" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">और भी</p>
+      <h2>छोटी चीज़ें जो समय बचाती हैं</h2>
+      <ul class="ticks"><li>प्रीव्यू के साथ <b>Open</b>: FCStd, STEP, STL — तस्वीर, तारीख, साइज़</li><li><b>STEP</b>, <b>IGES</b>, <b>OBJ</b> इम्पोर्ट; ट्रेस करने के लिए JPG / PNG</li><li>व्यू या पूरी विंडो का <b>Screenshot</b>, पारदर्शी बैकग्राउंड वाला PNG भी</li><li>किसी भी फ़ेस, एज, बिंदु या अक्ष तक Extrude; दूसरी तरफ़ की अपनी सीमाएँ</li><li>Fillet ▸ <b>Full</b>: दो किनारों के बीच पूरी गोलाई</li><li>लाइट और डार्क थीम; सुझाव नीले में, त्रुटियाँ लाल में</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<div class="bottom alt"><div class="wrap">
+  <div class="pair2 docrow">
+    <div class="box" id="docs">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg><div><h3>डॉक्यूमेंटेशन</h3>
+        <p>क्विक स्टार्ट और नया क्या है पाँच भाषाओं में; पूरे मैनुअल अंग्रेज़ी और रूसी में।</p></div>
+        <a class="more" href="../files/ProstoCAD-manual.pdf">मैनुअल खोलें →</a></div>
+      <div class="guides">
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_windows.webp?v=f2e2d20e"><img src="../img/g_windows.webp?v=f2e2d20e" alt="यूज़र मैनुअल (Windows)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg>यूज़र मैनुअल (Windows)</h3><p>वही मैनुअल, Windows की कुंजियों, पाथ और इंस्टॉलेशन के साथ।</p>
+        <div class="links"><a href="../files/ProstoCAD-manual-windows.pdf">English <small>PDF · 398 KB</small></a><a href="../files/ProstoCAD-manual-windows_ru.pdf">Русский <small>PDF · 786 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_manual.webp?v=07d80746"><img src="../img/g_manual.webp?v=07d80746" alt="यूज़र मैनुअल (Mac)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>यूज़र मैनुअल (Mac)</h3><p>हर टूल चरण-दर-चरण, STL और AI वाले अध्याय के साथ।</p>
+        <div class="links"><a href="../files/ProstoCAD-manual.pdf">English <small>PDF · 395 KB</small></a><a href="../files/ProstoCAD-manual_ru.pdf">Русский <small>PDF · 781 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_quick.webp?v=29779fe4"><img src="../img/g_quick.webp?v=29779fe4" alt="क्विक स्टार्ट" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg>क्विक स्टार्ट</h3><p>इंस्टॉल, विंडो, माउस और आपका पहला पार्ट — दो पेज।</p>
+        <div class="links"><a href="../files/ProstoCAD-quickstart_hi.pdf">हिन्दी <small>PDF · 215 KB</small></a><a href="../files/ProstoCAD-quickstart_en.pdf">English <small>PDF · 168 KB</small></a><a href="../files/ProstoCAD-quickstart_ru.pdf">Русский <small>PDF · 190 KB</small></a><a href="../files/ProstoCAD-quickstart_de.pdf">Deutsch <small>PDF · 170 KB</small></a><a href="../files/ProstoCAD-quickstart_zh.pdf">中文 <small>PDF · 306 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="../img/g_news.webp?v=c67c613e"><img src="../img/g_news.webp?v=c67c613e" alt="नया क्या है" width="480" height="256" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg>नया क्या है</h3><p>0.12.0 और उससे पहले क्या जुड़ा, इसकी स्लाइड्स।</p>
+        <div class="links"><a href="../files/InnCadPlus-whats-new_hi.pdf">हिन्दी <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_en.pdf">English <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_ru.pdf">Русский <small>PDF · 3 MB</small></a><a href="../files/InnCadPlus-whats-new_de.pdf">Deutsch <small>PDF · 2 MB</small></a><a href="../files/InnCadPlus-whats-new_zh.pdf">中文 <small>PDF · 2 MB</small></a></div></div></div>
+      </div>
+    </div>
+
+    <div class="box" id="faq">
+      <div class="boxhead"><span class="q">?</span><div><h3>अक्सर पूछे जाने वाले सवाल</h3>
+        <p>आम सवालों के छोटे जवाब।</p></div></div>
+      <div class="faq">
+        <details><summary>क्या ProstoCAD मुफ़्त है?</summary><p>हाँ। डाउनलोड और इस्तेमाल दोनों मुफ़्त हैं।</p></details>
+        <details><summary>क्या FreeCAD इंस्टॉल होना ज़रूरी है?</summary><p>नहीं। FreeCAD 1.1.3 इंजन ProstoCAD के अंदर ही है। इसकी अपनी सेटिंग्स हैं और यह इंस्टॉल किए गए FreeCAD को नहीं छूता।</p></details>
+        <details id="faq-mac"><summary>macOS कहता है कि वह ऐप को वेरिफ़ाई नहीं कर सकता</summary>
+          <p>टेस्ट बिल्ड Apple से notarized नहीं है। <b>Done</b> पर क्लिक करें (Move to Trash पर नहीं), <b>System Settings ▸ Privacy &amp; Security</b> खोलें, “ProstoCAD was blocked…” तक स्क्रॉल करें और <b>Open Anyway</b> पर क्लिक करें, फिर अपने पासवर्ड से पुष्टि करें। ऐसा सिर्फ़ एक बार करना होता है।</p>
+          <p>macOS 13 और 14 पर ऐप पर राइट-क्लिक ▸ Open से भी यही होता है। या Terminal में: <code>xattr -dr com.apple.quarantine /Applications/ProstoCAD.app</code></p></details>
+        <details><summary>क्या यह Intel Mac या Linux पर चलता है?</summary><p>Linux: संस्करण जल्द आ रहा है। Intel Mac: इस बिल्ड में नहीं। अभी ProstoCAD Apple Silicon वाले Mac (M1 या नया, macOS 13 या नया) और Windows 10 / 11 x64 पर चलता है।</p></details>
+        <details><summary>यह कौन-से फ़ाइल फ़ॉर्मेट पढ़ता और लिखता है?</summary><p>FreeCAD फ़ाइलें (.FCStd), STEP और STL खोलता है; IGES, OBJ और ट्रेस करने के लिए JPG / PNG / BMP तस्वीरें इम्पोर्ट करता है; STEP (सटीक सॉलिड) और STL (स्लाइसर के लिए प्रिसिज़न स्लाइडर के साथ) एक्सपोर्ट करता है।</p></details>
+        <details><summary>क्या FreeCAD मेरी फ़ाइलें खोल सकता है?</summary><p>हाँ। पार्ट FreeCAD की PartDesign बॉडी है, स्केच Sketcher स्केच है, असेंबली FreeCAD के अपने जॉइंट्स इस्तेमाल करती है: सामान्य .FCStd फ़ाइलें। ProstoCAD भी FreeCAD में बनी फ़ाइलें खोलता है।</p></details>
+        <details><summary>AI के लिए क्या चाहिए?</summary><p>आपके अपने अकाउंट से साइन-इन किया हुआ AI कमांड-लाइन टूल: Claude Code, Codex या Gemini CLI (Codex और Gemini CLI को Node.js चाहिए)। Connect AI बताता है कि इन्हें कहाँ से लें। AI Link सिर्फ़ आपके कंप्यूटर पर और सिर्फ़ ProstoCAD की कुंजी वाले प्रोग्राम्स को सुनता है; इसे बंद करें तो कोई AI ProstoCAD तक नहीं पहुँच सकता।</p></details>
+        <details><summary>कुछ गड़बड़ हो गई। कैसे रिपोर्ट करूँ?</summary><p>मैनुअल का अध्याय 11 बताता है कि लॉग कहाँ है और क्या भेजना है; फिर हमें लिखें — देखें <a href="#contact">संपर्क</a>।</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="box solo" id="solo">
+    <div class="solo-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.5-4.6-9.2-9.3C1.6 7.6 3.9 4.5 7.1 4.5c2 0 3.5 1.1 4.9 3 1.4-1.9 2.9-3 4.9-3 3.2 0 5.5 3.1 4.3 6.5-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg></div>
+    <div>
+      <h3>एक व्यक्ति का प्रोजेक्ट</h3>
+      <p>ProstoCAD एक ही व्यक्ति बनाता है। सुझाव, बग रिपोर्ट और अनुरोधों का स्वागत है — अगर किसी बग को ठीक करने या किसी सुझाव को पूरा करने में समय लगे, तो कृपया पहले से माफ़ करें।</p>
+    </div>
+    <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/issues">सुझाव या बग भेजें<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+  </div>
+</div></div>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div>
+    <h3>संपर्क</h3>
+    <p>सवाल और बग रिपोर्ट: <a href="https://github.com/Igr11/ProstoCAD/issues">GitHub issues</a> (InCad, वह वर्कबेंच जिस पर ProstoCAD बना है)। लॉग जोड़ें — मैनुअल का अध्याय 11।</p>
+    <p>इंस्टॉल किए गए FreeCAD के लिए वही टूल्स: <a href="https://github.com/Igr11/ProstoCAD">InCad वर्कबेंच</a>।</p>
+  </div>
+  <div>
+    <p>ProstoCAD <a href="https://www.freecad.org">FreeCAD</a>, Open CASCADE और Qt पर बना है। यह एक स्वतंत्र प्रोजेक्ट है, FreeCAD टीम का बनाया नहीं।</p>
+    <p>इस साइट के सभी स्क्रीनशॉट असली हैं: वे ProstoCAD और InCad ऐडऑन में बनाए गए हैं।</p>
+    <p>यह साइट कोई कुकी नहीं रखती, न ट्रैकिंग, न विज्ञापन।</p>
+    <p><a href="../licenses/">लाइसेंस और सोर्स कोड</a> · InCad वर्कबेंच ओपन सोर्स है (LGPL 2.1 या नया)</p>
+  </div>
+</div></footer>
+
+<dialog id="lb"><img alt=""></dialog>
+<script src="../app.js?v=ed6ab6eb" defer></script>
+</body>
+</html>

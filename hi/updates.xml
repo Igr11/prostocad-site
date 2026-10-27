@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/hi/updates.xml</id><title>ProstoCAD और InCad — अपडेट</title>
+<link href="https://prostocad.com/hi/"/><link rel="self" href="https://prostocad.com/hi/updates.xml"/>
+<updated>2026-10-27T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/hi/#update-plus-0.12.0</id>
+<title>ProstoCAD 0.12.0: InnCad Plus अब ProstoCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;नया नाम, वही प्रोग्राम: आपकी फ़ाइलें पहले की तरह खुलती हैं, और पहली बार शुरू होने पर ProstoCAD, InnCad Plus की सेटिंग्स अपने आप ले लेता है।&lt;/li&gt;&lt;li&gt;हर आयत को उसके दो विकर्ण और एक केंद्र बिंदु कंस्ट्रक्शन के रूप में मिलते हैं: एक कंस्ट्रेंट (केंद्र को मूल बिंदु पर) उसे केंद्र में रख देता है। गोल कोनों वाले आयत के विकर्ण कोनों के केंद्रों को जोड़ते हैं।&lt;/li&gt;&lt;li&gt;स्केच में राइट-क्लिक से चुनी हुई हर चीज़ के लिए Delete मिलता है, डायमेंशन के लिए भी; Parameters में स्केच डायमेंशन हटाया जा सकता है।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Symmetric के बाद लाइनें खींची नहीं जा सकती थीं: अब जोड़ी बनते ही टूल बंद हो जाता है।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-incad-0.13.0</id>
+<title>ProstoCAD for FreeCAD 0.13.0: InCad अब ProstoCAD for FreeCAD है — साथ में डायमेंशन के लिए Delete, आयत के विकर्ण और आसान Symmetric</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;नया नाम, वही वर्कबेंच: FreeCAD में यह ProstoCAD के नाम से दिखता है, और पहले बनी हर फ़ाइल पहले की तरह खुलती है।&lt;/li&gt;&lt;li&gt;हर आयत को उसके दो विकर्ण और एक केंद्र बिंदु कंस्ट्रक्शन के रूप में मिलते हैं: एक कंस्ट्रेंट (केंद्र को मूल बिंदु पर) उसे केंद्र में रख देता है। गोल कोनों वाले आयत के विकर्ण कोनों के केंद्रों को जोड़ते हैं।&lt;/li&gt;&lt;li&gt;स्केच में राइट-क्लिक से चुनी हुई हर चीज़ के लिए Delete मिलता है, डायमेंशन के लिए भी; Parameters में स्केच डायमेंशन हटाया जा सकता है।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Symmetric के बाद लाइनें खींची नहीं जा सकती थीं: अब जोड़ी बनते ही टूल बंद हो जाता है।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+</feed>

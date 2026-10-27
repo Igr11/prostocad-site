@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProstoCAD — free parametric CAD for 3D printing, with STL tools and AI</title>
+<meta name="description" content="ProstoCAD: parametric parts and assemblies on the FreeCAD 1.1.3 engine. A Mac app and a Windows build, STL tools and a built-in AI link (Claude Code, Codex, Gemini CLI).">
+<meta property="og:title" content="ProstoCAD">
+<meta property="og:description" content="ProstoCAD: parametric parts and assemblies on the FreeCAD 1.1.3 engine. A Mac app and a Windows build, STL tools and a built-in AI link (Claude Code, Codex, Gemini CLI).">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a111c">
+<meta name="msvalidate.01" content="499B6EF04BFF810C76A070A973326980">
+<link rel="alternate" hreflang="en" href="https://prostocad.com/">
+<link rel="alternate" hreflang="ru" href="https://prostocad.com/ru/">
+<link rel="alternate" hreflang="de" href="https://prostocad.com/de/">
+<link rel="alternate" hreflang="zh-Hans" href="https://prostocad.com/zh/">
+<link rel="alternate" hreflang="hi" href="https://prostocad.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://prostocad.com/">
+<link rel="canonical" href="https://prostocad.com/">
+<link rel="alternate" type="application/atom+xml" href="https://prostocad.com/updates.xml" title="ProstoCAD — updates">
+<meta property="og:url" content="https://prostocad.com/">
+<meta property="og:image" content="https://prostocad.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=ed6ab6eb">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><img src="icon.svg" alt="" width="34" height="34"><span><strong>Prosto<span>CAD</span></strong><small>Parts · Assemblies · STL</small></span></a>
+  <nav class="links">
+    <a href="#features">Features</a>
+    <a href="#updates">Updates</a>
+    <a href="#docs">Documentation</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#addon">FreeCAD Addon</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="right">
+    <details class="langmenu"><summary aria-label="Language"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>EN</span></summary><div class="menu"><a href="" data-lang="en" hreflang="en" lang="en" aria-current="true">English</a><a href="ru/" data-lang="ru" hreflang="ru" lang="ru">Русский</a><a href="de/" data-lang="de" hreflang="de" lang="de">Deutsch</a><a href="zh/" data-lang="zh" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="hi/" data-lang="hi" hreflang="hi" lang="hi">हिन्दी</a></div></details>
+    <a class="btn primary small" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Download</span></a>
+  </div>
+</div></header>
+<div class="newsbar"><div class="wrap"><a href="#updates"><span class="tag-new">New</span><span class="what"><b>ProstoCAD 0.12.0</b> — InnCad Plus is now ProstoCAD — plus Delete for dimensions, rectangle diagonals and a smoother Symmetric · <b>ProstoCAD for FreeCAD 0.13.0</b> — InCad is now ProstoCAD for FreeCAD — plus Delete for dimensions, rectangle diagonals and a smoother Symmetric</span><span class="go">What changed →</span></a></div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <p class="town">A new CAD in town…</p>
+      <p class="mono-kicker">Free · on the FreeCAD 1.1.3 engine</p>
+      <h1>Parametric CAD<span>for 3D printing enthusiasts.</span></h1>
+      <p class="tagline">Prosto. Presto. Printed.</p>
+      <p class="equation">ProstoCAD <b class='plus'>+</b> your idea = a printed part</p>
+      <p class="lead">For people who don't want to spend a fortune on a hobby and won't use pirated software. ProstoCAD is free: parts and assemblies, tools that turn an STL back into a real part, and a built-in link to your AI — Claude Code, Codex or Gemini CLI builds the part in your window.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Download ProstoCAD<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+        <a class="btn outline" href="#docs"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>View Documentation<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+      </div>
+      <p class="meta"><span>Version 0.12.0</span><i></i><span>Free</span><i></i><span>macOS (Apple Silicon) · Windows x64 · Linux soon</span></p>
+      <p class="renamed">ProstoCAD is the new name of InnCad Plus.</p>
+    </div>
+    <div class="window"><div class="bar"><i></i><i></i><i></i></div><div class=""><a class="zoom" href="img/hero.webp?v=947d2b0a"><img src="img/hero.webp?v=947d2b0a" alt="The ProstoCAD window: ribbon, Model Browser, Parameters and a part" width="1800" height="963" loading="lazy" decoding="async"></a></div></div>
+  </div>
+  <p class="real"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>All screenshots on this site are real: they were made in ProstoCAD and its FreeCAD addon.</p>
+
+  <div class="feats" id="features">
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20.5 7.5v9L12 21.2 3.5 16.5v-9z"/><path d="M3.5 7.5 12 12.2l8.5-4.7M12 12.2v9"/></svg></div><div><h3>Parametric Modeling</h3>
+      <p>Sketches with dimensions and formulas, features with a live preview, assemblies with joints.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg></div><div><h3>STEP / STL / IGES</h3>
+      <p>Open STEP and STL, import IGES and OBJ, export STEP for other CAD programs and STL for slicers.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg></div><div><h3>STL to a Real Part</h3>
+      <p>Mesh Section and Smooth rebuild a mesh as editable features — or Connect AI lets your AI do it.</p></div></div>
+    <div class="box feat"><div class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg></div><div><h3>Standalone App</h3>
+      <p>The FreeCAD 1.1.3 engine is inside: nothing else to install. Works on your machine; files stay plain .FCStd.</p></div></div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-card">
+      <span class="pill">Real threads</span>
+      <h2>Real threads, ready for 3D printing, in a few clicks</h2>
+      <p>A real helical thread you can print, not a texture — in a finished hole or on a shaft: pick the round face and a size, or let Auto match the hole. ISO metric, UNC / UNF, G, Trapezoidal, Print-friendly with flat crests, or Custom — your own pitch, flank angle and depth for jars, lids and anything non-standard. A print clearance of any size (0.2 mm by default) lets printed parts screw together.</p>
+      <div class="shot"><a class="zoom" href="img/thread.webp?v=f0aac2c9"><img src="img/thread.webp?v=f0aac2c9" alt="The Thread dialog and a print-ready M5 thread" width="1040" height="650" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">AI × 3D printing</span>
+      <h2>AI optimization for 3D printing, with a minimum of supports</h2>
+      <p>Ask your AI to prepare the part for printing: it can turn overhangs into 45° chamfers, give the part a flat base and split what cannot print in one piece. Every change is an ordinary feature in the history — check it, edit it or undo it.</p>
+      <div class="term"><div class="bar"><i></i><i></i><i></i><span>Connect AI</span></div>
+        <p class="you">&gt; Optimize this part for 3D printing with as few supports as possible.</p>
+        <p>✓ Overhangs replaced with 45° chamfers</p>
+        <p>✓ Flat base on the largest face</p>
+        <p>✓ Each step in the Model Browser — Undo takes it back</p>
+      </div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">3D sketch</span>
+      <h2>3D lines in a 3D sketch, on a virtual cube</h2>
+      <p>A very easy way to draw in space: a cube of virtual points around the origin, its size and step are yours. The line runs in all three directions: pick points on any layer — XY, XZ, YZ — or in the whole Cube; Tab / Shift+Tab steps the layer, points drag with the mouse. Lines, Spline or Through points — the line becomes a path for Sweep and Loft.</p>
+      <div class="shot"><a class="zoom" href="img/line3d_curve.webp?v=f475d377"><img src="img/line3d_curve.webp?v=f475d377" alt="A 3D line through points on different layers of the virtual cube" width="1510" height="882" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Photo → real size</span>
+      <h2>One photo and one measurement — real dimensions</h2>
+      <p>Insert a photo, click two points and type one real length: the whole picture scales, and you design over it in true millimeters. Photo taken at an angle? Horizontal or Vertical turns it so that line is level.</p>
+      <div class="shot"><a class="zoom" href="img/photo_scale.webp?v=6fe72c0d"><img src="img/photo_scale.webp?v=6fe72c0d" alt="Scale a photo by two points and one real length; level it with Horizontal or Vertical" width="1100" height="688" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card">
+      <span class="pill">Emboss · Engrave</span>
+      <h2>Text and any sketch — raised or engraved on any face</h2>
+      <p>Emboss raises a Text or any closed sketch — letters, a logo, a star — and Engrave cuts it in: on flat faces, wrapped round cylinders and cones, projected onto spheres. Letters that run past a face carry on round onto the faces that continue it smoothly, so mixed surfaces work too. Any installed font, several lines, Cyrillic, text along a curve; Evenly round spreads a word all the way round.</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="img/star.webp?v=d639d691"><img src="img/star.webp?v=d639d691" alt="A star made in ProstoCAD" width="1000" height="711" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="img/18_emboss.webp?v=5092079f"><img src="img/18_emboss.webp?v=5092079f" alt="Text embossed round a cylinder" width="900" height="532" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card" id="gears">
+      <span class="pill">Gears · Worms</span>
+      <h2>Gears and worm drives in one dialog</h2>
+      <p>Spur Gears makes a meshing pair at once, no sketch: involute teeth, straight or helical (5–45°), sized by teeth, ratio or center distance, with bores for the shafts. Worm Gear makes the worm and its wheel, 1–6 starts. A third gear meshes with one already there; Make Assembly puts every gear into a part of its own.</p>
+      <div class="stack"><div class="shot"><a class="zoom" href="img/gears_pair.webp?v=8d746a2d"><img src="img/gears_pair.webp?v=8d746a2d" alt="The Spur Gears dialog and a helical pair in mesh" width="1200" height="765" loading="lazy" decoding="async"></a></div><div class="shot"><a class="zoom" href="img/gears_worm.webp?v=6f53ef30"><img src="img/gears_worm.webp?v=6f53ef30" alt="The Worm Gear dialog with the worm and its wheel" width="1200" height="765" loading="lazy" decoding="async"></a></div></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">Pattern</span>
+        <h2>Patterns: spread evenly between two faces, skip the copies you don't need</h2>
+        <p>Equal spacing spreads the copies evenly between two limits — two faces, edges or points — so you never count the step yourself. Excluded: click the copies you don't need right on the model and they are left out; ✕ brings one back. Rectangular, circular and Mirror for features; in sketches also Along Path — copies placed along any curve: lines, arcs, splines.</p>
+      </div>
+      <div class="shot"><a class="zoom" href="img/pattern.webp?v=84b6f058"><img src="img/pattern.webp?v=84b6f058" alt="A rectangular pattern with Equal spacing between the plate&#x27;s end faces, copies 3 and 5 left out" width="1400" height="749" loading="lazy" decoding="async"></a></div>
+    </div>
+    <div class="promo-card wide">
+      <div>
+        <span class="pill">Split for printing</span>
+        <h2>Too big for the printer? Split it — with a dovetail</h2>
+        <p>Draw the cut line in a sketch — straight, an arc or a dovetail — and Split ▸ Keep all cuts the part along it, every piece a Solid of its own. Any clearance you need: draw the line a second time with Offset by the gap — the thin strip between the lines becomes a Solid too; delete it, and the gap is there. Then Make Assembly turns the pieces straight into an assembly, each a part ready to print; the dovetail holds the printed pieces together.</p>
+      </div>
+      <figure class="scheme"><svg class="dovetail" viewBox="0 0 440 190" role="img" aria-label="A part split in two along a dovetail line">
+  <defs><linearGradient id="dtA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6fb0"/><stop offset="1" stop-color="#1d4778"/></linearGradient>
+  <linearGradient id="dtB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8692a"/><stop offset="1" stop-color="#7a4316"/></linearGradient></defs>
+  <path d="M20 60 L190 60 L190 92 L226 80 L226 140 L190 128 L190 160 L20 160 Z" fill="url(#dtA)" stroke="#4aa6ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M244 60 L420 60 L420 160 L244 160 L244 128 L280 140 L280 80 L244 92 Z" fill="url(#dtB)" stroke="#f08a24" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190 92 L226 80 L226 140 L190 128" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <text x="105" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">1</text>
+  <text x="340" y="117" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">2</text>
+  <path d="M195 36 H275 M195 36 l10 -6 M195 36 l10 6 M275 36 l-10 -6 M275 36 l-10 6" stroke="#93a3b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="235" y="26" fill="#93a3b8" font-size="13" text-anchor="middle" font-family="system-ui, sans-serif">Split</text>
+</svg>
+        <figcaption>Scheme</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="pair2">
+    <div class="box req" id="requirements">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.6"/><path d="M12 2.5v2.9M12 18.6v2.9M21.5 12h-2.9M5.4 12H2.5M18.7 5.3l-2 2M7.3 16.7l-2 2M18.7 18.7l-2-2M7.3 7.3l-2-2"/></svg><div><h3>System Requirements</h3>
+        <p>The FreeCAD 1.1.3 engine is inside — no FreeCAD to install.</p></div></div>
+      <div class="oss">
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.86-.76-1.47.02-2.83.86-3.59 2.17-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.3-3.51zM14.19 6.15c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg><div><h3>macOS</h3><ul>
+          <li>macOS 13 Ventura or later</li><li>Apple Silicon: M1 or newer</li><li>About 1 GB of disk space</li><li>From a USB stick: soon</li></ul></div></div>
+        <div class="osr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.1 10.4 4v7.2H3V5.1zm0 13.8 7.4 1.1v-7.1H3v6zm8.2 1.2L21 21.5v-8.6h-9.8v7.2zM11.2 3.9v7.3H21V2.5l-9.8 1.4z"/></svg><div><h3>Windows</h3><ul>
+          <li>Windows 10 or 11, 64-bit (x64)</li><li>About 600 MB of disk space</li><li>No administrator rights needed</li><li>Runs straight from a USB stick</li></ul></div></div>
+        <div class="osr soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2c-2.2 0-3.6 1.8-3.6 4.3 0 1.3.3 2.2-.6 3.6C6.6 11.8 5 14 5 16.6c0 .9.2 1.7.6 2.4-.9.4-1.6 1-1.6 1.6 0 .9 1.6 1.4 3.4 1.4 1 0 1.8-.3 2.3-.8.7.2 1.5.3 2.3.3s1.6-.1 2.3-.3c.5.5 1.3.8 2.3.8 1.8 0 3.4-.5 3.4-1.4 0-.6-.7-1.2-1.6-1.6.4-.7.6-1.5.6-2.4 0-2.6-1.6-4.8-2.8-6.7-.9-1.4-.6-2.3-.6-3.6C15.6 3.8 14.2 2 12 2zm-1.4 3.6c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zm2.8 0c.4 0 .7.5.7 1.1s-.3 1.1-.7 1.1-.7-.5-.7-1.1.3-1.1.7-1.1zM12 8.6c.9 0 1.8.4 1.8.8s-.9 1-1.8 1-1.8-.6-1.8-1 .9-.8 1.8-.8zm0 3c2 0 3.4 2.2 3.4 4.7S14 20 12 20s-3.4-1.2-3.4-3.7S10 11.6 12 11.6z"/></svg><div><h3>Linux <span class="tag-soon">soon</span></h3><ul>
+          <li>A Linux version is coming soon</li></ul></div></div>
+      </div>
+      <div class="foot">
+        <p>Not in this build: Intel Macs. Linux: coming soon.</p>
+        <p>For the AI link (optional): Claude Code, Codex or Gemini CLI, signed in with your own account.</p>
+      </div>
+    </div>
+
+    <div class="box dlbox" id="download">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><div><h3>Download ProstoCAD</h3>
+        <p>Version 0.12.0 · released October 27, 2026 · free</p></div></div>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-pf="pf-mac">macOS</button>
+        <button type="button" role="tab" data-pf="pf-zip">Windows Portable</button>
+        <button type="button" role="tab" data-pf="pf-linux">Linux <span class="tag-soon">soon</span></button>
+      </div>
+      <div class="pf" id="pf-mac"><h4>macOS</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-macos-arm64.dmg"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Download for Mac</a>
+        <p class="file">ProstoCAD-0.12.0-macos-arm64.dmg · 186 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9</code></div>
+          <button class="copy" type="button" data-copy="e54a48b14c84d8fe05507faeed121c91687ce5a284867c679b3a5596432676f9" data-ok="Copied" aria-label="Copy SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note">Drag ProstoCAD.app onto Applications. The first time, macOS asks to confirm: <a href="#faq-mac">Open Anyway</a>.</p></div>
+      <div class="pf" id="pf-zip"><h4>Windows Portable</h4>
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/ProstoCAD-0.12.0-windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>Download Windows Portable</a>
+        <p class="file">ProstoCAD-0.12.0-windows-x64.zip · 188 MB</p>
+        <div class="sha"><div><small>SHA-256</small><code>71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd</code></div>
+          <button class="copy" type="button" data-copy="71a8ecc564858ef8c181fab4c1ddaa86fe70b9ff4180c0fb1644a248883cf8cd" data-ok="Copied" aria-label="Copy SHA-256"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        <p class="note"><b>No installation needed. Unzip and use.</b> Use a short path with Latin letters only, then run <code>ProstoCAD.exe</code>.</p></div>
+      <div class="pf" id="pf-linux"><h4>Linux</h4><p class="note">A Linux version is on its way. Come back soon — until then ProstoCAD is here for Mac and Windows.</p></div>
+      <div class="links">
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">Release on GitHub</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases">All releases</a>
+        <a href="https://github.com/Igr11/ProstoCAD-releases/releases/download/v0.12.0/SHA256SUMS-0.12.0.txt">SHA256SUMS-0.12.0.txt</a>
+      </div>
+      <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>Come back often: ProstoCAD gets better almost every day, and a new version may already be waiting for you.</p></div>
+    </div>
+  </div>
+
+  <div class="box addon" id="addon">
+    <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3.5a2 2 0 0 1 4 0V5h3.5A1.5 1.5 0 0 1 19 6.5V10h-1.5a2 2 0 0 0 0 4H19v3.5a1.5 1.5 0 0 1-1.5 1.5H14v-1.5a2 2 0 0 0-4 0V19H6.5A1.5 1.5 0 0 1 5 17.5V14h1.5a2 2 0 0 0 0-4H5V6.5A1.5 1.5 0 0 1 6.5 5H10z"/></svg><div><p class="kicker">For FreeCAD users</p>
+      <h3>ProstoCAD for FreeCAD — the addon</h3>
+      <p class="slogan">For those who opened FreeCAD after years in another CAD.</p></div></div>
+    <div class="addon-body">
+      <div>
+        <p>Already have FreeCAD 1.1? ProstoCAD for FreeCAD adds the same parametric tools to it as a workbench: the ribbon, the Model Browser, feature dialogs, assemblies. Free, and your files stay plain .FCStd. The STL tools and Connect AI are in ProstoCAD only.</p>
+        <p class="back">One button — <b>Return to FreeCAD</b> — and you are back in FreeCAD's own interface.</p>
+        <a class="new-note" href="#gears"><img src="img/gears_addon.webp?v=58e76195" alt="A pair of gears made with Spur Gears" width="600" height="396" loading="lazy" decoding="async"><span><span class="tag-new">Finally</span>Spur gears and worm drives are in the addon too, from version 0.11.</span></a>
+        <p class="note">FreeCAD 1.1 (tested with 1.1.3) · macOS on Apple Silicon or Windows 10 / 11 x64</p>
+        <p class="note">Mac: install with FreeCAD's Addon Manager, the steps are in README.txt inside the ZIP. Windows: unzip and run <code>install.bat</code>.</p>
+      </div>
+      <div class="addon-dl">
+        <a class="btn primary" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-macOS-arm64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Addon for Mac<small>ZIP · 8 MB</small></span></a>
+        <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/releases/download/v0.13.0/ProstoCAD-FreeCAD-0.13.0-2026-10-27-4176e15-Windows-x64.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0-4.5-4.5m4.5 4.5 4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span>Addon for Windows<small>ZIP · 8 MB</small></span></a>
+        <p class="note">Version 0.13.0 · <a href="https://github.com/Igr11/ProstoCAD/releases">All releases of the addon</a></p>
+      </div>
+    </div>
+    <div class="fresh"><svg class="buddy" viewBox="0 0 64 64" aria-hidden="true"><g class="gear"><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(0 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(45 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(90 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(135 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(180 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(225 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(270 32 32)"/><rect x="27.5" y="3" width="9" height="13" rx="2" transform="rotate(315 32 32)"/><circle cx="32" cy="32" r="20"/><circle class="hub" cx="32" cy="32" r="16"/></g><g class="face"><ellipse class="eye" cx="26" cy="29" rx="2.4" ry="3.2"/><ellipse class="eye wink" cx="38" cy="29" rx="2.4" ry="3.2"/><circle class="cheek" cx="22.5" cy="35" r="2.2"/><circle class="cheek" cx="41.5" cy="35" r="2.2"/><path class="smile" d="M26 36.5 q6 6 12 0"/></g></svg><p>Come back often: the addon gets better almost every day, and a new version may already be waiting for you.</p></div>
+  </div>
+</div></div>
+
+<section id="updates"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Updates</p>
+    <h2>What's new in ProstoCAD</h2>
+    <p>The latest version of each: what was added and what was fixed. Earlier versions are on GitHub: <a href="https://github.com/Igr11/ProstoCAD-releases/releases">ProstoCAD</a>, <a href="https://github.com/Igr11/ProstoCAD/releases">ProstoCAD for FreeCAD</a>.</p>
+  </div>
+  <div class="upd-grid"><article class="box upd" id="update-plus-0.12.0">
+      <p class="upd-head"><span class="prod plus">ProstoCAD</span><b>0.12.0</b><time datetime="2026-10-27">October 27, 2026</time></p>
+      <h3>InnCad Plus is now ProstoCAD — plus Delete for dimensions, rectangle diagonals and a smoother Symmetric</h3><h4 class="added">Added</h4><ul class="ticks"><li>A new name, the same program: your files open as before, and on its first start ProstoCAD takes over InnCad Plus&#x27;s settings by itself.</li><li>Every rectangle gets its two diagonals and a centre point as construction: one constraint (the centre on the origin) centres it. A rounded rectangle&#x27;s diagonals join its corner centres.</li><li>Right-click in a sketch offers Delete for whatever is selected, dimensions too; Parameters can delete a sketch dimension.</li></ul><h4 class="fixed">Fixed</h4><ul class="ticks"><li>After Symmetric the lines could not be dragged: the tool now ends once the pair is made.</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0">Release notes on GitHub →</a></article><article class="box upd" id="update-incad-0.13.0">
+      <p class="upd-head"><span class="prod incad">ProstoCAD for FreeCAD</span><b>0.13.0</b><time datetime="2026-10-27">October 27, 2026</time></p>
+      <h3>InCad is now ProstoCAD for FreeCAD — plus Delete for dimensions, rectangle diagonals and a smoother Symmetric</h3><h4 class="added">Added</h4><ul class="ticks"><li>A new name, the same workbench: in FreeCAD it shows as ProstoCAD, and every file made before opens as it did.</li><li>Every rectangle gets its two diagonals and a centre point as construction: one constraint (the centre on the origin) centres it. A rounded rectangle&#x27;s diagonals join its corner centres.</li><li>Right-click in a sketch offers Delete for whatever is selected, dimensions too; Parameters can delete a sketch dimension.</li></ul><h4 class="fixed">Fixed</h4><ul class="ticks"><li>After Symmetric the lines could not be dragged: the tool now ends once the pair is made.</li></ul>
+      <a class="more" href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0">Release notes on GitHub →</a></article></div>
+  <p class="follow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><span>Hear about new versions: add the <a href="updates.xml">updates feed</a> (RSS / Atom) to any feed reader, or on GitHub click Watch ▸ Custom ▸ Releases for <a href="https://github.com/Igr11/ProstoCAD-releases">ProstoCAD</a> and <a href="https://github.com/Igr11/ProstoCAD">ProstoCAD for FreeCAD</a>.</span></p>
+</div></section>
+
+<section class="alt" id="workflow"><div class="wrap">
+  <div class="head">
+    <p class="kicker">How it works</p>
+    <h2>Familiar to anyone who has used a parametric CAD</h2>
+    <p>A ribbon, a Model Browser with the history, feature dialogs with a live preview, a Parameters table with formulas, marking menus on the right mouse button. Underneath it is ordinary FreeCAD geometry.</p>
+  </div>
+  <div class="cards3">
+    <div class="box card"><div class="shot"><a class="zoom" href="img/ui_sketch.webp?v=7a61ab4d"><img src="img/ui_sketch.webp?v=7a61ab4d" alt="A fully constrained sketch with dimensions" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>Sketch</h3>
+      <p>Lines, arcs, splines and text; dimensions typed while you draw; a Constraint List; sketch patterns.</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="img/ui_feature.webp?v=755acb9b"><img src="img/ui_feature.webp?v=755acb9b" alt="The Extrude dialog with its preview on the part" width="1000" height="625" loading="lazy" decoding="async"></a></div><div class="body"><h3>Features</h3>
+      <p>Extrude, Revolve, Hole, Fillet, Shell, Sweep, Loft, Thread, Emboss, gears — each with a live preview and drag handles.</p></div></div>
+    <div class="box card"><div class="shot"><a class="zoom" href="img/asm_engine.webp?v=01783c85"><img src="img/asm_engine.webp?v=01783c85" alt="The Moto Engine Demo assembly in ProstoCAD: 23 parts, each with its degrees of freedom" width="1200" height="750" loading="lazy" decoding="async"></a></div><div class="body"><h3>Assemblies</h3>
+      <p>Mate, Flush, Insert and more on FreeCAD's own joints; a gizmo moves a part only where it is still free.</p></div></div>
+  </div>
+</div></section>
+
+<section id="section"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Assembly · View ▸ Section</p>
+    <h2>Cut the whole assembly — every part in its color</h2>
+    <p>The plane cuts every part it meets, each with its own hatching. Interference shows where parts go into each other, in bright red, with the volume.</p>
+  </div>
+  <div class="big">
+    <div><div class="shot"><a class="zoom" href="img/moto_front.webp?v=b4fc5097"><img src="img/moto_front.webp?v=b4fc5097" alt="Section of a 20-part engine assembly" width="1392" height="935" loading="lazy" decoding="async"></a></div>
+      <p class="caption">Moto Engine Demo — a 20-part assembly made in FreeCAD, cut in ProstoCAD.</p></div>
+    <div class="side">
+      <div class="shot"><a class="zoom" href="img/moto_iso.webp?v=362e5b8d"><img src="img/moto_iso.webp?v=362e5b8d" alt="The engine assembly in 3D" width="1000" height="695" loading="lazy" decoding="async"></a></div>
+      <div class="shot"><a class="zoom" href="img/interference.webp?v=3e749745"><img src="img/interference.webp?v=3e749745" alt="Interference in bright red" width="912" height="720" loading="lazy" decoding="async"></a></div>
+      <ul class="ticks"><li>Any shape: ProstoCAD and FreeCAD assemblies, STEP, other programs' files</li><li><b>Hide</b>, <b>Show</b>, <b>Show All</b> right in the assembly's tree</li><li><b>Open</b> a part in its own window; Save puts the assembly and its parts in one folder</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="pawn"><div class="wrap">
+  <div class="head">
+    <p class="kicker">Demo: a chess pawn</p>
+    <h2>From a photo to a colored part in five steps</h2>
+  </div>
+  <div class="steps">
+    <div><div class="shot"><a class="zoom" href="img/chess_1_photo.webp?v=580de11d"><img src="img/chess_1_photo.webp?v=580de11d" alt="A photo of a pawn on the XZ plane" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>1</em>A photo</h3><p>Image ▸ Insert Image, On XZ — the picture stands upright</p></div>
+    <div><div class="shot"><a class="zoom" href="img/chess_2_scale.webp?v=38797169"><img src="img/chess_2_scale.webp?v=38797169" alt="Scaling the photo by two points" width="1600" height="1035" loading="lazy" decoding="async"></a></div><h3><em>2</em>Scale</h3><p>Two points, foot and top: Real length 50 mm</p></div>
+    <div><div class="shot"><a class="zoom" href="img/chess_3_sketch.webp?v=0b78306e"><img src="img/chess_3_sketch.webp?v=0b78306e" alt="Half the outline sketched over the photo" width="900" height="763" loading="lazy" decoding="async"></a></div><h3><em>3</em>Sketch</h3><p>Half the silhouette over the photo</p></div>
+    <div><div class="shot"><a class="zoom" href="img/chess_4_revolve.webp?v=00629593"><img src="img/chess_4_revolve.webp?v=00629593" alt="The pawn revolved" width="900" height="688" loading="lazy" decoding="async"></a></div><h3><em>4</em>Revolve</h3><p>About Z — the pawn is exactly 50 mm</p></div>
+    <div><div class="shot"><a class="zoom" href="img/chess_5_appearance.webp?v=3036b8ab"><img src="img/chess_5_appearance.webp?v=3036b8ab" alt="Appearance on the pawn" width="900" height="598" loading="lazy" decoding="async"></a></div><h3><em>5</em>Appearance</h3><p>Wood, Satin, Hide Edges — on the part at once</p></div>
+  </div>
+  <div class="trio">
+    <figure><div class="shot"><a class="zoom" href="img/chess_6_wood.webp?v=3e9752f9"><img src="img/chess_6_wood.webp?v=3e9752f9" alt="A wooden pawn" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Wood · Satin</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="img/chess_7_black.webp?v=197a9ffc"><img src="img/chess_7_black.webp?v=197a9ffc" alt="A glossy black pawn" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Glossy, black</figcaption></figure>
+    <figure><div class="shot"><a class="zoom" href="img/chess_8_red.webp?v=18134dc8"><img src="img/chess_8_red.webp?v=18134dc8" alt="A red brushed-metal pawn" width="900" height="824" loading="lazy" decoding="async"></a></div><figcaption>Metal + Brushed</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="appearance"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="img/finishes.webp?v=f1f3abf4"><img src="img/finishes.webp?v=f1f3abf4" alt="Finishes: Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ Material ▸ Appearance</p>
+      <h2>Color and finish</h2>
+      <ul class="ticks"><li>Any color from the palette or <b>More…</b></li><li><b>Matte, Satin, Glossy, Metal, Chrome, Glass, Rubber</b></li><li>Picked faces, Solids or the whole part; <b>Hide Edges</b> takes the edge lines off</li><li>Shown at once; OK is one Undo step</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div class="shot"><a class="zoom" href="img/textures.webp?v=15527169"><img src="img/textures.webp?v=15527169" alt="Textures: Brushed, Wood, Carbon, Knurl, Sand" width="1200" height="640" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Appearance ▸ Texture</p>
+      <h2>Textures over the color</h2>
+      <ul class="ticks"><li><b>Brushed, Wood, Carbon, Knurl, Sand</b></li><li>The color shows through: a red part gets red wood</li><li>The pattern keeps its real size on any part</li><li>Saved in the file, shown in assemblies too</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="tools"><div class="wrap">
+  <div class="row">
+    <div><div class="shot"><a class="zoom" href="img/work_plane_series_view.webp?v=a6ce38d8"><img src="img/work_plane_series_view.webp?v=a6ce38d8" alt="A series of turned work planes" width="809" height="564" loading="lazy" decoding="async"></a></div>
+      <div class="pair"><div class="shot"><a class="zoom" href="img/work_plane_series.webp?v=942ccea7"><img src="img/work_plane_series.webp?v=942ccea7" alt="The Work Plane dialog with Planes and Turn" width="864" height="532" loading="lazy" decoding="async"></a></div></div></div>
+    <div class="text">
+      <p class="kicker">Work Plane</p>
+      <h2>Loft planes — several at once, and turned</h2>
+      <ul class="ticks"><li>Offset ▸ <b>Planes</b>: 2×, 3×… the offset in one go</li><li><b>Turn</b> about X, Y, Z of the previous plane or the global axes</li><li>Typed, or dragged on rings</li></ul>
+    </div>
+  </div>
+  <div class="row flip">
+    <div><div class="shot"><a class="zoom" href="img/asm_axes.webp?v=8f0c140d"><img src="img/asm_axes.webp?v=8f0c140d" alt="Axes of the engine&#x27;s turned parts and holes, shown as light centre lines" width="1200" height="750" loading="lazy" decoding="async"></a></div></div>
+    <div class="text">
+      <p class="kicker">Assembly</p>
+      <h2>Axes to constrain to</h2>
+      <ul class="ticks"><li>Every turned body and hole shows its <b>axis</b> as a light center line</li><li>Mate, Flush, Insert, Cylindrical, Parallel take an axis with a click</li><li>Make Assembly keeps the parts' names</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="plus" id="plus"><div class="wrap">
+  <div class="head">
+    <p class="kicker">STL → STEP</p>
+    <h2>STL into STEP with AI</h2>
+    <p>An STL is a mesh of triangles: a slicer prints it, but you cannot change a size or open it as a solid in another CAD. Connect your AI, and it rebuilds the STL in ProstoCAD as a real part — sketches, Extrude, Revolve, sizes you can edit — ready to save as STEP. Or do it yourself with the STL tools below.</p>
+  </div>
+  <div class="ba">
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="img/ai_hook_before.webp?v=72ec0346"><img src="img/ai_hook_before.webp?v=72ec0346" alt="Before: the hook&#x27;s STL, a mesh of triangles" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>Before</b> · STL: a mesh of triangles</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="img/ai_hook_after.webp?v=2675e03a"><img src="img/ai_hook_after.webp?v=2675e03a" alt="After: the hook rebuilt by AI as features" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>After</b> · built by AI: 9 features in the history, sizes you can edit</figcaption></figure>
+    </div>
+    <div class="ba-row">
+      <figure><div class="shot"><a class="zoom" href="img/ai_case_before.webp?v=5e5b4acb"><img src="img/ai_case_before.webp?v=5e5b4acb" alt="Before: an iPhone case as STL" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>Before</b> · STL of an iPhone case</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="img/ai_case_after.webp?v=18028a93"><img src="img/ai_case_after.webp?v=18028a93" alt="After: the iPhone case rebuilt by AI" width="1100" height="588" loading="lazy" decoding="async"></a></div><figcaption><b>After</b> · built by AI: 24 features, ready to save as STEP</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="img/leg_photo.webp?v=216d4eae"><img src="img/leg_photo.webp?v=216d4eae" alt="Before: a photo of a table leg&#x27;s stamped base plate" width="960" height="1280" loading="lazy" decoding="async"></a></div><figcaption><b>Before</b> · just a photo of a table leg</figcaption></figure>
+      <span class="ba-arrow">→</span>
+      <figure><div class="shot"><a class="zoom" href="img/leg_render.webp?v=f7cf866a"><img src="img/leg_render.webp?v=f7cf866a" alt="After: the base plate built by AI from the photo, its STEP in Plasticity" width="1200" height="939" loading="lazy" decoding="async"></a></div><figcaption><b>After</b> · built by AI from one photo, saved as STEP and opened in Plasticity</figcaption></figure>
+    </div>
+    <div class="ba-row photo">
+      <figure><div class="shot"><a class="zoom" href="img/leg_inncad.webp?v=ca96ce49"><img src="img/leg_inncad.webp?v=ca96ce49" alt="The base plate in ProstoCAD from below, its features in the Model Browser" width="1200" height="698" loading="lazy" decoding="async"></a></div><figcaption><b>ProstoCAD</b> · the underside: 11 features in the history, sizes you can edit</figcaption></figure>
+      <span class="ba-arrow ba-gap" aria-hidden="true">→</span>
+      <figure><div class="shot"><video src="img/leg_spin.mp4?v=c3bf0153" poster="img/leg_spin.webp?v=0fd8848d" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="The base plate built by AI from the photo, turning over"></video></div><figcaption>Both sides: a stamped plate of even thickness</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="row ai" id="ai">
+    <div class="shot"><a class="zoom" href="img/ai_help_light.webp?v=a5228f2d"><img src="img/ai_help_light.webp?v=a5228f2d" alt="The Connect AI window: Claude Code, Codex, Gemini CLI and other MCP programs" width="1600" height="1051" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">Tools ▸ AI ▸ Connect AI</p>
+      <h2>One button, and your AI is in ProstoCAD</h2>
+      <ul class="ticks"><li>Claude Code installed? <b>Connect AI</b> opens a Terminal with it in the part's folder, no questions</li><li>The MCP server is built in — nothing to download</li><li>No AI yet? The window shows where to get Claude Code, Codex or Gemini CLI and the install command</li><li>Claude Desktop, Cursor, VS Code, Windsurf, LM Studio: ready paths and JSON to copy</li><li>The AI's features stay in the Model Browser like yours: edit them, or Undo each step</li></ul>
+      <p class="quote">“Rebuild the STL in ProstoCAD as a part, sharp edges first.”</p>
+      <p><a class="btn outline small" href="#connect">How to connect, step by step<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+
+  <div class="stl">
+    <div class="box"><b><em>01</em>Import</b><p>The STL comes in as it is; the status line counts its triangles.</p></div>
+    <div class="box"><b><em>02</em>STL → STEP</b><p>The mesh becomes a solid of its triangles, ready to export as STEP.</p></div>
+    <div class="box"><b><em>03</em>Mesh Section</b><p>Cut the STL by a plane: a sketch of lines, arcs and circles with round sizes.</p></div>
+    <div class="box"><b><em>04</em>Smooth</b><p>A turned part rebuilt as features: a sketch, Revolve, Grooves, a Thread with the measured pitch.</p></div>
+  </div>
+</div></section>
+
+<section id="connect"><div class="wrap">
+  <div class="head">
+    <p class="kicker">AI · MCP</p>
+    <h2>Connect your AI — step by step</h2>
+    <p>ProstoCAD has an MCP server built in (AI Link): nothing to download for it. Any AI program that speaks MCP can work in your ProstoCAD window — look at the part, measure an STL, build features you can edit.</p>
+  </div>
+  <div class="connect">
+    <div class="box step-box">
+      <h3><span class="num">A</span>The quick way: Connect AI</h3>
+      <ol class="steps-ol">
+        <li>Install an AI command-line program and sign in with your own account: <b>Claude Code</b>, <b>Codex</b> (OpenAI) or <b>Gemini CLI</b> (Google). Run it once in a Terminal to sign in.
+          <div class="mini">
+            <p><a href="https://claude.com/claude-code">Claude Code</a> · installer on its page</p>
+            <div class="snip"><code>npm install -g @openai/codex</code><button class="copy" type="button" data-copy="npm install -g @openai/codex" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <div class="snip"><code>npm install -g @google/gemini-cli</code><button class="copy" type="button" data-copy="npm install -g @google/gemini-cli" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+            <p>Codex and Gemini CLI need <a href="https://nodejs.org">Node.js</a> (the LTS installer).</p>
+          </div></li>
+        <li>In ProstoCAD, open the part or import the STL.</li>
+        <li><b>Tools ▸ AI ▸ Connect AI.</b> A Terminal opens in the part's folder with the AI already connected to ProstoCAD — no questions. The first time, macOS asks whether ProstoCAD may control Terminal: allow it.</li>
+        <li>Tell the AI what you want, in your words:
+          <div class="prompts">
+            <span>“Rebuild the STL in ProstoCAD as a part, sharp edges first.”</span>
+            <span>“Optimize this part for 3D printing with as few supports as possible.”</span>
+            <span>“Put an M6 thread in the hole on the top face.”</span>
+          </div></li>
+      </ol>
+      <p class="note">No AI installed yet? Connect AI shows each one's page and the command that installs it, with Copy.</p>
+    </div>
+
+    <div class="box step-box">
+      <h3><span class="num">B</span>Any other MCP program</h3>
+      <p>Add a local (stdio) MCP server named <code>inncad</code> in the program's MCP settings:</p>
+      <table class="where">
+        <tr><td>Claude Desktop</td><td>Settings ▸ Developer ▸ Edit Config</td></tr>
+        <tr><td>Cursor</td><td>Cursor Settings ▸ MCP</td></tr>
+        <tr><td>VS Code (Copilot agent mode)</td><td>Command Palette ▸ MCP: Add Server ▸ stdio</td></tr>
+        <tr><td>Windsurf</td><td>Windsurf Settings ▸ MCP servers</td></tr>
+        <tr><td>LM Studio (local models)</td><td>Program ▸ Install ▸ Edit mcp.json</td></tr>
+        <tr><td>Cline</td><td>MCP Servers ▸ Configure</td></tr>
+      </table>
+      <div class="ostabs" data-tabs>
+        <button type="button" data-tab="mcp-mac">macOS</button>
+        <button type="button" data-tab="mcp-win">Windows</button>
+      </div>
+      <div class="tabpanel" id="mcp-mac">
+          <p class="lbl">Command</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/bin/python3</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/bin/python3" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Argument</p><div class="snip"><code>/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py</code><button class="copy" type="button" data-copy="/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Settings file (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;/Applications/ProstoCAD.app/Contents/Resources/bin/python3&quot;,
+      &quot;args&quot;: [
+        &quot;/Applications/ProstoCAD.app/Contents/Resources/Mod/InCad/incad/ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <div class="tabpanel" id="mcp-win">
+          <p class="lbl">Command</p><div class="snip"><code>C:\ProstoCAD\runtime\bin\python.exe</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\bin\python.exe" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Argument</p><div class="snip"><code>C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py</code><button class="copy" type="button" data-copy="C:\ProstoCAD\runtime\Mod\InCad\incad\ai_bridge.py" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">Settings file (Claude Desktop, Cursor, Windsurf, LM Studio, Cline)</p><div class="snip"><pre>{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;mcpServers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+          <p class="lbl">VS Code (.vscode/mcp.json)</p><div class="snip"><pre>{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}</pre><button class="copy" type="button" data-copy="{
+  &quot;servers&quot;: {
+    &quot;inncad&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;C:\\ProstoCAD\\runtime\\bin\\python.exe&quot;,
+      &quot;args&quot;: [
+        &quot;C:\\ProstoCAD\\runtime\\Mod\\InCad\\incad\\ai_bridge.py&quot;
+      ]
+    }
+  }
+}" data-ok="Copied" aria-label="Copy"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5.5A1.5 1.5 0 0 0 14 4H5.5A1.5 1.5 0 0 0 4 5.5V14a1.5 1.5 0 0 0 1.5 1.5h3"/></svg></button></div>
+        </div>
+      <p class="note">Write the whole path, not ~. In your home folder's Applications? Use /Users/<i>you</i>/Applications/…; on Windows, your ProstoCAD folder instead of C:\ProstoCAD. Connect AI shows the exact paths of your installation, with Copy. Restart the program after changing its settings.</p>
+    </div>
+  </div>
+
+  <div class="connect two">
+    <div class="box step-box">
+      <h3>What the AI can do in ProstoCAD</h3>
+      <p class="lbl">Look</p>
+      <div class="chips"><code>status</code><code>view</code><code>mesh_info</code><code>mesh_section</code><code>fit_at</code><code>compare</code></div>
+      <p class="lbl">Build</p>
+      <div class="chips"><code>new_solid</code><code>sketch</code><code>extrude</code><code>revolve</code><code>fillet</code><code>chamfer</code><code>thread</code></div>
+      <p class="lbl">Pick and fix</p>
+      <div class="chips"><code>find_faces</code><code>find_edges</code><code>delete</code><code>undo</code><code>run_python</code></div>
+      <p class="note">Every feature the AI makes lands in the Model Browser like yours: edit it, delete it or Undo it.</p>
+    </div>
+    <div class="box step-box">
+      <h3>Safe and under your control</h3>
+      <ul class="ticks">
+        <li><b>AI Link</b> (on by default) listens only on this computer and only to programs that know the key ProstoCAD keeps in its settings folder.</li>
+        <li>Switch it off in <b>Tools ▸ AI ▸ AI Link</b>, and no AI can reach ProstoCAD.</li>
+        <li>The AI program and its account are your own choice.</li>
+        <li>Ask for the plain shape first, fillets and chamfers after — easier to check. Tried with Claude; small local models lose track of sizes and planes.</li>
+        <li>Work on copies and check what the AI built before you trust a size.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+  <div class="row">
+    <div class="shot"><a class="zoom" href="img/open_preview.webp?v=bf93487a"><img src="img/open_preview.webp?v=bf93487a" alt="The Open window with file previews" width="1400" height="762" loading="lazy" decoding="async"></a></div>
+    <div class="text">
+      <p class="kicker">And more</p>
+      <h2>Small things that save time</h2>
+      <ul class="ticks"><li><b>Open</b> with previews: FCStd, STEP, STL — picture, date, size</li><li>Import <b>STEP</b>, <b>IGES</b>, <b>OBJ</b>; JPG / PNG to sketch over</li><li><b>Screenshot</b> of the view or the whole window, PNG with a transparent background too</li><li>Extrude to any face, edge, point or axis; its own extents for the second side</li><li>Fillet ▸ <b>Full</b>: a full round between two edges</li><li>Light and dark themes; tips in blue, errors in red</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<div class="bottom alt"><div class="wrap">
+  <div class="pair2 docrow">
+    <div class="box" id="docs">
+      <div class="boxhead"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg><div><h3>Documentation</h3>
+        <p>Quick Start and What's New in five languages; the full manuals in English and Russian.</p></div>
+        <a class="more" href="files/ProstoCAD-manual.pdf">Open the manual →</a></div>
+      <div class="guides">
+        <div class="guide"><div class="shot"><a class="zoom" href="img/g_windows.webp?v=f2e2d20e"><img src="img/g_windows.webp?v=f2e2d20e" alt="User Manual (Windows)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg>User Manual (Windows)</h3><p>The same manual with Windows keys, paths and install.</p>
+        <div class="links"><a href="files/ProstoCAD-manual-windows.pdf">English <small>PDF · 398 KB</small></a><a href="files/ProstoCAD-manual-windows_ru.pdf">Русский <small>PDF · 786 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="img/g_manual.webp?v=07d80746"><img src="img/g_manual.webp?v=07d80746" alt="User Manual (Mac)" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12.5h7M8.5 16h7"/></svg>User Manual (Mac)</h3><p>Every tool step by step, with the STL and AI chapter.</p>
+        <div class="links"><a href="files/ProstoCAD-manual.pdf">English <small>PDF · 395 KB</small></a><a href="files/ProstoCAD-manual_ru.pdf">Русский <small>PDF · 781 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="img/g_quick.webp?v=29779fe4"><img src="img/g_quick.webp?v=29779fe4" alt="Quick Start" width="480" height="270" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v13c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 6v13"/></svg>Quick Start</h3><p>Install, the window, the mouse and your first part — two pages.</p>
+        <div class="links"><a href="files/ProstoCAD-quickstart_en.pdf">English <small>PDF · 168 KB</small></a><a href="files/ProstoCAD-quickstart_ru.pdf">Русский <small>PDF · 190 KB</small></a><a href="files/ProstoCAD-quickstart_de.pdf">Deutsch <small>PDF · 170 KB</small></a><a href="files/ProstoCAD-quickstart_zh.pdf">中文 <small>PDF · 306 KB</small></a><a href="files/ProstoCAD-quickstart_hi.pdf">हिन्दी <small>PDF · 215 KB</small></a></div></div></div>
+        <div class="guide"><div class="shot"><a class="zoom" href="img/g_news.webp?v=c67c613e"><img src="img/g_news.webp?v=c67c613e" alt="What&#x27;s New" width="480" height="256" loading="lazy" decoding="async"></a></div><div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.8 9-4.8"/></svg>What's New</h3><p>Slides of what came in 0.12.0 and before.</p>
+        <div class="links"><a href="files/InnCadPlus-whats-new_en.pdf">English <small>PDF · 2 MB</small></a><a href="files/InnCadPlus-whats-new_ru.pdf">Русский <small>PDF · 3 MB</small></a><a href="files/InnCadPlus-whats-new_de.pdf">Deutsch <small>PDF · 2 MB</small></a><a href="files/InnCadPlus-whats-new_zh.pdf">中文 <small>PDF · 2 MB</small></a><a href="files/InnCadPlus-whats-new_hi.pdf">हिन्दी <small>PDF · 2 MB</small></a></div></div></div>
+      </div>
+    </div>
+
+    <div class="box" id="faq">
+      <div class="boxhead"><span class="q">?</span><div><h3>Frequently Asked Questions</h3>
+        <p>Quick answers to common questions.</p></div></div>
+      <div class="faq">
+        <details><summary>Is ProstoCAD free?</summary><p>Yes. Download it and use it for free.</p></details>
+        <details><summary>Do I need FreeCAD installed?</summary><p>No. The FreeCAD 1.1.3 engine is inside ProstoCAD. It keeps its own settings and does not touch an installed FreeCAD.</p></details>
+        <details id="faq-mac"><summary>macOS says it cannot verify the app</summary>
+          <p>The test build is not notarized by Apple. Click <b>Done</b> (not Move to Trash), open <b>System Settings ▸ Privacy &amp; Security</b>, scroll to “ProstoCAD was blocked…” and click <b>Open Anyway</b>, then confirm with your password. Needed only once.</p>
+          <p>On macOS 13 and 14 a right-click on the app ▸ Open does the same. Or in Terminal: <code>xattr -dr com.apple.quarantine /Applications/ProstoCAD.app</code></p></details>
+        <details><summary>Does it run on Intel Macs or Linux?</summary><p>Linux: a version is coming soon. Intel Macs: not in this build. Today ProstoCAD runs on Macs with Apple Silicon (M1 or newer, macOS 13 or newer) and on Windows 10 / 11 x64.</p></details>
+        <details><summary>Which file formats does it read and write?</summary><p>Opens FreeCAD files (.FCStd), STEP and STL; imports IGES, OBJ and JPG / PNG / BMP pictures to sketch over; exports STEP (exact solids) and STL (with a precision slider for slicers).</p></details>
+        <details><summary>Can FreeCAD open my files?</summary><p>Yes. A part is a FreeCAD PartDesign body, a sketch a Sketcher sketch, an assembly uses FreeCAD's own joints: plain .FCStd files. ProstoCAD opens files made in FreeCAD too.</p></details>
+        <details><summary>What does the AI need?</summary><p>An AI command-line tool signed in with your own account: Claude Code, Codex or Gemini CLI (Codex and Gemini CLI need Node.js). Connect AI shows where to get them. AI Link listens only on your computer and only to programs with the ProstoCAD key; switch it off and no AI can reach ProstoCAD.</p></details>
+        <details><summary>Something went wrong. How do I report it?</summary><p>Chapter 11 of the manual says where the log is and what to send; then write to us — see <a href="#contact">Contact</a>.</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="box solo" id="solo">
+    <div class="solo-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.5-4.6-9.2-9.3C1.6 7.6 3.9 4.5 7.1 4.5c2 0 3.5 1.1 4.9 3 1.4-1.9 2.9-3 4.9-3 3.2 0 5.5 3.1 4.3 6.5-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg></div>
+    <div>
+      <h3>A one-person project</h3>
+      <p>ProstoCAD is made by one person. Wishes, bug reports and requests are welcome — please forgive me in advance if fixing a bug or making a wish come true takes a while.</p>
+    </div>
+    <a class="btn outline" href="https://github.com/Igr11/ProstoCAD/issues">Send a wish or a bug<svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>
+  </div>
+</div></div>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div>
+    <h3>Contact</h3>
+    <p>Questions and bug reports: <a href="https://github.com/Igr11/ProstoCAD/issues">GitHub issues</a> (the open-source ProstoCAD workbench). Attach the log — chapter 11 of the manual.</p>
+    <p>The same tools for an installed FreeCAD: the <a href="https://github.com/Igr11/ProstoCAD">ProstoCAD for FreeCAD workbench</a>.</p>
+  </div>
+  <div>
+    <p>ProstoCAD is built on <a href="https://www.freecad.org">FreeCAD</a>, Open CASCADE and Qt. It is an independent project, not made by the FreeCAD team.</p>
+    <p>All screenshots on this site are real: they were made in ProstoCAD and its FreeCAD addon.</p>
+    <p>This site sets no cookies and has no tracking or ads.</p>
+    <p><a href="licenses/">Licenses and source code</a> · the ProstoCAD for FreeCAD workbench is open source (LGPL 2.1 or later)</p>
+  </div>
+</div></footer>
+
+<dialog id="lb"><img alt=""></dialog>
+<script src="app.js?v=ed6ab6eb" defer></script>
+</body>
+</html>
