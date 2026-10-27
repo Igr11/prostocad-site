@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
 <updated>2026-10-27T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.12.0</id>
-<title>ProstoCAD 0.12.0: InnCad Plus 更名为 ProstoCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric</title>
-<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;新名字，同一个程序：文件照常打开，ProstoCAD 首次启动时会自动接管 InnCad Plus 的设置。&lt;/li&gt;&lt;li&gt;每个矩形都会自动带上两条对角线和一个中心点（构造线）：一个约束（中心点落在原点）即可让矩形居中。圆角矩形的对角线连接各圆角的圆心。&lt;/li&gt;&lt;li&gt;在草图中右键可删除任何选中的对象，包括尺寸；在 Parameters 中也能删除草图尺寸。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;以前用完 Symmetric 后线条无法拖动：现在配对完成后工具会自动结束。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.13.0</id>
-<title>ProstoCAD for FreeCAD 0.13.0: InCad 更名为 ProstoCAD for FreeCAD——另有：尺寸可直接删除、矩形对角线、更顺手的 Symmetric</title>
-<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;新名字，同一个工作台：在 FreeCAD 中显示为 ProstoCAD，以前做的文件照常打开。&lt;/li&gt;&lt;li&gt;每个矩形都会自动带上两条对角线和一个中心点（构造线）：一个约束（中心点落在原点）即可让矩形居中。圆角矩形的对角线连接各圆角的圆心。&lt;/li&gt;&lt;li&gt;在草图中右键可删除任何选中的对象，包括尺寸；在 Parameters 中也能删除草图尺寸。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;以前用完 Symmetric 后线条无法拖动：现在配对完成后工具会自动结束。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-plus-0.12.1</id>
+<title>ProstoCAD 0.12.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.1"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.13.1</id>
+<title>ProstoCAD for FreeCAD 0.13.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.1"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
