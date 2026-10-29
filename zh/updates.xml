@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
-<updated>2026-10-29T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.14.0</id>
-<title>ProstoCAD 0.14.0: 工程图、适用于任何零件的新 Smooth、简单的 AI 连接、螺纹牙型</title>
-<updated>2026-10-29T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.14.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件或装配体的最基本、最简单的工程图：视图、比例、尺寸、文字、标题栏、画笔和记号笔、PDF。打开的工程图会跟随零件更新。&lt;/li&gt;&lt;li&gt;Smooth 可把任何 STL 变成可编辑的特征：回转件用 Revolve，板件、支架或盒子按台阶用 Extrude——沿零件自身的方向，即使它是倾斜的。它在您的电脑上运行，需要时间——简单零件几分钟，复杂零件一小时或更久：建议放在夜间运行，或用于简单零件。连接的 AI 也正是为了加快这一过程：它按同样的方法重建零件，速度快得多。&lt;/li&gt;&lt;li&gt;Mesh Section 像设计师一样绘制每条轮廓：尖角、直线、圆弧，自由形状处是一条光滑样条。&lt;/li&gt;&lt;li&gt;Connect AI：从箭头菜单选择 Claude Code、Codex 或 Gemini CLI——未安装的会一次完成安装（含 Node.js）、连接和启动。Add to AI apps 可配置 Antigravity、Claude Desktop、Cursor 等。&lt;/li&gt;&lt;li&gt;螺纹：DIN 405 圆螺纹和 DIN 513 锯齿螺纹；Custom 牙型——三角形、梯形、半圆；切入表面或在表面上生长；Save for the next part。&lt;/li&gt;&lt;li&gt;带有最近文件及其缩略图的起始页；通过 Edit 打开的零件上有 Return to Assembly；Split ▸ Make Assembly。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;从工作平面上的草图 Extrude To 到零件的某个面时会与零件合并（以前会生成单独的实体）。&lt;/li&gt;&lt;li&gt;标注尺寸时图纸不再跳动；装配体中被固定的零件直接在零件上标出。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.14.0</id>
-<title>ProstoCAD for FreeCAD 0.14.0: 螺纹牙型、起始页、Return to Assembly</title>
-<updated>2026-10-29T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.14.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;螺纹：DIN 405 圆螺纹和 DIN 513 锯齿螺纹；Custom 牙型——三角形、梯形、半圆；切入表面或在表面上生长；Save for the next part。&lt;/li&gt;&lt;li&gt;带有最近文件及其缩略图的起始页；通过 Edit 打开的零件上有 Return to Assembly；Split ▸ Make Assembly。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;从工作平面上的草图 Extrude To 到零件的某个面时会与零件合并（以前会生成单独的实体）。&lt;/li&gt;&lt;li&gt;带间隙的 Split 在切线转折处会留下一条细条。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<updated>2026-10-27T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/zh/#update-plus-0.12.1</id>
+<title>ProstoCAD 0.12.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.1"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.13.1</id>
+<title>ProstoCAD for FreeCAD 0.13.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
+<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.1"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
