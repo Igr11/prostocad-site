@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/hi/updates.xml</id><title>ProstoCAD और InCad — अपडेट</title>
 <link href="https://prostocad.com/hi/"/><link rel="self" href="https://prostocad.com/hi/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/hi/#update-plus-0.16.0</id>
-<title>ProstoCAD 0.16.0: बड़े पार्ट्स पर कहीं ज़्यादा तेज़</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;कई Solid वाले पार्ट में Interference: जहाँ ढक्कन जार में घुसता है, वह लाल दिखता है।&lt;/li&gt;&lt;li&gt;फ़ेस या एज पर Edit Feature; Solid पर Edit, बाकी Solid पारदर्शी।&lt;/li&gt;&lt;li&gt;Esc लंबी गणना रोक देता है।&lt;/li&gt;&lt;li&gt;नया एल्गोरिद्म पार्ट की उसकी STL से तुलना कई गुना तेज़ करता है।&lt;/li&gt;&lt;li&gt;Project Geometry दूसरे Solid के एज स्केच में कॉपी करता है।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;स्केच टूल, फ़ीचर डायलॉग, क्लीयरेंस वाला Boolean और रंगे फ़ेस अब बड़े पार्ट्स पर नहीं अटकते।&lt;/li&gt;&lt;li&gt;पार्ट के बीच का स्केच आसपास का पार्ट दिखाता है; Boolean से बना ढक्कन अब गायब नहीं होता।&lt;/li&gt;&lt;li&gt;Space फिर से छिपाता और दिखाता है।&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/hi/#update-incad-0.16.0</id>
-<title>ProstoCAD for FreeCAD 0.16.0: बड़े पार्ट्स पर कहीं ज़्यादा तेज़</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;कई Solid वाले पार्ट में Interference: जहाँ ढक्कन जार में घुसता है, वह लाल दिखता है।&lt;/li&gt;&lt;li&gt;फ़ेस या एज पर Edit Feature; Solid पर Edit, बाकी Solid पारदर्शी।&lt;/li&gt;&lt;li&gt;Esc लंबी गणना रोक देता है।&lt;/li&gt;&lt;li&gt;Project Geometry दूसरे Solid के एज स्केच में कॉपी करता है।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;स्केच टूल, फ़ीचर डायलॉग, क्लीयरेंस वाला Boolean और रंगे फ़ेस अब बड़े पार्ट्स पर नहीं अटकते।&lt;/li&gt;&lt;li&gt;पार्ट के बीच का स्केच आसपास का पार्ट दिखाता है; Boolean से बना ढक्कन अब गायब नहीं होता।&lt;/li&gt;&lt;li&gt;Space फिर से छिपाता और दिखाता है।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-plus-0.16.1</id>
+<title>ProstoCAD 0.16.1: बग फ़िक्स</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;खुला सेक्शन पार्ट के बदलावों के साथ चलता है: नया मटीरियल अब कट में छेद जैसा नहीं दिखता।&lt;/li&gt;&lt;li&gt;End of Part वहीं रहता है जहाँ आप उसे ले जाते हैं, Boolean के ऊपर या नीचे।&lt;/li&gt;&lt;li&gt;जो फ़ीचर अपने डायलॉग से नहीं बना (FreeCAD फ़ाइल, AI की स्क्रिप्ट), वह डिफ़ॉल्ट नहीं, अपनी वैल्यू के साथ खुलता है।&lt;/li&gt;&lt;li&gt;End of Part ऊपर ले जाने पर फ़ीचर डायलॉग अब उसके नीचे के स्टेप दोबारा नहीं गिनते।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-incad-0.16.1</id>
+<title>ProstoCAD for FreeCAD 0.16.1: बग फ़िक्स</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;खुला सेक्शन पार्ट के बदलावों के साथ चलता है: नया मटीरियल अब कट में छेद जैसा नहीं दिखता।&lt;/li&gt;&lt;li&gt;End of Part वहीं रहता है जहाँ आप उसे ले जाते हैं, Boolean के ऊपर या नीचे।&lt;/li&gt;&lt;li&gt;जो फ़ीचर अपने डायलॉग से नहीं बना (FreeCAD फ़ाइल, AI की स्क्रिप्ट), वह डिफ़ॉल्ट नहीं, अपनी वैल्यू के साथ खुलता है।&lt;/li&gt;&lt;li&gt;End of Part ऊपर ले जाने पर फ़ीचर डायलॉग अब उसके नीचे के स्टेप दोबारा नहीं गिनते।&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/ru/updates.xml</id><title>ProstoCAD — обновления</title>
 <link href="https://prostocad.com/ru/"/><link rel="self" href="https://prostocad.com/ru/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/ru/#update-plus-0.16.0</id>
-<title>ProstoCAD 0.16.0: Намного быстрее на больших деталях</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;Добавлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Interference в детали с несколькими Solid: где крышка заходит в банку — видно красным.&lt;/li&gt;&lt;li&gt;Edit Feature на грани или ребре; Edit на Solid — остальные Solid полупрозрачные.&lt;/li&gt;&lt;li&gt;Esc останавливает долгие расчёты.&lt;/li&gt;&lt;li&gt;Новый алгоритм сравнивает деталь с её STL во много раз быстрее.&lt;/li&gt;&lt;li&gt;Project Geometry копирует в эскиз рёбра другого Solid.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Инструменты эскиза, окна команд, Boolean с зазором и покрашенные грани больше не зависают на больших деталях.&lt;/li&gt;&lt;li&gt;Эскиз в середине детали показывает деталь вокруг; крышка, сделанная Boolean, больше не исчезает.&lt;/li&gt;&lt;li&gt;Пробел снова прячет и показывает.&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/ru/#update-incad-0.16.0</id>
-<title>ProstoCAD for FreeCAD 0.16.0: Намного быстрее на больших деталях</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;Добавлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Interference в детали с несколькими Solid: где крышка заходит в банку — видно красным.&lt;/li&gt;&lt;li&gt;Edit Feature на грани или ребре; Edit на Solid — остальные Solid полупрозрачные.&lt;/li&gt;&lt;li&gt;Esc останавливает долгие расчёты.&lt;/li&gt;&lt;li&gt;Project Geometry копирует в эскиз рёбра другого Solid.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Инструменты эскиза, окна команд, Boolean с зазором и покрашенные грани больше не зависают на больших деталях.&lt;/li&gt;&lt;li&gt;Эскиз в середине детали показывает деталь вокруг; крышка, сделанная Boolean, больше не исчезает.&lt;/li&gt;&lt;li&gt;Пробел снова прячет и показывает.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/ru/#update-plus-0.16.1</id>
+<title>ProstoCAD 0.16.1: Исправления</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Открытый разрез следит за изменениями детали: новый материал больше не показывается дырой в заливке.&lt;/li&gt;&lt;li&gt;End of Part остаётся там, куда его перенесли, — выше или ниже Boolean.&lt;/li&gt;&lt;li&gt;Элемент, сделанный не своим окном (файл FreeCAD, скрипт ИИ), открывается со своими значениями, а не по умолчанию.&lt;/li&gt;&lt;li&gt;При поднятом End of Part окна команд больше не пересчитывают шаги ниже него.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/ru/#update-incad-0.16.1</id>
+<title>ProstoCAD for FreeCAD 0.16.1: Исправления</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Открытый разрез следит за изменениями детали: новый материал больше не показывается дырой в заливке.&lt;/li&gt;&lt;li&gt;End of Part остаётся там, куда его перенесли, — выше или ниже Boolean.&lt;/li&gt;&lt;li&gt;Элемент, сделанный не своим окном (файл FreeCAD, скрипт ИИ), открывается со своими значениями, а не по умолчанию.&lt;/li&gt;&lt;li&gt;При поднятом End of Part окна команд больше не пересчитывают шаги ниже него.&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

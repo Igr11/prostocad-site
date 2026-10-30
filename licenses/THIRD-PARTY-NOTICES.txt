@@ -1,4 +1,4 @@
-ProstoCAD 0.16.0 — third-party software notices
+ProstoCAD 0.16.1 — third-party software notices
 
 ProstoCAD is free to use. It is built on the ProstoCAD for FreeCAD workbench (formerly InCad), open source under the GNU LGPL 2.1 or later
 at https://github.com/Igr11/ProstoCAD; its own additions (STL tools, AI link) are not open source. It bundles the open-source
@@ -8,7 +8,7 @@ FreeCAD project. FreeCAD is a trademark of its owners.
 
 Source code: for every component the upstream source URL (and SHA-256) and the conda-forge patches
 used are listed; each conda package (URL listed) also carries its recipe and patches in info/recipe.
-The source of every component licensed under the GPL is mirrored with the release: https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.0
+The source of every component licensed under the GPL is mirrored with the release: https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1
 For at least three years from the date of this release we will also provide, on request, a copy of
 the complete corresponding source code of any GPL or LGPL component listed here, for no more than the
 cost of physically performing the distribution: ask at https://github.com/Igr11/ProstoCAD/issues

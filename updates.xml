@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/updates.xml</id><title>ProstoCAD — updates</title>
 <link href="https://prostocad.com/"/><link rel="self" href="https://prostocad.com/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/#update-plus-0.16.0</id>
-<title>ProstoCAD 0.16.0: Much faster on big parts</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Interference in a part with several Solids: where a lid goes into its jar shows in red.&lt;/li&gt;&lt;li&gt;Edit Feature on a face or an edge; Edit on a Solid with the other Solids see-through.&lt;/li&gt;&lt;li&gt;Esc stops long work.&lt;/li&gt;&lt;li&gt;A new algorithm compares a part with its STL many times faster.&lt;/li&gt;&lt;li&gt;Project Geometry copies edges of another Solid into a sketch.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Sketch tools, feature dialogs, a Boolean with a clearance and painted faces no longer hang on big parts.&lt;/li&gt;&lt;li&gt;A sketch in the middle of a part shows the part around it; a lid made by a Boolean no longer disappears.&lt;/li&gt;&lt;li&gt;Space hides and shows again.&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/#update-incad-0.16.0</id>
-<title>ProstoCAD for FreeCAD 0.16.0: Much faster on big parts</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Interference in a part with several Solids: where a lid goes into its jar shows in red.&lt;/li&gt;&lt;li&gt;Edit Feature on a face or an edge; Edit on a Solid with the other Solids see-through.&lt;/li&gt;&lt;li&gt;Esc stops long work.&lt;/li&gt;&lt;li&gt;Project Geometry copies edges of another Solid into a sketch.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Sketch tools, feature dialogs, a Boolean with a clearance and painted faces no longer hang on big parts.&lt;/li&gt;&lt;li&gt;A sketch in the middle of a part shows the part around it; a lid made by a Boolean no longer disappears.&lt;/li&gt;&lt;li&gt;Space hides and shows again.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/#update-plus-0.16.1</id>
+<title>ProstoCAD 0.16.1: Bug fixes</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;An open section follows changes to the part: new material no longer shows as a hole in the cut.&lt;/li&gt;&lt;li&gt;End of Part stays where you move it, above or below a Boolean.&lt;/li&gt;&lt;li&gt;A feature made outside its dialog (a FreeCAD file, an AI&amp;#x27;s script) opens with its own values, not the defaults.&lt;/li&gt;&lt;li&gt;With End of Part moved up, feature dialogs no longer recompute the steps below it.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/#update-incad-0.16.1</id>
+<title>ProstoCAD for FreeCAD 0.16.1: Bug fixes</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;An open section follows changes to the part: new material no longer shows as a hole in the cut.&lt;/li&gt;&lt;li&gt;End of Part stays where you move it, above or below a Boolean.&lt;/li&gt;&lt;li&gt;A feature made outside its dialog (a FreeCAD file, an AI&amp;#x27;s script) opens with its own values, not the defaults.&lt;/li&gt;&lt;li&gt;With End of Part moved up, feature dialogs no longer recompute the steps below it.&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

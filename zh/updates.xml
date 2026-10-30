@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.16.0</id>
-<title>ProstoCAD 0.16.0: 大型零件上快得多</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在含多个 Solid 的零件中使用 Interference：盖子与罐子相交之处以红色显示。&lt;/li&gt;&lt;li&gt;在面或边上使用 Edit Feature；在 Solid 上使用 Edit，其余 Solid 变为半透明。&lt;/li&gt;&lt;li&gt;按 Esc 可停止耗时的计算。&lt;/li&gt;&lt;li&gt;新算法将零件与其 STL 的比较速度提高了许多倍。&lt;/li&gt;&lt;li&gt;Project Geometry 可将另一个 Solid 的边复制到草图中。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图工具、特征对话框、带间隙的 Boolean 和着色面在大型零件上不再卡顿。&lt;/li&gt;&lt;li&gt;位于零件中间的草图会显示周围的零件；由 Boolean 生成的盖子不再消失。&lt;/li&gt;&lt;li&gt;空格键再次可以隐藏和显示。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.16.0</id>
-<title>ProstoCAD for FreeCAD 0.16.0: 大型零件上快得多</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在含多个 Solid 的零件中使用 Interference：盖子与罐子相交之处以红色显示。&lt;/li&gt;&lt;li&gt;在面或边上使用 Edit Feature；在 Solid 上使用 Edit，其余 Solid 变为半透明。&lt;/li&gt;&lt;li&gt;按 Esc 可停止耗时的计算。&lt;/li&gt;&lt;li&gt;Project Geometry 可将另一个 Solid 的边复制到草图中。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图工具、特征对话框、带间隙的 Boolean 和着色面在大型零件上不再卡顿。&lt;/li&gt;&lt;li&gt;位于零件中间的草图会显示周围的零件；由 Boolean 生成的盖子不再消失。&lt;/li&gt;&lt;li&gt;空格键再次可以隐藏和显示。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-plus-0.16.1</id>
+<title>ProstoCAD 0.16.1: 错误修复</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;打开的剖面会跟随零件的更改：新增的材料不再在剖面中显示为空洞。&lt;/li&gt;&lt;li&gt;End of Part 会留在你移动到的位置，无论在 Boolean 之上还是之下。&lt;/li&gt;&lt;li&gt;不是通过其对话框创建的特征（FreeCAD 文件、AI 脚本）会以自身的数值打开，而不是默认值。&lt;/li&gt;&lt;li&gt;End of Part 上移后，特征对话框不再重新计算其下方的步骤。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.16.1</id>
+<title>ProstoCAD for FreeCAD 0.16.1: 错误修复</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
+<content type="html">&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;打开的剖面会跟随零件的更改：新增的材料不再在剖面中显示为空洞。&lt;/li&gt;&lt;li&gt;End of Part 会留在你移动到的位置，无论在 Boolean 之上还是之下。&lt;/li&gt;&lt;li&gt;不是通过其对话框创建的特征（FreeCAD 文件、AI 脚本）会以自身的数值打开，而不是默认值。&lt;/li&gt;&lt;li&gt;End of Part 上移后，特征对话框不再重新计算其下方的步骤。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
