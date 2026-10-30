@@ -286,6 +286,7 @@ ul.ticks li::before { content: ""; position: absolute; left: 1px; top: 0.45em; w
 .prod.plus { background: linear-gradient(90deg, var(--blue), var(--orange)); }
 .prod.incad { background: linear-gradient(90deg, var(--fc-red), var(--fc-blue)); }
 .upd h3 { margin-top: 12px; }
+.upd-note { margin-top: 10px; padding: 10px 12px; border-radius: 8px; background: rgba(255, 196, 64, 0.1); border-left: 3px solid #ffc440; color: #f3e3b8; font-size: 15px; }
 .upd h4 { margin: 18px 0 0; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .upd h4.fixed { color: #9fd8b0; }
 .upd ul.ticks { margin-top: 10px; gap: 8px; font-size: 15.5px; }

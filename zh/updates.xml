@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
-<updated>2026-10-27T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.12.1</id>
-<title>ProstoCAD 0.12.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
-<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.12.1"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.13.1</id>
-<title>ProstoCAD for FreeCAD 0.13.1: 草图绘制更流畅、点更容易选中，并修复了 Extrude Cut</title>
-<updated>2026-10-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.13.1"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图绘制紧跟鼠标，不再落后于指针。在 Retina 屏幕上点也更容易选中。&lt;/li&gt;&lt;li&gt;绘制矩形时以虚线显示对角线，完成后保留一个中心点：把它放到原点，矩形就居中了。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;零件旁边的轮廓使用 Extrude ▸ Cut 第一次就能切除（以前要先选 Intersect 再选 Cut）。&lt;/li&gt;&lt;li&gt;矩形中心点可用 Coincident 放到轴上：其约束图标不再抢走点击。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/zh/#update-plus-0.15.0</id>
+<title>ProstoCAD 0.15.0: 为 0.14 致歉——还有许多美味新功能</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.15.0"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Boss：在草图的每个点上生成螺钉柱或热熔螺母柱——带嵌件孔、根部圆角，筋可旋转，也可逐根去掉。&lt;/li&gt;&lt;li&gt;Lip / Groove：沿抽壳盒体边缘的凸缘，以及盖子上与之配合的凹槽，圆角处也适用。&lt;/li&gt;&lt;li&gt;Snap Fit：贴合在壁上的弹性卡扣，卡钩伸出边缘之上；在边缘以下很深处与壁相连并带倒角——牢固，打印无需支撑。&lt;/li&gt;&lt;li&gt;Hole ▸ Insert：在任意位置生成热熔螺母孔，M2 至 M5。&lt;/li&gt;&lt;li&gt;在表面上生长出的凸起圆螺纹——适合自制盖子、油桶和罐子的瓶口：螺纹从表面无中生有地升起，又回到表面中。&lt;/li&gt;&lt;li&gt;工程图：圆和圆角带中心线，可直接在图纸上测量；角度尺寸；Clear Marks。&lt;/li&gt;&lt;li&gt;Check for Updates 会查找新版本并为你下载；对话框可以拖到任意位置，而且更紧凑。&lt;/li&gt;&lt;li&gt;0.14 带来的一切也都在：工程图、适用于任何零件的 Smooth（现在快了许多倍）、简单的 AI 连接、螺纹牙型。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;螺纹在一两秒内生成，不再让程序卡死；自定义牙型按所选形状生成。&lt;/li&gt;&lt;li&gt;带螺纹零件上的 Extrude 不再卡顿数秒；通向曲面壁的孔中的螺纹可以正常生成。&lt;/li&gt;&lt;li&gt;Windows：Connect AI 能正常安装并连接。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.15.0</id>
+<title>ProstoCAD for FreeCAD 0.15.0: 插件里同样有许多美味新功能</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.15.0"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Boss：在草图的每个点上生成螺钉柱或热熔螺母柱——带嵌件孔、根部圆角，筋可旋转，也可逐根去掉。&lt;/li&gt;&lt;li&gt;Lip / Groove：沿抽壳盒体边缘的凸缘，以及盖子上与之配合的凹槽，圆角处也适用。&lt;/li&gt;&lt;li&gt;Snap Fit：贴合在壁上的弹性卡扣，卡钩伸出边缘之上；在边缘以下很深处与壁相连并带倒角——牢固，打印无需支撑。&lt;/li&gt;&lt;li&gt;Hole ▸ Insert：在任意位置生成热熔螺母孔，M2 至 M5。&lt;/li&gt;&lt;li&gt;在表面上生长出的凸起圆螺纹——适合自制盖子、油桶和罐子的瓶口：螺纹从表面无中生有地升起，又回到表面中。&lt;/li&gt;&lt;li&gt;Check for Updates 会查找新版本并为你下载；对话框可以拖到任意位置，而且更紧凑。&lt;/li&gt;&lt;li&gt;0.14 带来的一切也都在：螺纹牙型、起始页、Return to Assembly。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;螺纹在一两秒内生成，不再让程序卡死；自定义牙型按所选形状生成。&lt;/li&gt;&lt;li&gt;带螺纹零件上的 Extrude 不再卡顿数秒；通向曲面壁的孔中的螺纹可以正常生成。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
