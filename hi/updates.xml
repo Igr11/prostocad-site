@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/hi/updates.xml</id><title>ProstoCAD और InCad — अपडेट</title>
 <link href="https://prostocad.com/hi/"/><link rel="self" href="https://prostocad.com/hi/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/hi/#update-plus-0.16.1</id>
-<title>ProstoCAD 0.16.1: बग फ़िक्स</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;खुला सेक्शन पार्ट के बदलावों के साथ चलता है: नया मटीरियल अब कट में छेद जैसा नहीं दिखता।&lt;/li&gt;&lt;li&gt;End of Part वहीं रहता है जहाँ आप उसे ले जाते हैं, Boolean के ऊपर या नीचे।&lt;/li&gt;&lt;li&gt;जो फ़ीचर अपने डायलॉग से नहीं बना (FreeCAD फ़ाइल, AI की स्क्रिप्ट), वह डिफ़ॉल्ट नहीं, अपनी वैल्यू के साथ खुलता है।&lt;/li&gt;&lt;li&gt;End of Part ऊपर ले जाने पर फ़ीचर डायलॉग अब उसके नीचे के स्टेप दोबारा नहीं गिनते।&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/hi/#update-incad-0.16.1</id>
-<title>ProstoCAD for FreeCAD 0.16.1: बग फ़िक्स</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;खुला सेक्शन पार्ट के बदलावों के साथ चलता है: नया मटीरियल अब कट में छेद जैसा नहीं दिखता।&lt;/li&gt;&lt;li&gt;End of Part वहीं रहता है जहाँ आप उसे ले जाते हैं, Boolean के ऊपर या नीचे।&lt;/li&gt;&lt;li&gt;जो फ़ीचर अपने डायलॉग से नहीं बना (FreeCAD फ़ाइल, AI की स्क्रिप्ट), वह डिफ़ॉल्ट नहीं, अपनी वैल्यू के साथ खुलता है।&lt;/li&gt;&lt;li&gt;End of Part ऊपर ले जाने पर फ़ीचर डायलॉग अब उसके नीचे के स्टेप दोबारा नहीं गिनते।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-plus-0.16.2</id>
+<title>ProstoCAD 0.16.2: किनारे पर रुकने वाले चैम्फ़र</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;फ़ेस से चौड़ा चैम्फ़र अब त्रुटि देने के बजाय फ़ेस के दूसरे किनारे पर रुक जाता है: 2 mm फ़ेस पर 2.5 mm चैम्फ़र 2 mm का बनता है।&lt;/li&gt;&lt;li&gt;हर डायलॉग में फ़िलेट और चैम्फ़र का आकार 0.5 mm से शुरू होता है; तीर 0.1 mm के कदम से चलते हैं।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;अक्षरों वाले पार्ट्स पर ट्री में फ़ीचर पर क्लिक अब नहीं अटकता (पहले 25-30 s)।&lt;/li&gt;&lt;li&gt;कई फ़ेस पर Appearance फिर से तेज़ है (पहले 55 s, अब एक सेकंड से कम)।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-incad-0.16.2</id>
+<title>ProstoCAD for FreeCAD 0.16.2: किनारे पर रुकने वाले चैम्फ़र</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;फ़ेस से चौड़ा चैम्फ़र अब त्रुटि देने के बजाय फ़ेस के दूसरे किनारे पर रुक जाता है: 2 mm फ़ेस पर 2.5 mm चैम्फ़र 2 mm का बनता है।&lt;/li&gt;&lt;li&gt;हर डायलॉग में फ़िलेट और चैम्फ़र का आकार 0.5 mm से शुरू होता है; तीर 0.1 mm के कदम से चलते हैं।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;अक्षरों वाले पार्ट्स पर ट्री में फ़ीचर पर क्लिक अब नहीं अटकता (पहले 25-30 s)।&lt;/li&gt;&lt;li&gt;कई फ़ेस पर Appearance फिर से तेज़ है (पहले 55 s, अब एक सेकंड से कम)।&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

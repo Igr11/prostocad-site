@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/ru/updates.xml</id><title>ProstoCAD — обновления</title>
 <link href="https://prostocad.com/ru/"/><link rel="self" href="https://prostocad.com/ru/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/ru/#update-plus-0.16.1</id>
-<title>ProstoCAD 0.16.1: Исправления</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Открытый разрез следит за изменениями детали: новый материал больше не показывается дырой в заливке.&lt;/li&gt;&lt;li&gt;End of Part остаётся там, куда его перенесли, — выше или ниже Boolean.&lt;/li&gt;&lt;li&gt;Элемент, сделанный не своим окном (файл FreeCAD, скрипт ИИ), открывается со своими значениями, а не по умолчанию.&lt;/li&gt;&lt;li&gt;При поднятом End of Part окна команд больше не пересчитывают шаги ниже него.&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/ru/#update-incad-0.16.1</id>
-<title>ProstoCAD for FreeCAD 0.16.1: Исправления</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Открытый разрез следит за изменениями детали: новый материал больше не показывается дырой в заливке.&lt;/li&gt;&lt;li&gt;End of Part остаётся там, куда его перенесли, — выше или ниже Boolean.&lt;/li&gt;&lt;li&gt;Элемент, сделанный не своим окном (файл FreeCAD, скрипт ИИ), открывается со своими значениями, а не по умолчанию.&lt;/li&gt;&lt;li&gt;При поднятом End of Part окна команд больше не пересчитывают шаги ниже него.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/ru/#update-plus-0.16.2</id>
+<title>ProstoCAD 0.16.2: Фаски, которые останавливаются на краю</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;Добавлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Фаска шире грани останавливается на её дальнем крае, а не выдаёт ошибку: фаска 2,5 мм на грани 2 мм становится 2 мм.&lt;/li&gt;&lt;li&gt;Скругления и фаски во всех окнах начинаются с 0,5 мм; стрелки шагают по 0,1 мм.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Щелчок по элементу в дереве больше не подвисает на деталях с надписями (было 25-30 с).&lt;/li&gt;&lt;li&gt;Appearance на многих гранях снова быстрый (было 55 с, теперь меньше секунды).&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/ru/#update-incad-0.16.2</id>
+<title>ProstoCAD for FreeCAD 0.16.2: Фаски, которые останавливаются на краю</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;Добавлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Фаска шире грани останавливается на её дальнем крае, а не выдаёт ошибку: фаска 2,5 мм на грани 2 мм становится 2 мм.&lt;/li&gt;&lt;li&gt;Скругления и фаски во всех окнах начинаются с 0,5 мм; стрелки шагают по 0,1 мм.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Исправлено&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Щелчок по элементу в дереве больше не подвисает на деталях с надписями (было 25-30 с).&lt;/li&gt;&lt;li&gt;Appearance на многих гранях снова быстрый (было 55 с, теперь меньше секунды).&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

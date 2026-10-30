@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/de/updates.xml</id><title>ProstoCAD und InCad — Neuigkeiten</title>
 <link href="https://prostocad.com/de/"/><link rel="self" href="https://prostocad.com/de/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/de/#update-plus-0.16.1</id>
-<title>ProstoCAD 0.16.1: Fehlerbehebungen</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;Behoben&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Ein offener Schnitt folgt den Änderungen am Teil: neues Material erscheint nicht mehr als Loch in der Schnittfläche.&lt;/li&gt;&lt;li&gt;End of Part bleibt dort, wohin Sie es verschieben, über oder unter einem Boolean.&lt;/li&gt;&lt;li&gt;Ein Feature, das nicht über seinen Dialog entstand (eine FreeCAD-Datei, ein KI-Skript), öffnet mit seinen eigenen Werten statt der Vorgaben.&lt;/li&gt;&lt;li&gt;Mit nach oben verschobenem End of Part berechnen Feature-Dialoge die Schritte darunter nicht mehr neu.&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/de/#update-incad-0.16.1</id>
-<title>ProstoCAD for FreeCAD 0.16.1: Fehlerbehebungen</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;Behoben&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Ein offener Schnitt folgt den Änderungen am Teil: neues Material erscheint nicht mehr als Loch in der Schnittfläche.&lt;/li&gt;&lt;li&gt;End of Part bleibt dort, wohin Sie es verschieben, über oder unter einem Boolean.&lt;/li&gt;&lt;li&gt;Ein Feature, das nicht über seinen Dialog entstand (eine FreeCAD-Datei, ein KI-Skript), öffnet mit seinen eigenen Werten statt der Vorgaben.&lt;/li&gt;&lt;li&gt;Mit nach oben verschobenem End of Part berechnen Feature-Dialoge die Schritte darunter nicht mehr neu.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/de/#update-plus-0.16.2</id>
+<title>ProstoCAD 0.16.2: Fasen, die an der Kante enden</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;Neu&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Eine Fase, die breiter als eine Fläche ist, endet an deren gegenüberliegender Kante statt mit einem Fehler: eine 2,5-mm-Fase auf einer 2-mm-Fläche wird 2 mm.&lt;/li&gt;&lt;li&gt;Rundungen und Fasen beginnen in jedem Dialog bei 0,5 mm; die Pfeile springen in 0,1-mm-Schritten.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Behoben&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Ein Klick auf ein Feature im Baum hängt bei Teilen mit Schrift nicht mehr (vorher 25-30 s).&lt;/li&gt;&lt;li&gt;Appearance auf vielen Flächen ist wieder schnell (vorher 55 s, jetzt unter einer Sekunde).&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/de/#update-incad-0.16.2</id>
+<title>ProstoCAD for FreeCAD 0.16.2: Fasen, die an der Kante enden</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;Neu&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Eine Fase, die breiter als eine Fläche ist, endet an deren gegenüberliegender Kante statt mit einem Fehler: eine 2,5-mm-Fase auf einer 2-mm-Fläche wird 2 mm.&lt;/li&gt;&lt;li&gt;Rundungen und Fasen beginnen in jedem Dialog bei 0,5 mm; die Pfeile springen in 0,1-mm-Schritten.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Behoben&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Ein Klick auf ein Feature im Baum hängt bei Teilen mit Schrift nicht mehr (vorher 25-30 s).&lt;/li&gt;&lt;li&gt;Appearance auf vielen Flächen ist wieder schnell (vorher 55 s, jetzt unter einer Sekunde).&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

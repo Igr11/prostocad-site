@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
 <updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.16.1</id>
-<title>ProstoCAD 0.16.1: 错误修复</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;打开的剖面会跟随零件的更改：新增的材料不再在剖面中显示为空洞。&lt;/li&gt;&lt;li&gt;End of Part 会留在你移动到的位置，无论在 Boolean 之上还是之下。&lt;/li&gt;&lt;li&gt;不是通过其对话框创建的特征（FreeCAD 文件、AI 脚本）会以自身的数值打开，而不是默认值。&lt;/li&gt;&lt;li&gt;End of Part 上移后，特征对话框不再重新计算其下方的步骤。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.16.1</id>
-<title>ProstoCAD for FreeCAD 0.16.1: 错误修复</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.1"/>
-<content type="html">&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;打开的剖面会跟随零件的更改：新增的材料不再在剖面中显示为空洞。&lt;/li&gt;&lt;li&gt;End of Part 会留在你移动到的位置，无论在 Boolean 之上还是之下。&lt;/li&gt;&lt;li&gt;不是通过其对话框创建的特征（FreeCAD 文件、AI 脚本）会以自身的数值打开，而不是默认值。&lt;/li&gt;&lt;li&gt;End of Part 上移后，特征对话框不再重新计算其下方的步骤。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-plus-0.16.2</id>
+<title>ProstoCAD 0.16.2: 倒角在边缘处停止</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;比面更宽的倒角会停在该面的另一侧边缘，而不再报错：2 mm 面上的 2.5 mm 倒角即成为 2 mm。&lt;/li&gt;&lt;li&gt;所有对话框中的圆角和倒角尺寸从 0.5 mm 起；箭头每次调整 0.1 mm。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在带文字的零件上，单击树中的特征不再卡顿（之前需 25-30 秒）。&lt;/li&gt;&lt;li&gt;在大量面上使用 Appearance 再次变快（之前 55 秒，现在不到一秒）。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.16.2</id>
+<title>ProstoCAD for FreeCAD 0.16.2: 倒角在边缘处停止</title>
+<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;比面更宽的倒角会停在该面的另一侧边缘，而不再报错：2 mm 面上的 2.5 mm 倒角即成为 2 mm。&lt;/li&gt;&lt;li&gt;所有对话框中的圆角和倒角尺寸从 0.5 mm 起；箭头每次调整 0.1 mm。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在带文字的零件上，单击树中的特征不再卡顿（之前需 25-30 秒）。&lt;/li&gt;&lt;li&gt;在大量面上使用 Appearance 再次变快（之前 55 秒，现在不到一秒）。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
