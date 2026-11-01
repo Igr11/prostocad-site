@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/hi/updates.xml</id><title>ProstoCAD और InCad — अपडेट</title>
 <link href="https://prostocad.com/hi/"/><link rel="self" href="https://prostocad.com/hi/updates.xml"/>
-<updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/hi/#update-plus-0.16.2</id>
-<title>ProstoCAD 0.16.2: किनारे पर रुकने वाले चैम्फ़र</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;फ़ेस से चौड़ा चैम्फ़र अब त्रुटि देने के बजाय फ़ेस के दूसरे किनारे पर रुक जाता है: 2 mm फ़ेस पर 2.5 mm चैम्फ़र 2 mm का बनता है।&lt;/li&gt;&lt;li&gt;हर डायलॉग में फ़िलेट और चैम्फ़र का आकार 0.5 mm से शुरू होता है; तीर 0.1 mm के कदम से चलते हैं।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;अक्षरों वाले पार्ट्स पर ट्री में फ़ीचर पर क्लिक अब नहीं अटकता (पहले 25-30 s)।&lt;/li&gt;&lt;li&gt;कई फ़ेस पर Appearance फिर से तेज़ है (पहले 55 s, अब एक सेकंड से कम)।&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/hi/#update-incad-0.16.2</id>
-<title>ProstoCAD for FreeCAD 0.16.2: किनारे पर रुकने वाले चैम्फ़र</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;फ़ेस से चौड़ा चैम्फ़र अब त्रुटि देने के बजाय फ़ेस के दूसरे किनारे पर रुक जाता है: 2 mm फ़ेस पर 2.5 mm चैम्फ़र 2 mm का बनता है।&lt;/li&gt;&lt;li&gt;हर डायलॉग में फ़िलेट और चैम्फ़र का आकार 0.5 mm से शुरू होता है; तीर 0.1 mm के कदम से चलते हैं।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;अक्षरों वाले पार्ट्स पर ट्री में फ़ीचर पर क्लिक अब नहीं अटकता (पहले 25-30 s)।&lt;/li&gt;&lt;li&gt;कई फ़ेस पर Appearance फिर से तेज़ है (पहले 55 s, अब एक सेकंड से कम)।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<updated>2026-11-01T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/hi/#update-plus-0.17.0</id>
+<title>ProstoCAD 0.17.0: Smooth: STL के त्रिकोणों से चिकने फ़ेस</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Smooth अब STL → STEP के बाद केवल त्रिकोण वाले फ़ेस को चिकना बनाता है: समतल, सिलिंडर, कोन, गोले, टोरस और प्रोफ़ाइल असली चिकने फ़ेस बन जाते हैं, समतल फ़ेस जैसे हैं वैसे रहते हैं। परिणाम रखने से पहले सॉलिड की जाँच होती है।&lt;/li&gt;&lt;li&gt;Mesh Section अब सॉलिड को भी काटता है (Smooth के बाद, आयात किया गया STEP, कोई भी पार्ट): चुने गए स्केच में या स्केच की एक रेखा से होकर।&lt;/li&gt;&lt;li&gt;STEP निर्यात जिसे दूसरे CAD प्रोग्राम (Plasticity आदि) जैसा है वैसा पढ़ते हैं: कोई खुला फ़ेस नहीं।&lt;/li&gt;&lt;li&gt;तीन बिंदु चुनते समय उनसे होकर जाने वाला समतल दिखता है।&lt;/li&gt;&lt;li&gt;ड्रॉइंग: तीन बिंदुओं से कोण का माप।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;STL के त्रिकोणों से बने सॉलिड पर हर फ़ीचर में एक मिनट से ज़्यादा लगता था; अब लगभग 10 s।&lt;/li&gt;&lt;li&gt;खोली या आयात की गई फ़ाइल तुरंत दिखती है।&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/hi/#update-incad-0.17.0</id>
+<title>ProstoCAD for FreeCAD 0.17.0: STEP जिसे दूसरे प्रोग्राम पढ़ते हैं</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;जोड़ा गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;STEP निर्यात जिसे दूसरे CAD प्रोग्राम (Plasticity आदि) जैसा है वैसा पढ़ते हैं: कोई खुला फ़ेस नहीं।&lt;/li&gt;&lt;li&gt;तीन बिंदु चुनते समय उनसे होकर जाने वाला समतल दिखता है।&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;ठीक किया गया&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;STL के त्रिकोणों से बने सॉलिड पर हर फ़ीचर में एक मिनट से ज़्यादा लगता था; अब लगभग 10 s।&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

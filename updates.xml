@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/updates.xml</id><title>ProstoCAD — updates</title>
 <link href="https://prostocad.com/"/><link rel="self" href="https://prostocad.com/updates.xml"/>
-<updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/#update-plus-0.16.2</id>
-<title>ProstoCAD 0.16.2: Chamfers that stop at the edge</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;A chamfer wider than a face stops at the face&amp;#x27;s far edge instead of failing: a 2.5 mm chamfer on a 2 mm face is a 2 mm one.&lt;/li&gt;&lt;li&gt;Fillet and chamfer sizes start at 0.5 mm in every dialog; the arrows step by 0.1 mm.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;A click on a feature in the tree no longer hangs on parts with lettering (25-30 s before).&lt;/li&gt;&lt;li&gt;Appearance on many faces is fast again (55 s before, now under a second).&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/#update-incad-0.16.2</id>
-<title>ProstoCAD for FreeCAD 0.16.2: Chamfers that stop at the edge</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;A chamfer wider than a face stops at the face&amp;#x27;s far edge instead of failing: a 2.5 mm chamfer on a 2 mm face is a 2 mm one.&lt;/li&gt;&lt;li&gt;Fillet and chamfer sizes start at 0.5 mm in every dialog; the arrows step by 0.1 mm.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;A click on a feature in the tree no longer hangs on parts with lettering (25-30 s before).&lt;/li&gt;&lt;li&gt;Appearance on many faces is fast again (55 s before, now under a second).&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<updated>2026-11-01T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/#update-plus-0.17.0</id>
+<title>ProstoCAD 0.17.0: Smooth: smooth faces from an STL&#x27;s triangles</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Smooth makes only the triangle faces smooth after STL → STEP: planes, cylinders, cones, spheres, tori and profiles become real smooth faces, flat faces stay as they are. The solid is checked sound before it is kept.&lt;/li&gt;&lt;li&gt;Mesh Section cuts a Solid too (after Smooth, an imported STEP, any part): into a picked sketch or through a sketched line.&lt;/li&gt;&lt;li&gt;STEP export that other CAD programs (Plasticity and others) read as it is: no open faces.&lt;/li&gt;&lt;li&gt;While picking three points, the plane through them shows.&lt;/li&gt;&lt;li&gt;Drawings: an angle size by three points.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Features on a solid made of an STL&amp;#x27;s triangles took over a minute each; now about 10 s.&lt;/li&gt;&lt;li&gt;An opened or imported file is shown at once.&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/#update-incad-0.17.0</id>
+<title>ProstoCAD for FreeCAD 0.17.0: STEP that other programs read</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;Added&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;STEP export that other CAD programs (Plasticity and others) read as it is: no open faces.&lt;/li&gt;&lt;li&gt;While picking three points, the plane through them shows.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Fixed&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Features on a solid made of an STL&amp;#x27;s triangles took over a minute each; now about 10 s.&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>

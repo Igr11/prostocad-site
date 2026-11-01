@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
-<updated>2026-10-30T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.16.2</id>
-<title>ProstoCAD 0.16.2: 倒角在边缘处停止</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;比面更宽的倒角会停在该面的另一侧边缘，而不再报错：2 mm 面上的 2.5 mm 倒角即成为 2 mm。&lt;/li&gt;&lt;li&gt;所有对话框中的圆角和倒角尺寸从 0.5 mm 起；箭头每次调整 0.1 mm。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在带文字的零件上，单击树中的特征不再卡顿（之前需 25-30 秒）。&lt;/li&gt;&lt;li&gt;在大量面上使用 Appearance 再次变快（之前 55 秒，现在不到一秒）。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.16.2</id>
-<title>ProstoCAD for FreeCAD 0.16.2: 倒角在边缘处停止</title>
-<updated>2026-10-30T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.16.2"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;比面更宽的倒角会停在该面的另一侧边缘，而不再报错：2 mm 面上的 2.5 mm 倒角即成为 2 mm。&lt;/li&gt;&lt;li&gt;所有对话框中的圆角和倒角尺寸从 0.5 mm 起；箭头每次调整 0.1 mm。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在带文字的零件上，单击树中的特征不再卡顿（之前需 25-30 秒）。&lt;/li&gt;&lt;li&gt;在大量面上使用 Appearance 再次变快（之前 55 秒，现在不到一秒）。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<updated>2026-11-01T12:00:00Z</updated><author><name>ProstoCAD</name></author>
+<entry><id>https://prostocad.com/zh/#update-plus-0.17.0</id>
+<title>ProstoCAD 0.17.0: Smooth：由 STL 三角形生成光滑面</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Smooth 在 STL → STEP 之后只把三角形面变光滑：平面、圆柱、圆锥、球、圆环和轮廓都成为真正的光滑面，平面保持不变。保留结果之前会检查实体是否完好。&lt;/li&gt;&lt;li&gt;Mesh Section 也能剖切实体（Smooth 之后、导入的 STEP、任何零件）：剖到选中的草图中，或沿草图中的一条线剖切。&lt;/li&gt;&lt;li&gt;STEP 导出可被其他 CAD 程序（Plasticity 等）原样读取：没有开放的面。&lt;/li&gt;&lt;li&gt;选取三个点时，会显示穿过它们的平面。&lt;/li&gt;&lt;li&gt;工程图：可按三个点标注角度。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在由 STL 三角形构成的实体上，每个特征操作原来要一分多钟；现在约 10 秒。&lt;/li&gt;&lt;li&gt;打开或导入的文件会立即显示。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.17.0</id>
+<title>ProstoCAD for FreeCAD 0.17.0: 其他程序可读取的 STEP</title>
+<updated>2026-11-01T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.17.0"/>
+<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;STEP 导出可被其他 CAD 程序（Plasticity 等）原样读取：没有开放的面。&lt;/li&gt;&lt;li&gt;选取三个点时，会显示穿过它们的平面。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在由 STL 三角形构成的实体上，每个特征操作原来要一分多钟；现在约 10 秒。&lt;/li&gt;&lt;/ul&gt;</content></entry>
 </feed>
