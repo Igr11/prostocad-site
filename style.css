@@ -304,6 +304,7 @@ ul.ticks li::before { content: ""; position: absolute; left: 1px; top: 0.45em; w
 .row.flip { grid-template-columns: 1fr 1.35fr; }
 .row.flip > :first-child { order: 2; }
 .row + .row { margin-top: 84px; }
+.row.ai > .shot { max-width: 340px; justify-self: center; }  /* the Connect AI window: a tall window, at its own size */
 .row .text h2 { margin-top: 12px; }
 .row .text p { color: #c0cbd9; margin-top: 14px; }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
