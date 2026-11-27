@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><id>https://prostocad.com/zh/updates.xml</id><title>ProstoCAD 与 InCad — 更新</title>
 <link href="https://prostocad.com/zh/"/><link rel="self" href="https://prostocad.com/zh/updates.xml"/>
 <updated>2026-11-27T12:00:00Z</updated><author><name>ProstoCAD</name></author>
-<entry><id>https://prostocad.com/zh/#update-plus-0.18.0</id>
-<title>ProstoCAD 0.18.0: 自有草图、新窗口、只在 ProstoCAD 中工作的 AI</title>
-<updated>2026-11-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.18.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图是 ProstoCAD 自己的，即使线条很多也很快：磁吸、指针旁的尺寸框、空格键切换工具的作用、右键环形菜单、Rotate、Tangent Arc、复制粘贴，以及坐标轴和原点上的约束。旧版本的文件照常打开。&lt;/li&gt;&lt;li&gt;全新的特征窗口：卡片式布局，尺寸可拖动其圆点或用滚轮调整；所有设置集中在 ⚙ 下的一个面板中。&lt;/li&gt;&lt;li&gt;Connect AI：新窗口提供 Claude Code、Codex、Gemini CLI 和 Antigravity CLI（免费 Google 账号），一键安装并连接；每个 AI 程序都有自己的说明。AI 只处理在 ProstoCAD 中打开的零件。&lt;/li&gt;&lt;li&gt;Spur Gears：保持 Ratio 不变并输入想要的中心距——窗口会给出标准模数下的齿轮对，Use 即可采用。&lt;/li&gt;&lt;li&gt;Mac：访达以零件图片显示 .FCStd、STL 和 STEP 文件，按空格键可直接旋转查看零件本身。&lt;/li&gt;&lt;li&gt;大型零件快得多：Undo、Redo、OK 和第一次点击；STL 零件的工程图约快一倍；大零件的保存快数倍。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;带有只部分起作用的约束（边与坐标轴 Collinear、角点在原点）的草图会被保留；以前会被拒绝，修改随之丢失。&lt;/li&gt;&lt;li&gt;Revolve 会等待点击选择轴，不再自行选择。&lt;/li&gt;&lt;/ul&gt;</content></entry>
-<entry><id>https://prostocad.com/zh/#update-incad-0.18.0</id>
-<title>ProstoCAD for FreeCAD 0.18.0: 自有草图、新窗口、按中心距设计齿轮</title>
-<updated>2026-11-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.18.0"/>
-<content type="html">&lt;h4&gt;新增&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;草图是 ProstoCAD 自己的，即使线条很多也很快：磁吸、指针旁的尺寸框、空格键切换工具的作用、右键环形菜单、Rotate、Tangent Arc、复制粘贴，以及坐标轴和原点上的约束。旧版本的文件照常打开。&lt;/li&gt;&lt;li&gt;全新的特征窗口：卡片式布局，尺寸可拖动其圆点或用滚轮调整；所有设置集中在 ⚙ 下的一个面板中。&lt;/li&gt;&lt;li&gt;Spur Gears：保持 Ratio 不变并输入想要的中心距——窗口会给出标准模数下的齿轮对，Use 即可采用。&lt;/li&gt;&lt;li&gt;大型零件快得多：Undo、Redo、OK 和第一次点击。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;修复&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;带有只部分起作用的约束（边与坐标轴 Collinear、角点在原点）的草图会被保留；以前会被拒绝，修改随之丢失。&lt;/li&gt;&lt;li&gt;Revolve 会等待点击选择轴，不再自行选择。&lt;/li&gt;&lt;/ul&gt;</content></entry>
+<entry><id>https://prostocad.com/zh/#update-plus-0.18.1</id>
+<title>ProstoCAD 0.18.1: 小幅改进和错误修复</title>
+<updated>2026-11-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD-releases/releases/tag/v0.18.1"/>
+<content type="html"></content></entry>
+<entry><id>https://prostocad.com/zh/#update-incad-0.18.1</id>
+<title>ProstoCAD for FreeCAD 0.18.1: 小幅改进和错误修复</title>
+<updated>2026-11-27T12:00:00Z</updated><link href="https://github.com/Igr11/ProstoCAD/releases/tag/v0.18.1"/>
+<content type="html"></content></entry>
 </feed>
